@@ -51,6 +51,5 @@ Currently supports the following endpoints:
 
 ## Slack Channel
 
-Find us in #open-collaboration on Slack!
-
+Find us in #open-platform on Slack!
 
