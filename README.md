@@ -27,7 +27,7 @@ While in pre-alpha, this doesn't exist in NPM, and is hosted on internal GitLab.
 
  - `git clone git@git.tm.tmcs:universe/ticketmaster-node.git`
  - `cd ticketmaster-node && npm link`
- - `cd <your project> && npm link ticketmaster-node`
+ - `cd <your project> && npm link ticketmaster-node && npm install ticketmaster-node --save`
 
 Inside your project:
 
