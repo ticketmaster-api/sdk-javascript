@@ -37,7 +37,7 @@ var TM = require('ticketmaster-node');
 TM('your-api-key').discovery.event.all()
 .then(function(events) {
   console.log(events);
-};
+});
 ```
 
 ## Status
