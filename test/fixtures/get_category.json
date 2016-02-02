@@ -1,0 +1,31 @@
+[
+    {
+        "scope": "https://app.ticketmaster.com",
+        "method": "GET",
+        "path": "/discovery/v1/categories/10004?apikey=mock-api-key",
+        "status": 200,
+        "headers": {
+            "Access-Control-Allow-Headers": "origin, x-requested-with, accept",
+            "Access-Control-Allow-Origin": "*",
+            "Date": "Sat, 16 Jan 2016 18:41:27 GMT",
+            "Content-Length": "3488",
+            "Access-Control-Max-Age": "3628800",
+            "Access-Control-Allow-Methods": "GET, PUT, POST, DELETE",
+            "X-Application-Context": "application:default,jetson4",
+            "Connection": "keep-alive",
+            "Content-Type": "application/json;charset=utf-8",
+            "Server": "Apache-Coyote/1.1"
+        },
+        "response": {
+            "name": "Sports",
+            "level": 1,
+            "_links":  {
+              "self":  {
+                "href": "/discovery/v1/categories/10004?locale=en-us&domain=ticketmaster.com"
+              }
+            },
+            "id": "10004",
+            "type": "category"
+        }
+    }
+]
