@@ -20,10 +20,16 @@ describe('Event.parseResponse', function() {
       done();
     });
 
-    it('should set the categories', function(done) {
+    it('should set categories', function(done) {
       ParseResponse(getEventJson).categories.should.be.a('array');
       ParseResponse(getEventJson).categories[0].should.be.a('object');
       ParseResponse(getEventJson).categories[1].should.be.a('object');
+      done();
+    });
+
+    it('should set attractions', function(done) {
+      ParseResponse(getEventJson).attractions.should.be.a('array');
+      ParseResponse(getEventJson).attractions[0].should.be.a('object');
       done();
     });
   });
