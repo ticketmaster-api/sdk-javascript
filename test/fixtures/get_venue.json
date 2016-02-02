@@ -1,0 +1,54 @@
+[
+    {
+        "scope": "https://app.ticketmaster.com",
+        "method": "GET",
+        "path": "/discovery/v1/venues/475247?apikey=mock-api-key",
+        "status": 200,
+        "headers": {
+            "Access-Control-Allow-Headers": "origin, x-requested-with, accept",
+            "Access-Control-Allow-Origin": "*",
+            "Date": "Sat, 16 Jan 2016 18:41:27 GMT",
+            "Content-Length": "3488",
+            "Access-Control-Max-Age": "3628800",
+            "Access-Control-Allow-Methods": "GET, PUT, POST, DELETE",
+            "X-Application-Context": "application:default,jetson4",
+            "Connection": "keep-alive",
+            "Content-Type": "application/json;charset=utf-8",
+            "Server": "Apache-Coyote/1.1"
+        },
+        "response": {
+            "name": "Alamodome",
+            "marketId":  [
+              40,
+              122,
+              5
+            ],
+            "country":  {
+              "countryCode": "US"
+            },
+            "state":  {
+              "stateCode": "TX"
+            },
+            "city":  {
+              "name": "San Antonio"
+            },
+            "location":  {
+              "latitude": "29.417054662",
+              "longitude": "-98.479151396"
+            },
+            "postalCode": "78203",
+            "address":  {
+              "line1": "100 Montana St",
+              "line2": "San Antonio, TX"
+            },
+            "timeZone": "America/Chicago",
+            "_links":  {
+              "self":  {
+                "href": "/discovery/v1/venues/475247?locale=en-us&domain=ticketmaster.com"
+              }
+            },
+            "id": "475247",
+            "type": "venue"
+        }
+    }
+]

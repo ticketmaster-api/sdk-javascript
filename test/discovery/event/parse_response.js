@@ -32,5 +32,10 @@ describe('Event.parseResponse', function() {
       ParseResponse(getEventJson).attractions[0].should.be.a('object');
       done();
     });
+
+    it('should set venue', function(done) {
+      ParseResponse(getEventJson).venue.should.be.a('object');
+      done();
+    });
   });
 });
