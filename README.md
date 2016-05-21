@@ -1,4 +1,5 @@
-# ticketmaster
+# ticketmaster [![Build Status](https://travis-ci.org/ticketmaster-api/sdk-javascript.svg?branch=master)](https://travis-ci.org/ticketmaster-api/sdk-javascript)
+
 
 Node SDK for the Ticketmaster Open Platform (http://developer.ticketmaster.com/).
 
