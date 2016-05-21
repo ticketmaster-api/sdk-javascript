@@ -4,7 +4,7 @@ var nock      = require('nock');
 var nockBack  = nock.back;
 var Find       = require('../../../../lib/discovery/v1/venue/find');
 
-describe('Venue.find', function() {
+describe('discovery.v1.venue.find', function() {
   before(function() {
     nockBack.fixtures = './test/fixtures/discovery/v1'
   });

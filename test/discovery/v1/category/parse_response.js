@@ -3,7 +3,7 @@ var should    = chai.should();
 var getCategoryJson = require('../../../fixtures/discovery/v1/category/find-200')[0].response;
 var ParseResponse = require('../../../../lib/discovery/v1/category/parse_response');
 
-describe('Category.parseResponse', function() {
+describe('discovery.v1.category.parseResponse', function() {
   describe('success', function() {
     it('should return a Category object', function(done) {
       ParseResponse(getCategoryJson).should.be.a('object');

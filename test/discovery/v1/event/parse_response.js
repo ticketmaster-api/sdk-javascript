@@ -3,7 +3,7 @@ var should    = chai.should();
 var getEventJson = require('../../../fixtures/discovery/v1/event/find-200')[0].response;
 var ParseResponse = require('../../../../lib/discovery/v1/event/parse_response');
 
-describe('Event.parseResponse', function() {
+describe('discovery.v1.event.parseResponse', function() {
   describe('success', function() {
     it('should return an Event object', function(done) {
       ParseResponse(getEventJson).should.be.a('object');

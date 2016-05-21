@@ -1,0 +1,30 @@
+[
+    {
+        "scope": "https://app.ticketmaster.com",
+        "method": "GET",
+        "path": "/discovery/v2/events/unknown-id?apikey=mock-api-key",
+        "status": 404,
+        "response": {
+          "errors": [
+            {
+              "code": "DIS1004",
+              "detail": "Resource not found with provided criteria (locale=en-us, id=unknown)",
+              "status": "404",
+              "_links": {
+                "about": {
+                  "href": "/discovery/v2/errors.html#DIS1004"
+                }
+              }
+            }
+          ]
+        },
+        "headers": {
+            "Date": "Sat, 16 Jan 2016 19:38:44 GMT",
+            "Content-Length": "187",
+            "X-Application-Context": "application:default,jetson1",
+            "Connection": "keep-alive",
+            "Content-Type": "application/json;charset=utf-8",
+            "Server": "Apache-Coyote/1.1"
+        }
+    }
+]

@@ -3,7 +3,7 @@ var should    = chai.should();
 var getVenueJson = require('../../../fixtures/discovery/v1/venue/find-200')[0].response;
 var ParseResponse = require('../../../../lib/discovery/v1/venue/parse_response');
 
-describe('Venue.parseResponse', function() {
+describe('discovery.v1.venue.parseResponse', function() {
   describe('success', function() {
     it('should return a Venue object', function(done) {
       ParseResponse(getVenueJson).should.be.a('object');
