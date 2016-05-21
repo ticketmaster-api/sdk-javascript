@@ -1,5 +1,5 @@
 {
-  "name": "ticketmaster-node",
+  "name": "ticketmaster",
   "version": "0.1.0",
   "description": "Node SDK for the Ticketmaster Open Platform",
   "main": "index.js",
