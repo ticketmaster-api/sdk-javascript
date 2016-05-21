@@ -3,7 +3,7 @@ var should    = chai.should();
 var getAttractionJson = require('../../../fixtures/discovery/v1/attraction/find-200')[0].response;
 var ParseResponse = require('../../../../lib/discovery/v1/attraction/parse_response');
 
-describe('Attraction.parseResponse', function() {
+describe('discovery.v1.attraction.parseResponse', function() {
   describe('success', function() {
     it('should return a Attraction object', function(done) {
       ParseResponse(getAttractionJson).should.be.a('object');

@@ -4,7 +4,7 @@ var nock      = require('nock');
 var nockBack  = nock.back;
 var Find      = require('../../../../lib/discovery/v1/event/find');
 
-describe('Event.find', function() {
+describe('discovery.v1.event.find', function() {
   before(function() {
     nockBack.fixtures = './test/fixtures/discovery/v1'
   });

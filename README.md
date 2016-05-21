@@ -23,7 +23,7 @@ Aims to wrap the Ticketmaster API with coverage for all Open Platform endpoints,
 
 ```javascript
 var TM = require('ticketmaster');
-TM('your-api-key').discovery.v1.event.all()
+TM('your-api-key').discovery.v2.event.all()
 .then(function(events) {
   // "events" is an array of Ticketmaster event information
   console.log(events);
@@ -32,7 +32,7 @@ TM('your-api-key').discovery.v1.event.all()
 
 Alternative syntax if you are only interested in a subset of the API:
 ```javascript
-var EventAPI = require('ticketmaster').discovery.v1.event;
+var EventAPI = require('ticketmaster').discovery.v2.event;
 EventAPI('your-api-key').all()
 ```
 
@@ -49,6 +49,14 @@ Currently supports the following endpoints:
      - Attraction
        - Find
      - Category
+       - Find
+     - Event
+       - All
+       - Find
+     - Venue
+       - Find
+   - v2
+     - Attraction
        - Find
      - Event
        - All

@@ -2,11 +2,11 @@ var chai      = require("chai");
 var should    = chai.should();
 var nock      = require('nock');
 var nockBack  = nock.back;
-var All       = require('../../../../lib/discovery/v1/event/all');
+var All       = require('../../../../lib/discovery/v2/event/all');
 
-describe('discovery.v1.event.all', function() {
+describe('discovery.v2.event.all', function() {
   before(function() {
-    nockBack.fixtures = './test/fixtures/discovery/v1'
+    nockBack.fixtures = './test/fixtures/discovery/v2'
   });
 
   describe('success', function() {

@@ -1,0 +1,69 @@
+[
+    {
+        "scope": "https://app.ticketmaster.com",
+        "method": "GET",
+        "path": "/discovery/v2/venues/KovZpZAEA76A?apikey=mock-api-key",
+        "status": 200,
+        "headers": {
+            "Access-Control-Allow-Headers": "origin, x-requested-with, accept",
+            "Access-Control-Allow-Origin": "*",
+            "Date": "Sat, 16 Jan 2016 18:41:27 GMT",
+            "Content-Length": "3488",
+            "Access-Control-Max-Age": "3628800",
+            "Access-Control-Allow-Methods": "GET, PUT, POST, DELETE",
+            "X-Application-Context": "application:default,jetson4",
+            "Connection": "keep-alive",
+            "Content-Type": "application/json;charset=utf-8",
+            "Server": "Apache-Coyote/1.1"
+        },
+        "response": {
+          "name": "The Pavilion at Montage Mountain",
+          "type": "venue",
+          "id": "KovZpZAEA76A",
+          "test": false,
+          "url": "http://ticketmaster.com/venue/16765",
+          "locale": "en-us",
+          "postalCode": "18505",
+          "timezone": "America/New_York",
+          "city": {
+            "name": "Scranton"
+          },
+          "state": {
+            "name": "Pennsylvania",
+            "stateCode": "PA"
+          },
+          "country": {
+            "name": "United States Of America",
+            "countryCode": "US"
+          },
+          "address": {
+            "line1": "1000 Montage Mountain Road"
+          },
+          "location": {
+            "longitude": "-75.66388880",
+            "latitude": "41.34797580"
+          },
+          "markets": [
+            {
+              "id": "18"
+            }
+          ],
+          "dmas": [
+            {
+              "id": 294
+            },
+            {
+              "id": 358
+            },
+            {
+              "id": 416
+            }
+          ],
+          "_links": {
+            "self": {
+              "href": "/discovery/v2/venues/KovZpZAEA76A?locale=en-us"
+            }
+          }
+        }
+    }
+]
