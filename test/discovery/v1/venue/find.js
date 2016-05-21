@@ -2,21 +2,21 @@ var chai      = require("chai");
 var should    = chai.should();
 var nock      = require('nock');
 var nockBack  = nock.back;
-var Find      = require('../../../lib/discovery/attraction/find');
+var Find       = require('../../../../lib/discovery/v1/venue/find');
 
-describe('Attraction.find', function() {
+describe('Venue.find', function() {
   before(function() {
-    nockBack.fixtures = './test/fixtures'
+    nockBack.fixtures = './test/fixtures/discovery/v1'
   });
 
   describe('success', function() {
-    it('should find a attraction', function(done) {
-      nockBack('get_attraction.json', {}, function(nockDone) {
+    it('should find a venue', function(done) {
+      nockBack('venue/find-200.json', {}, function(nockDone) {
         var find = Find('mock-api-key');
-        find('1542376')
+        find('475247')
         .then((function(_this) {
           return function(result) {
-            result.name.should.equal("Monster Jam");
+            result.name.should.equal("Alamodome");
             nockDone();
             done();
           };

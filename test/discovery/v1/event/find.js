@@ -2,16 +2,16 @@ var chai      = require("chai");
 var should    = chai.should();
 var nock      = require('nock');
 var nockBack  = nock.back;
-var Find      = require('../../../lib/discovery/event/find');
+var Find      = require('../../../../lib/discovery/v1/event/find');
 
 describe('Event.find', function() {
   before(function() {
-    nockBack.fixtures = './test/fixtures'
+    nockBack.fixtures = './test/fixtures/discovery/v1'
   });
 
   describe('success', function() {
     it('should find an event', function(done) {
-      nockBack('get_event.json', {}, function(nockDone) {
+      nockBack('event/find-200.json', {}, function(nockDone) {
         var find = Find('mock-api-key');
         find('3A004F38C8275108')
         .then((function(_this) {
@@ -27,7 +27,7 @@ describe('Event.find', function() {
 
   describe('not found', function() {
     it('should handle 404', function(done) {
-      nockBack('fail_get_event.json', {}, function(nockDone) {
+      nockBack('event/find-404.json', {}, function(nockDone) {
         var find = Find('mock-api-key');
         find('unknown-id')
         .catch((function(_this) {

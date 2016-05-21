@@ -1,7 +1,7 @@
 var chai      = require("chai");
 var should    = chai.should();
-var getVenueJson = require('../../fixtures/get_venue')[0].response;
-var ParseResponse = require('../../../lib/discovery/venue/parse_response');
+var getVenueJson = require('../../../fixtures/discovery/v1/venue/find-200')[0].response;
+var ParseResponse = require('../../../../lib/discovery/v1/venue/parse_response');
 
 describe('Venue.parseResponse', function() {
   describe('success', function() {

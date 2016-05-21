@@ -1,7 +1,7 @@
 var chai      = require("chai");
 var should    = chai.should();
-var getCategoryJson = require('../../fixtures/get_category')[0].response;
-var ParseResponse = require('../../../lib/discovery/category/parse_response');
+var getCategoryJson = require('../../../fixtures/discovery/v1/category/find-200')[0].response;
+var ParseResponse = require('../../../../lib/discovery/v1/category/parse_response');
 
 describe('Category.parseResponse', function() {
   describe('success', function() {

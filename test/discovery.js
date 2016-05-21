@@ -1,3 +1,5 @@
+// s
+
 // var chai      = require("chai");
 // var should    = chai.should();
 // var nock      = require('nock');
@@ -6,7 +8,7 @@
 
 // describe('discovery', function() {
 //   before(function() {
-//     nockBack.fixtures = './test/fixtures'
+//     nockBack.fixtures = './test/fixtures/discovery/v1'
 //     nockBack.setMode('record')
 //     nock.recorder.rec();
 //   });

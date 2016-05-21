@@ -2,16 +2,16 @@ var chai      = require("chai");
 var should    = chai.should();
 var nock      = require('nock');
 var nockBack  = nock.back;
-var All       = require('../../../lib/discovery/event/all');
+var All       = require('../../../../lib/discovery/v1/event/all');
 
 describe('Event.all', function() {
   before(function() {
-    nockBack.fixtures = './test/fixtures'
+    nockBack.fixtures = './test/fixtures/discovery/v1'
   });
 
   describe('success', function() {
     it('should find an event', function(done) {
-      nockBack('get_events.json', {}, function(nockDone) {
+      nockBack('event/all-200.json', {}, function(nockDone) {
         var all = All('mock-api-key');
         all()
         .then(function(events) {
