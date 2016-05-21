@@ -1,55 +1,68 @@
-# ticketmaster-node
+# ticketmaster
 
-Node SDK for the Ticketmaster Open Platform
+Node SDK for the Ticketmaster Open Platform (http://developer.ticketmaster.com/).
 
-***WARNING: Extremely alpha proof-of-concept***
-
-Aims to wrap the Ticketmaster API with coverage for all endpoints, including these features:
- - Passes API access keys
- - Promisifies all requests via Bluebird
- - TODO: Passes OAuth2 bearer credentials
+Aims to wrap the Ticketmaster API with coverage for all Open Platform endpoints, featuring:
+ - API key authentication support
+ - Ticketmaster OAuth2 access key support
+ - Promises on all requests via Bluebird
 
 ## Build Status
 
- - TBD, not integrated with Jenkins
+ - [TODO] Implement Travis CI
 
 ## System Requirements
 
  - NodeJS
 
-## Installation
-
- - `make install`
-
 ## Usage
 
-While in pre-alpha, this doesn't exist in NPM, and is hosted on internal GitLab.  To experiment before public,
 
- - `git clone git@git.tm.tmcs:universe/ticketmaster-node.git`
- - `cd ticketmaster-node && npm link`
- - `cd <your project> && npm link ticketmaster-node && npm install ticketmaster-node --save`
+1. Include the ticketmaster npm package:
 
-Inside your project:
+ - `npm install --save ticketmaster`
+
+2. Require the package and make an API call:
 
 ```javascript
-var TM = require('ticketmaster-node');
-
-TM('your-api-key').discovery.event.all()
+var TM = require('ticketmaster');
+TM('your-api-key').discovery.v1.event.all()
 .then(function(events) {
+  // "events" is an array of Ticketmaster event information
   console.log(events);
 });
 ```
+
+Alternative syntax if you are only interested in a subset of the API:
+```javascript
+var EventAPI = require('ticketmaster').discovery.v1.event;
+EventAPI('your-api-key').all()
+```
+
+## Running Tests
+
+ - `make test`
 
 ## Status
 
 Currently supports the following endpoints:
 
  - Discovery API
-   - Event
-     - All
-     - Find
+   - v1
+     - Attraction
+       - Find
+     - Category
+       - Find
+     - Event
+       - All
+       - Find
+     - Venue
+       - Find
 
-## Slack Channel
+The goal is to implement all endpoints available @ http://developer.ticketmaster.com/.
+Pull Requests gladly accepted!
 
-Find us in #open-platform on Slack!
+## Contact Us
+
+[internal only] Find us in #open-platform on Ticketmaster Slack!
 
