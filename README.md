@@ -8,10 +8,6 @@ Aims to wrap the Ticketmaster API with coverage for all Open Platform endpoints,
  - Ticketmaster OAuth2 access key support
  - Promises on all requests via Bluebird
 
-## Build Status
-
- - [TODO] Implement Travis CI
-
 ## System Requirements
 
  - NodeJS (v0.10 or greater)
