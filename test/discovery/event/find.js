@@ -2,7 +2,7 @@ var chai      = require("chai");
 var should    = chai.should();
 var nock      = require('nock');
 var nockBack  = nock.back;
-var Find       = require('../../../lib/discovery/event/find');
+var Find      = require('../../../lib/discovery/event/find');
 
 describe('Event.find', function() {
   before(function() {

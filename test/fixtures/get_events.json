@@ -1,0 +1,1178 @@
+[
+    {
+        "scope": "https://app.ticketmaster.com",
+        "method": "GET",
+        "path": "/discovery/v1/events/?apikey=mock-api-key",
+        "status": 200,
+        "headers": {
+          "Access-Control-Allow-Headers": "origin, x-requested-with, accept",
+          "Access-Control-Allow-Origin": "*",
+          "Date": "Sat, 16 Jan 2016 18:41:27 GMT",
+          "Content-Length": "3488",
+          "Access-Control-Max-Age": "3628800",
+          "Access-Control-Allow-Methods": "GET, PUT, POST, DELETE",
+          "X-Application-Context": "application:default,jetson4",
+          "Connection": "keep-alive",
+          "Content-Type": "application/json;charset=utf-8",
+          "Server": "Apache-Coyote/1.1"
+        },
+        "response": {
+          "_links" : {
+            "self" : {
+              "href" : "/discovery/v1/events{?page,size,sort}",
+              "templated" : true
+            },
+            "next" : {
+              "href" : "/discovery/v1/events?page=1&size=20{&sort}",
+              "templated" : true
+            }
+          },
+          "_embedded" : {
+            "events" : [ {
+              "name" : "OSEA Membership Registration",
+              "locale" : "en-us",
+              "eventUrl" : "http://https://www.universe.com/events/osea-membership-registration-tickets-toronto-1PDMTJ?ref=ticketmaster",
+              "dates" : {
+                "start" : {
+                  "dateTime" : "2015-08-07T02:15:00.000+0000",
+                  "localDate" : "2015-08-06",
+                  "localTime" : "22:15:00"
+                },
+                "end" : {
+                  "dateTime" : "2016-08-01T04:00:00.000+0000",
+                  "localDate" : "2016-08-01",
+                  "localTime" : "00:00:00"
+                },
+                "timezone" : "America/Toronto",
+                "displayOptions" : {
+                  "range" : {
+                    "localStartDate" : "2015-08-06",
+                    "localEndDate" : "2016-08-01"
+                  }
+                },
+                "status" : {
+                  "code" : "active"
+                }
+              },
+              "test" : false,
+              "_links" : {
+                "self" : {
+                  "href" : "/discovery/v1/events/universe-55c41218a14bfe5a87000d6d?locale=en-us&domain=ticketmaster.com"
+                }
+              },
+              "id" : "universe-55c41218a14bfe5a87000d6d",
+              "_embedded" : {
+                "venue" : [ {
+                  "name" : "OSEA Office",
+                  "marketId" : [ 101 ],
+                  "country" : {
+                    "countryCode" : "CA"
+                  },
+                  "state" : {
+                    "stateCode" : "ON"
+                  },
+                  "city" : {
+                    "name" : "Toronto"
+                  },
+                  "location" : { },
+                  "postalCode" : "M5T 2C7",
+                  "address" : {
+                    "line1" : "215 Spadina Ave",
+                    "line2" : "Toronto,Ontario"
+                  },
+                  "timeZone" : "America/Toronto",
+                  "type" : "venue"
+                } ]
+              },
+              "type" : "event"
+            }, {
+              "name" : "FORGE: Arts & Business Management Workshop",
+              "locale" : "en-us",
+              "eventUrl" : "https://www.universe.com/events/forge-arts-business-management-workshop-tickets-toronto-HVSJ74?ref=ticketmaster",
+              "dates" : {
+                "start" : {
+                  "dateTime" : "2016-01-14T23:30:00.000+0000",
+                  "localDate" : "2016-01-14",
+                  "localTime" : "18:30:00"
+                },
+                "end" : {
+                  "dateTime" : "2016-01-15T02:00:00.000+0000",
+                  "localDate" : "2016-01-14",
+                  "localTime" : "21:00:00"
+                },
+                "timezone" : "America/Toronto",
+                "displayOptions" : {
+                  "range" : {
+                    "localStartDate" : "2016-01-14",
+                    "localEndDate" : "2016-01-14"
+                  }
+                },
+                "status" : {
+                  "code" : "active"
+                }
+              },
+              "test" : false,
+              "_links" : {
+                "self" : {
+                  "href" : "/discovery/v1/events/universe-566c8cb9f1f86e93b1000747?locale=en-us&domain=ticketmaster.com"
+                }
+              },
+              "id" : "universe-566c8cb9f1f86e93b1000747",
+              "_embedded" : {
+                "venue" : [ {
+                  "name" : "Toronto City Hall",
+                  "marketId" : [ 101 ],
+                  "country" : {
+                    "countryCode" : "CA"
+                  },
+                  "state" : {
+                    "stateCode" : "ON"
+                  },
+                  "city" : {
+                    "name" : "Toronto"
+                  },
+                  "location" : { },
+                  "postalCode" : "M5H 2N2",
+                  "address" : {
+                    "line1" : "100 Queen St. W.",
+                    "line2" : "Toronto,ON"
+                  },
+                  "timeZone" : "America/Toronto",
+                  "type" : "venue"
+                } ]
+              },
+              "type" : "event"
+            }, {
+              "name" : "MILF Life Crisis- a new comedy about dating again!",
+              "locale" : "en-us",
+              "eventUrl" : "https://www.universe.com/events/milf-life-crisis-a-new-comedy-about-dating-again-tickets-toronto-1D7FTB?ref=ticketmaster",
+              "dates" : {
+                "start" : {
+                  "dateTime" : "2016-01-15T00:00:00.000+0000",
+                  "localDate" : "2016-01-14",
+                  "localTime" : "19:00:00"
+                },
+                "end" : {
+                  "dateTime" : "2016-01-15T01:15:00.000+0000",
+                  "localDate" : "2016-01-14",
+                  "localTime" : "20:15:00"
+                },
+                "timezone" : "America/Toronto",
+                "displayOptions" : {
+                  "range" : {
+                    "localStartDate" : "2016-01-14",
+                    "localEndDate" : "2016-01-14"
+                  }
+                },
+                "status" : {
+                  "code" : "active"
+                }
+              },
+              "test" : false,
+              "_links" : {
+                "self" : {
+                  "href" : "/discovery/v1/events/universe-566910ec9d09729ae1001ba0?locale=en-us&domain=ticketmaster.com"
+                }
+              },
+              "id" : "universe-566910ec9d09729ae1001ba0",
+              "_embedded" : {
+                "venue" : [ {
+                  "name" : "Red Sandcastle Theatre",
+                  "marketId" : [ 101 ],
+                  "country" : {
+                    "countryCode" : "CA"
+                  },
+                  "state" : {
+                    "stateCode" : "ON"
+                  },
+                  "city" : {
+                    "name" : "Toronto"
+                  },
+                  "location" : { },
+                  "postalCode" : "M4M 2N2",
+                  "address" : {
+                    "line1" : "922 Queen Street East",
+                    "line2" : "Toronto,Ontario"
+                  },
+                  "timeZone" : "America/Toronto",
+                  "type" : "venue"
+                } ]
+              },
+              "type" : "event"
+            }, {
+              "name" : "Neon Dreams Cinema Club presents: MIAMI BLUES",
+              "locale" : "en-us",
+              "eventUrl" : "https://www.universe.com/events/neon-dreams-cinema-club-presents-miami-blues-tickets-toronto-TFM67Q?ref=ticketmaster",
+              "dates" : {
+                "start" : {
+                  "dateTime" : "2016-01-15T00:00:00.000+0000",
+                  "localDate" : "2016-01-14",
+                  "localTime" : "19:00:00"
+                },
+                "end" : {
+                  "dateTime" : "2016-01-15T02:00:00.000+0000",
+                  "localDate" : "2016-01-14",
+                  "localTime" : "21:00:00"
+                },
+                "timezone" : "America/Toronto",
+                "displayOptions" : {
+                  "range" : {
+                    "localStartDate" : "2016-01-14",
+                    "localEndDate" : "2016-01-14"
+                  }
+                },
+                "status" : {
+                  "code" : "active"
+                }
+              },
+              "test" : false,
+              "_links" : {
+                "self" : {
+                  "href" : "/discovery/v1/events/universe-5681b2aa2e5959b60a001150?locale=en-us&domain=ticketmaster.com"
+                }
+              },
+              "id" : "universe-5681b2aa2e5959b60a001150",
+              "_embedded" : {
+                "venue" : [ {
+                  "name" : "The Royal Cinema",
+                  "marketId" : [ 101 ],
+                  "country" : {
+                    "countryCode" : "CA"
+                  },
+                  "state" : {
+                    "stateCode" : "ON"
+                  },
+                  "city" : {
+                    "name" : "Toronto"
+                  },
+                  "location" : { },
+                  "postalCode" : "M6G 1B4",
+                  "address" : {
+                    "line1" : "608 College St",
+                    "line2" : "Toronto,ON"
+                  },
+                  "timeZone" : "America/Toronto",
+                  "type" : "venue"
+                } ]
+              },
+              "type" : "event"
+            }, {
+              "name" : "MILF Life Crisis- a new comedy about dating again!",
+              "locale" : "en-us",
+              "eventUrl" : "https://www.universe.com/events/milf-life-crisis-a-new-comedy-about-dating-again-tickets-toronto-1D7FTB?ref=ticketmaster",
+              "dates" : {
+                "start" : {
+                  "dateTime" : "2016-01-16T00:00:00.000+0000",
+                  "localDate" : "2016-01-15",
+                  "localTime" : "19:00:00"
+                },
+                "end" : {
+                  "dateTime" : "2016-01-16T01:15:00.000+0000",
+                  "localDate" : "2016-01-15",
+                  "localTime" : "20:15:00"
+                },
+                "timezone" : "America/Toronto",
+                "displayOptions" : {
+                  "range" : {
+                    "localStartDate" : "2016-01-15",
+                    "localEndDate" : "2016-01-15"
+                  }
+                },
+                "status" : {
+                  "code" : "active"
+                }
+              },
+              "test" : false,
+              "_links" : {
+                "self" : {
+                  "href" : "/discovery/v1/events/universe-566910ec9d09729ae1001ba1?locale=en-us&domain=ticketmaster.com"
+                }
+              },
+              "id" : "universe-566910ec9d09729ae1001ba1",
+              "_embedded" : {
+                "venue" : [ {
+                  "name" : "Red Sandcastle Theatre",
+                  "marketId" : [ 101 ],
+                  "country" : {
+                    "countryCode" : "CA"
+                  },
+                  "state" : {
+                    "stateCode" : "ON"
+                  },
+                  "city" : {
+                    "name" : "Toronto"
+                  },
+                  "location" : { },
+                  "postalCode" : "M4M 2N2",
+                  "address" : {
+                    "line1" : "922 Queen Street East",
+                    "line2" : "Toronto,Ontario"
+                  },
+                  "timeZone" : "America/Toronto",
+                  "type" : "venue"
+                } ]
+              },
+              "type" : "event"
+            }, {
+              "name" : "Suffragette",
+              "locale" : "en-us",
+              "eventUrl" : "https://www.universe.com/events/suffragette-tickets-toronto-MQ0WV1?ref=ticketmaster",
+              "dates" : {
+                "start" : {
+                  "dateTime" : "2016-01-16T00:00:00.000+0000",
+                  "localDate" : "2016-01-15",
+                  "localTime" : "19:00:00"
+                },
+                "end" : {
+                  "dateTime" : "2016-01-16T02:00:00.000+0000",
+                  "localDate" : "2016-01-15",
+                  "localTime" : "21:00:00"
+                },
+                "timezone" : "America/Toronto",
+                "displayOptions" : {
+                  "range" : {
+                    "localStartDate" : "2016-01-15",
+                    "localEndDate" : "2016-01-15"
+                  }
+                },
+                "status" : {
+                  "code" : "active"
+                }
+              },
+              "test" : false,
+              "_links" : {
+                "self" : {
+                  "href" : "/discovery/v1/events/universe-5681afe433022d449b0010b9?locale=en-us&domain=ticketmaster.com"
+                }
+              },
+              "id" : "universe-5681afe433022d449b0010b9",
+              "_embedded" : {
+                "venue" : [ {
+                  "name" : "The Royal Cinema",
+                  "marketId" : [ 101 ],
+                  "country" : {
+                    "countryCode" : "CA"
+                  },
+                  "state" : {
+                    "stateCode" : "ON"
+                  },
+                  "city" : {
+                    "name" : "Toronto"
+                  },
+                  "location" : { },
+                  "postalCode" : "M6G 1B4",
+                  "address" : {
+                    "line1" : "608 College St",
+                    "line2" : "Toronto,ON"
+                  },
+                  "timeZone" : "America/Toronto",
+                  "type" : "venue"
+                } ]
+              },
+              "type" : "event"
+            }, {
+              "name" : "Desi Night",
+              "locale" : "en-us",
+              "eventUrl" : "https://www.universe.com/events/desi-night-tickets-brampton-F06SBV?ref=ticketmaster",
+              "dates" : {
+                "start" : {
+                  "dateTime" : "2016-01-16T02:00:00.000+0000",
+                  "localDate" : "2016-01-15",
+                  "localTime" : "21:00:00"
+                },
+                "end" : {
+                  "dateTime" : "2016-01-16T06:00:00.000+0000",
+                  "localDate" : "2016-01-16",
+                  "localTime" : "01:00:00"
+                },
+                "timezone" : "America/Toronto",
+                "displayOptions" : {
+                  "range" : {
+                    "localStartDate" : "2016-01-15",
+                    "localEndDate" : "2016-01-16"
+                  }
+                },
+                "status" : {
+                  "code" : "active"
+                }
+              },
+              "test" : false,
+              "_links" : {
+                "self" : {
+                  "href" : "/discovery/v1/events/universe-56955a51106c64cb8d000bc3?locale=en-us&domain=ticketmaster.com"
+                }
+              },
+              "id" : "universe-56955a51106c64cb8d000bc3",
+              "_embedded" : {
+                "venue" : [ {
+                  "marketId" : [ 101 ],
+                  "country" : {
+                    "countryCode" : "CA"
+                  },
+                  "state" : {
+                    "stateCode" : "ON"
+                  },
+                  "city" : {
+                    "name" : "Brampton"
+                  },
+                  "location" : { },
+                  "postalCode" : "L6Y 5H9",
+                  "address" : {
+                    "line1" : "7899 McLaughlin Rd",
+                    "line2" : "Brampton,Ontario"
+                  },
+                  "timeZone" : "America/Toronto",
+                  "type" : "venue"
+                } ]
+              },
+              "type" : "event"
+            }, {
+              "name" : "Kensington Krawl Food & Culture Tour",
+              "locale" : "en-us",
+              "eventUrl" : "https://www.universe.com/events/kensington-krawl-food-culture-tour-tickets-toronto-GZ6RV?ref=ticketmaster",
+              "dates" : {
+                "start" : {
+                  "dateTime" : "2016-01-16T16:30:00.000+0000",
+                  "localDate" : "2016-01-16",
+                  "localTime" : "11:30:00"
+                },
+                "end" : {
+                  "dateTime" : "2016-01-16T20:00:00.000+0000",
+                  "localDate" : "2016-01-16",
+                  "localTime" : "15:00:00"
+                },
+                "timezone" : "America/Toronto",
+                "displayOptions" : {
+                  "range" : {
+                    "localStartDate" : "2016-01-16",
+                    "localEndDate" : "2016-01-16"
+                  }
+                },
+                "status" : {
+                  "code" : "active"
+                }
+              },
+              "test" : false,
+              "_links" : {
+                "self" : {
+                  "href" : "/discovery/v1/events/universe-568b0799ee33fbb9cd000b63?locale=en-us&domain=ticketmaster.com"
+                }
+              },
+              "id" : "universe-568b0799ee33fbb9cd000b63",
+              "_embedded" : {
+                "venue" : [ {
+                  "name" : "Jimmy's Coffee",
+                  "marketId" : [ 101 ],
+                  "country" : {
+                    "countryCode" : "CA"
+                  },
+                  "state" : {
+                    "stateCode" : "ON"
+                  },
+                  "city" : {
+                    "name" : "Toronto"
+                  },
+                  "location" : { },
+                  "address" : {
+                    "line1" : "191 Baldwin St",
+                    "line2" : "Toronto,ON"
+                  },
+                  "timeZone" : "America/Toronto",
+                  "type" : "venue"
+                } ]
+              },
+              "type" : "event"
+            }, {
+              "name" : "The Peanuts Movie",
+              "locale" : "en-us",
+              "eventUrl" : "https://www.universe.com/events/the-peanuts-movie-tickets-toronto-V8RJNB?ref=ticketmaster",
+              "dates" : {
+                "start" : {
+                  "dateTime" : "2016-01-16T19:00:00.000+0000",
+                  "localDate" : "2016-01-16",
+                  "localTime" : "14:00:00"
+                },
+                "end" : {
+                  "dateTime" : "2016-01-16T21:00:00.000+0000",
+                  "localDate" : "2016-01-16",
+                  "localTime" : "16:00:00"
+                },
+                "timezone" : "America/Toronto",
+                "displayOptions" : {
+                  "range" : {
+                    "localStartDate" : "2016-01-16",
+                    "localEndDate" : "2016-01-16"
+                  }
+                },
+                "status" : {
+                  "code" : "active"
+                }
+              },
+              "test" : false,
+              "_links" : {
+                "self" : {
+                  "href" : "/discovery/v1/events/universe-5681aae92e59592a9600107f?locale=en-us&domain=ticketmaster.com"
+                }
+              },
+              "id" : "universe-5681aae92e59592a9600107f",
+              "_embedded" : {
+                "venue" : [ {
+                  "name" : "The Royal Cinema",
+                  "marketId" : [ 101 ],
+                  "country" : {
+                    "countryCode" : "CA"
+                  },
+                  "state" : {
+                    "stateCode" : "ON"
+                  },
+                  "city" : {
+                    "name" : "Toronto"
+                  },
+                  "location" : { },
+                  "postalCode" : "M6G 1B4",
+                  "address" : {
+                    "line1" : "608 College St",
+                    "line2" : "Toronto,ON"
+                  },
+                  "timeZone" : "America/Toronto",
+                  "type" : "venue"
+                } ]
+              },
+              "type" : "event"
+            }, {
+              "name" : "Brewers' Dinner at Folly Brewpub",
+              "locale" : "en-us",
+              "eventUrl" : "https://www.universe.com/events/brewers-dinner-at-folly-brewpub-tickets-toronto-VJQC5K?ref=ticketmaster",
+              "dates" : {
+                "start" : {
+                  "dateTime" : "2016-01-16T23:00:00.000+0000",
+                  "localDate" : "2016-01-16",
+                  "localTime" : "18:00:00"
+                },
+                "end" : {
+                  "dateTime" : "2016-01-17T02:00:00.000+0000",
+                  "localDate" : "2016-01-16",
+                  "localTime" : "21:00:00"
+                },
+                "timezone" : "America/Toronto",
+                "displayOptions" : {
+                  "range" : {
+                    "localStartDate" : "2016-01-16",
+                    "localEndDate" : "2016-01-16"
+                  }
+                },
+                "status" : {
+                  "code" : "active"
+                }
+              },
+              "test" : false,
+              "_links" : {
+                "self" : {
+                  "href" : "/discovery/v1/events/universe-568982f39c03e806c7003708?locale=en-us&domain=ticketmaster.com"
+                }
+              },
+              "id" : "universe-568982f39c03e806c7003708",
+              "_embedded" : {
+                "venue" : [ {
+                  "name" : "Folly Brewpub",
+                  "marketId" : [ 101 ],
+                  "country" : {
+                    "countryCode" : "CA"
+                  },
+                  "state" : {
+                    "stateCode" : "ON"
+                  },
+                  "city" : {
+                    "name" : "Toronto"
+                  },
+                  "location" : { },
+                  "postalCode" : "M6H 1A4",
+                  "address" : {
+                    "line1" : "928 College St",
+                    "line2" : "Toronto,ON"
+                  },
+                  "timeZone" : "America/Toronto",
+                  "type" : "venue"
+                } ]
+              },
+              "type" : "event"
+            }, {
+              "name" : "MILF Life Crisis- a new comedy about dating again!",
+              "locale" : "en-us",
+              "eventUrl" : "https://www.universe.com/events/milf-life-crisis-a-new-comedy-about-dating-again-tickets-toronto-1D7FTB?ref=ticketmaster",
+              "dates" : {
+                "start" : {
+                  "dateTime" : "2016-01-17T00:00:00.000+0000",
+                  "localDate" : "2016-01-16",
+                  "localTime" : "19:00:00"
+                },
+                "end" : {
+                  "dateTime" : "2016-01-17T01:15:00.000+0000",
+                  "localDate" : "2016-01-16",
+                  "localTime" : "20:15:00"
+                },
+                "timezone" : "America/Toronto",
+                "displayOptions" : {
+                  "range" : {
+                    "localStartDate" : "2016-01-16",
+                    "localEndDate" : "2016-01-16"
+                  }
+                },
+                "status" : {
+                  "code" : "active"
+                }
+              },
+              "test" : false,
+              "_links" : {
+                "self" : {
+                  "href" : "/discovery/v1/events/universe-566910ec9d09729ae1001ba2?locale=en-us&domain=ticketmaster.com"
+                }
+              },
+              "id" : "universe-566910ec9d09729ae1001ba2",
+              "_embedded" : {
+                "venue" : [ {
+                  "name" : "Red Sandcastle Theatre",
+                  "marketId" : [ 101 ],
+                  "country" : {
+                    "countryCode" : "CA"
+                  },
+                  "state" : {
+                    "stateCode" : "ON"
+                  },
+                  "city" : {
+                    "name" : "Toronto"
+                  },
+                  "location" : { },
+                  "postalCode" : "M4M 2N2",
+                  "address" : {
+                    "line1" : "922 Queen Street East",
+                    "line2" : "Toronto,Ontario"
+                  },
+                  "timeZone" : "America/Toronto",
+                  "type" : "venue"
+                } ]
+              },
+              "type" : "event"
+            }, {
+              "name" : "MDFF presents: TIRED MOONLIGHT",
+              "locale" : "en-us",
+              "eventUrl" : "https://www.universe.com/events/mdff-presents-tired-moonlight-tickets-toronto-KGT9MY?ref=ticketmaster",
+              "dates" : {
+                "start" : {
+                  "dateTime" : "2016-01-17T01:00:00.000+0000",
+                  "localDate" : "2016-01-16",
+                  "localTime" : "20:00:00"
+                },
+                "end" : {
+                  "dateTime" : "2016-01-17T03:00:00.000+0000",
+                  "localDate" : "2016-01-16",
+                  "localTime" : "22:00:00"
+                },
+                "timezone" : "America/Toronto",
+                "displayOptions" : {
+                  "range" : {
+                    "localStartDate" : "2016-01-16",
+                    "localEndDate" : "2016-01-16"
+                  }
+                },
+                "status" : {
+                  "code" : "active"
+                }
+              },
+              "test" : false,
+              "_links" : {
+                "self" : {
+                  "href" : "/discovery/v1/events/universe-568c2f16adcc0df0be0004a4?locale=en-us&domain=ticketmaster.com"
+                }
+              },
+              "id" : "universe-568c2f16adcc0df0be0004a4",
+              "_embedded" : {
+                "venue" : [ {
+                  "name" : "The Royal Cinema",
+                  "marketId" : [ 101 ],
+                  "country" : {
+                    "countryCode" : "CA"
+                  },
+                  "state" : {
+                    "stateCode" : "ON"
+                  },
+                  "city" : {
+                    "name" : "Toronto"
+                  },
+                  "location" : { },
+                  "postalCode" : "M6G 1B4",
+                  "address" : {
+                    "line1" : "608 College St",
+                    "line2" : "Toronto,ON"
+                  },
+                  "timeZone" : "America/Toronto",
+                  "type" : "venue"
+                } ]
+              },
+              "type" : "event"
+            }, {
+              "name" : "Folly Brewery Tour",
+              "locale" : "en-us",
+              "eventUrl" : "https://www.universe.com/events/folly-brewery-tour-tickets-toronto-PX9LY4?ref=ticketmaster",
+              "dates" : {
+                "start" : {
+                  "dateTime" : "2016-01-17T18:00:00.000+0000",
+                  "localDate" : "2016-01-17",
+                  "localTime" : "13:00:00"
+                },
+                "end" : {
+                  "dateTime" : "2016-01-17T19:00:00.000+0000",
+                  "localDate" : "2016-01-17",
+                  "localTime" : "14:00:00"
+                },
+                "timezone" : "America/Toronto",
+                "displayOptions" : {
+                  "range" : {
+                    "localStartDate" : "2016-01-17",
+                    "localEndDate" : "2016-01-17"
+                  }
+                },
+                "status" : {
+                  "code" : "active"
+                }
+              },
+              "test" : false,
+              "_links" : {
+                "self" : {
+                  "href" : "/discovery/v1/events/universe-5689984b6632e9ebf5003666?locale=en-us&domain=ticketmaster.com"
+                }
+              },
+              "id" : "universe-5689984b6632e9ebf5003666",
+              "_embedded" : {
+                "venue" : [ {
+                  "name" : "Folly Brewpub",
+                  "marketId" : [ 101 ],
+                  "country" : {
+                    "countryCode" : "CA"
+                  },
+                  "state" : {
+                    "stateCode" : "ON"
+                  },
+                  "city" : {
+                    "name" : "Toronto"
+                  },
+                  "location" : { },
+                  "postalCode" : "M6H 1A4",
+                  "address" : {
+                    "line1" : "928 College St",
+                    "line2" : "Toronto,ON"
+                  },
+                  "timeZone" : "America/Toronto",
+                  "type" : "venue"
+                } ]
+              },
+              "type" : "event"
+            }, {
+              "name" : "The Peanuts Movie",
+              "locale" : "en-us",
+              "eventUrl" : "https://www.universe.com/events/the-peanuts-movie-tickets-toronto-V8RJNB?ref=ticketmaster",
+              "dates" : {
+                "start" : {
+                  "dateTime" : "2016-01-17T19:00:00.000+0000",
+                  "localDate" : "2016-01-17",
+                  "localTime" : "14:00:00"
+                },
+                "end" : {
+                  "dateTime" : "2016-01-17T21:00:00.000+0000",
+                  "localDate" : "2016-01-17",
+                  "localTime" : "16:00:00"
+                },
+                "timezone" : "America/Toronto",
+                "displayOptions" : {
+                  "range" : {
+                    "localStartDate" : "2016-01-17",
+                    "localEndDate" : "2016-01-17"
+                  }
+                },
+                "status" : {
+                  "code" : "active"
+                }
+              },
+              "test" : false,
+              "_links" : {
+                "self" : {
+                  "href" : "/discovery/v1/events/universe-5681aae92e59592a96001080?locale=en-us&domain=ticketmaster.com"
+                }
+              },
+              "id" : "universe-5681aae92e59592a96001080",
+              "_embedded" : {
+                "venue" : [ {
+                  "name" : "The Royal Cinema",
+                  "marketId" : [ 101 ],
+                  "country" : {
+                    "countryCode" : "CA"
+                  },
+                  "state" : {
+                    "stateCode" : "ON"
+                  },
+                  "city" : {
+                    "name" : "Toronto"
+                  },
+                  "location" : { },
+                  "postalCode" : "M6G 1B4",
+                  "address" : {
+                    "line1" : "608 College St",
+                    "line2" : "Toronto,ON"
+                  },
+                  "timeZone" : "America/Toronto",
+                  "type" : "venue"
+                } ]
+              },
+              "type" : "event"
+            }, {
+              "name" : "Folly Brewery Tour",
+              "locale" : "en-us",
+              "eventUrl" : "http://https://www.universe.com/events/folly-brewery-tour-tickets-toronto-PX9LY4?ref=ticketmaster",
+              "dates" : {
+                "start" : {
+                  "dateTime" : "2016-01-17T19:00:00.000+0000",
+                  "localDate" : "2016-01-17",
+                  "localTime" : "14:00:00"
+                },
+                "end" : {
+                  "dateTime" : "2016-01-17T20:00:00.000+0000",
+                  "localDate" : "2016-01-17",
+                  "localTime" : "15:00:00"
+                },
+                "timezone" : "America/Toronto",
+                "displayOptions" : {
+                  "range" : {
+                    "localStartDate" : "2016-01-17",
+                    "localEndDate" : "2016-01-17"
+                  }
+                },
+                "status" : {
+                  "code" : "active"
+                }
+              },
+              "test" : false,
+              "_links" : {
+                "self" : {
+                  "href" : "/discovery/v1/events/universe-5689984b6632e9ebf5003667?locale=en-us&domain=ticketmaster.com"
+                }
+              },
+              "id" : "universe-5689984b6632e9ebf5003667",
+              "_embedded" : {
+                "venue" : [ {
+                  "name" : "Folly Brewpub",
+                  "marketId" : [ 101 ],
+                  "country" : {
+                    "countryCode" : "CA"
+                  },
+                  "state" : {
+                    "stateCode" : "ON"
+                  },
+                  "city" : {
+                    "name" : "Toronto"
+                  },
+                  "location" : { },
+                  "postalCode" : "M6H 1A4",
+                  "address" : {
+                    "line1" : "928 College St",
+                    "line2" : "Toronto,ON"
+                  },
+                  "timeZone" : "America/Toronto",
+                  "type" : "venue"
+                } ]
+              },
+              "type" : "event"
+            }, {
+              "name" : "Folly Brewery Tour",
+              "locale" : "en-us",
+              "eventUrl" : "https://www.universe.com/events/folly-brewery-tour-tickets-toronto-PX9LY4?ref=ticketmaster",
+              "dates" : {
+                "start" : {
+                  "dateTime" : "2016-01-17T20:00:00.000+0000",
+                  "localDate" : "2016-01-17",
+                  "localTime" : "15:00:00"
+                },
+                "end" : {
+                  "dateTime" : "2016-01-17T21:00:00.000+0000",
+                  "localDate" : "2016-01-17",
+                  "localTime" : "16:00:00"
+                },
+                "timezone" : "America/Toronto",
+                "displayOptions" : {
+                  "range" : {
+                    "localStartDate" : "2016-01-17",
+                    "localEndDate" : "2016-01-17"
+                  }
+                },
+                "status" : {
+                  "code" : "active"
+                }
+              },
+              "test" : false,
+              "_links" : {
+                "self" : {
+                  "href" : "/discovery/v1/events/universe-5689984b6632e9ebf5003668?locale=en-us&domain=ticketmaster.com"
+                }
+              },
+              "id" : "universe-5689984b6632e9ebf5003668",
+              "_embedded" : {
+                "venue" : [ {
+                  "name" : "Folly Brewpub",
+                  "marketId" : [ 101 ],
+                  "country" : {
+                    "countryCode" : "CA"
+                  },
+                  "state" : {
+                    "stateCode" : "ON"
+                  },
+                  "city" : {
+                    "name" : "Toronto"
+                  },
+                  "location" : { },
+                  "postalCode" : "M6H 1A4",
+                  "address" : {
+                    "line1" : "928 College St",
+                    "line2" : "Toronto,ON"
+                  },
+                  "timeZone" : "America/Toronto",
+                  "type" : "venue"
+                } ]
+              },
+              "type" : "event"
+            }, {
+              "name" : "A Night of Laughter with June Cline!",
+              "locale" : "en-us",
+              "eventUrl" : "http://https://www.universe.com/events/a-night-of-laughter-with-june-cline-tickets-roswell-HX8F3?ref=ticketmaster",
+              "dates" : {
+                "start" : {
+                  "dateTime" : "2016-01-17T21:00:00.000+0000",
+                  "localDate" : "2016-01-17",
+                  "localTime" : "16:00:00"
+                },
+                "end" : {
+                  "dateTime" : "2016-01-17T23:00:00.000+0000",
+                  "localDate" : "2016-01-17",
+                  "localTime" : "18:00:00"
+                },
+                "timezone" : "America/New_York",
+                "displayOptions" : {
+                  "range" : {
+                    "localStartDate" : "2016-01-17",
+                    "localEndDate" : "2016-01-17"
+                  }
+                },
+                "status" : {
+                  "code" : "active"
+                }
+              },
+              "test" : false,
+              "_links" : {
+                "self" : {
+                  "href" : "/discovery/v1/events/universe-567380279b709335c7000fe0?locale=en-us&domain=ticketmaster.com"
+                }
+              },
+              "id" : "universe-567380279b709335c7000fe0",
+              "_embedded" : {
+                "venue" : [ {
+                  "name" : "Red Door Playhouse",
+                  "marketId" : [ 51 ],
+                  "country" : {
+                    "countryCode" : "US"
+                  },
+                  "state" : {
+                    "stateCode" : "GA"
+                  },
+                  "city" : {
+                    "name" : "Roswell"
+                  },
+                  "location" : { },
+                  "postalCode" : "30075",
+                  "address" : {
+                    "line1" : "587 Atlanta St",
+                    "line2" : "Roswell,GA"
+                  },
+                  "timeZone" : "America/New_York",
+                  "type" : "venue"
+                } ]
+              },
+              "type" : "event"
+            }, {
+              "name" : "Suffragette",
+              "locale" : "en-us",
+              "eventUrl" : "http://https://www.universe.com/events/suffragette-tickets-toronto-MQ0WV1?ref=ticketmaster",
+              "dates" : {
+                "start" : {
+                  "dateTime" : "2016-01-17T23:30:00.000+0000",
+                  "localDate" : "2016-01-17",
+                  "localTime" : "18:30:00"
+                },
+                "end" : {
+                  "dateTime" : "2016-01-18T01:30:00.000+0000",
+                  "localDate" : "2016-01-17",
+                  "localTime" : "20:30:00"
+                },
+                "timezone" : "America/Toronto",
+                "displayOptions" : {
+                  "range" : {
+                    "localStartDate" : "2016-01-17",
+                    "localEndDate" : "2016-01-17"
+                  }
+                },
+                "status" : {
+                  "code" : "active"
+                }
+              },
+              "test" : false,
+              "_links" : {
+                "self" : {
+                  "href" : "/discovery/v1/events/universe-5681afe433022d449b0010ba?locale=en-us&domain=ticketmaster.com"
+                }
+              },
+              "id" : "universe-5681afe433022d449b0010ba",
+              "_embedded" : {
+                "venue" : [ {
+                  "name" : "The Royal Cinema",
+                  "marketId" : [ 101 ],
+                  "country" : {
+                    "countryCode" : "CA"
+                  },
+                  "state" : {
+                    "stateCode" : "ON"
+                  },
+                  "city" : {
+                    "name" : "Toronto"
+                  },
+                  "location" : { },
+                  "postalCode" : "M6G 1B4",
+                  "address" : {
+                    "line1" : "608 College St",
+                    "line2" : "Toronto,ON"
+                  },
+                  "timeZone" : "America/Toronto",
+                  "type" : "venue"
+                } ]
+              },
+              "type" : "event"
+            }, {
+              "name" : "Richmond Station hosts Chef Gabrielle Hamilton",
+              "locale" : "en-us",
+              "eventUrl" : "https://www.universe.com/events/richmond-station-hosts-chef-gabrielle-hamilton-tickets-toronto-NFCRS4?ref=ticketmaster",
+              "dates" : {
+                "start" : {
+                  "dateTime" : "2016-01-17T23:30:00.000+0000",
+                  "localDate" : "2016-01-17",
+                  "localTime" : "18:30:00"
+                },
+                "end" : {
+                  "dateTime" : "2016-01-18T04:00:00.000+0000",
+                  "localDate" : "2016-01-17",
+                  "localTime" : "23:00:00"
+                },
+                "timezone" : "America/Toronto",
+                "displayOptions" : {
+                  "range" : {
+                    "localStartDate" : "2016-01-17",
+                    "localEndDate" : "2016-01-17"
+                  }
+                },
+                "status" : {
+                  "code" : "active"
+                }
+              },
+              "test" : false,
+              "_links" : {
+                "self" : {
+                  "href" : "/discovery/v1/events/universe-5616a79528a98060a50019af?locale=en-us&domain=ticketmaster.com"
+                }
+              },
+              "id" : "universe-5616a79528a98060a50019af",
+              "_embedded" : {
+                "venue" : [ {
+                  "name" : "Richmond Station",
+                  "marketId" : [ 101 ],
+                  "country" : {
+                    "countryCode" : "CA"
+                  },
+                  "state" : {
+                    "stateCode" : "ON"
+                  },
+                  "city" : {
+                    "name" : "Toronto"
+                  },
+                  "location" : { },
+                  "address" : {
+                    "line1" : "1 Richmond Street West",
+                    "line2" : "Toronto,Ontario"
+                  },
+                  "timeZone" : "America/Toronto",
+                  "type" : "venue"
+                } ]
+              },
+              "type" : "event"
+            }, {
+              "name" : "Rock Baby Rock - A Dinner Show w/ Lance Lipinsky",
+              "locale" : "en-us",
+              "eventUrl" : "https://www.universe.com/events/rock-baby-rock-a-dinner-show-w-lance-lipinsky-tickets-chicago-7VNGY3?ref=ticketmaster",
+              "dates" : {
+                "start" : {
+                  "dateTime" : "2016-01-19T01:30:00.000+0000",
+                  "localDate" : "2016-01-18",
+                  "localTime" : "19:30:00"
+                },
+                "end" : {
+                  "dateTime" : "2016-01-19T03:00:00.000+0000",
+                  "localDate" : "2016-01-18",
+                  "localTime" : "21:00:00"
+                },
+                "timezone" : "America/Chicago",
+                "displayOptions" : {
+                  "range" : {
+                    "localStartDate" : "2016-01-18",
+                    "localEndDate" : "2016-01-18"
+                  }
+                },
+                "status" : {
+                  "code" : "active"
+                }
+              },
+              "test" : false,
+              "_links" : {
+                "self" : {
+                  "href" : "/discovery/v1/events/universe-562009a6cccd49256b001bf9?locale=en-us&domain=ticketmaster.com"
+                }
+              },
+              "id" : "universe-562009a6cccd49256b001bf9",
+              "_embedded" : {
+                "venue" : [ {
+                  "name" : "Hard Rock Cafe Chicago",
+                  "marketId" : [ 51 ],
+                  "country" : {
+                    "countryCode" : "US"
+                  },
+                  "state" : {
+                    "stateCode" : "IL"
+                  },
+                  "city" : {
+                    "name" : "Chicago"
+                  },
+                  "location" : { },
+                  "postalCode" : "60654",
+                  "address" : {
+                    "line1" : "63 W Ontario St",
+                    "line2" : "Chicago,Illinois"
+                  },
+                  "timeZone" : "America/Chicago",
+                  "type" : "venue"
+                } ]
+              },
+              "type" : "event"
+            } ]
+          },
+          "page" : {
+            "size" : 20,
+            "totalElements" : 62541,
+            "totalPages" : 3128,
+            "number" : 0
+          }
+        }
+    }
+]

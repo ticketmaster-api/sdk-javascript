@@ -8,3 +8,6 @@ node_modules/:
 
 test: node_modules/
 	@npm test
+
+.PHONY: test
+
