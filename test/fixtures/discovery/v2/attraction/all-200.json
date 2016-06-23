@@ -1,0 +1,2082 @@
+[
+    {
+        "scope": "https://app.ticketmaster.com",
+        "method": "GET",
+        "path": "/discovery/v2/attractions/?apikey=mock-api-key",
+        "status": 200,
+        "headers": {
+          "Access-Control-Allow-Headers": "origin, x-requested-with, accept",
+          "Access-Control-Allow-Origin": "*",
+          "Date": "Sat, 16 Jan 2016 18:41:27 GMT",
+          "Content-Length": "3488",
+          "Access-Control-Max-Age": "3628800",
+          "Access-Control-Allow-Methods": "GET, PUT, POST, DELETE",
+          "X-Application-Context": "application:default,jetson4",
+          "Connection": "keep-alive",
+          "Content-Type": "application/json;charset=utf-8",
+          "Server": "Apache-Coyote/1.1"
+        },
+        "response": {
+          "_links": {
+            "self": {
+              "href": "/discovery/v2/attractions?view=null{&page,size,sort}",
+              "templated": true
+            },
+            "next": {
+              "href": "/discovery/v2/attractions?view=null&page=1&size=20{&sort}",
+              "templated": true
+            }
+          },
+          "_embedded": {
+            "attractions": [
+              {
+                "name": "!!!",
+                "type": "attraction",
+                "id": "K8vZ9175BhV",
+                "test": false,
+                "url": "http://ticketmaster.com/artist/919340",
+                "locale": "en-us",
+                "images": [
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/a/418/aa73b994-9912-4535-ba21-4865ae93a418_41291_TABLET_LANDSCAPE_16_9.jpg",
+                    "width": 1024,
+                    "height": 576,
+                    "fallback": false
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/a/418/aa73b994-9912-4535-ba21-4865ae93a418_41291_RECOMENDATION_16_9.jpg",
+                    "width": 100,
+                    "height": 56,
+                    "fallback": false
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/a/418/aa73b994-9912-4535-ba21-4865ae93a418_41291_RETINA_LANDSCAPE_16_9.jpg",
+                    "width": 1136,
+                    "height": 639,
+                    "fallback": false
+                  },
+                  {
+                    "ratio": "3_2",
+                    "url": "http://s1.ticketm.net/dam/a/418/aa73b994-9912-4535-ba21-4865ae93a418_41291_RETINA_PORTRAIT_3_2.jpg",
+                    "width": 640,
+                    "height": 427,
+                    "fallback": false
+                  },
+                  {
+                    "ratio": "3_2",
+                    "url": "http://s1.ticketm.net/dam/a/418/aa73b994-9912-4535-ba21-4865ae93a418_41291_ARTIST_PAGE_3_2.jpg",
+                    "width": 305,
+                    "height": 203,
+                    "fallback": false
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/a/418/aa73b994-9912-4535-ba21-4865ae93a418_41291_EVENT_DETAIL_PAGE_16_9.jpg",
+                    "width": 205,
+                    "height": 115,
+                    "fallback": false
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/a/418/aa73b994-9912-4535-ba21-4865ae93a418_41291_TABLET_LANDSCAPE_LARGE_16_9.jpg",
+                    "width": 2048,
+                    "height": 1152,
+                    "fallback": false
+                  },
+                  {
+                    "ratio": "3_2",
+                    "url": "http://s1.ticketm.net/dam/a/418/aa73b994-9912-4535-ba21-4865ae93a418_41291_TABLET_LANDSCAPE_3_2.jpg",
+                    "width": 1024,
+                    "height": 683,
+                    "fallback": false
+                  },
+                  {
+                    "ratio": "4_3",
+                    "url": "http://s1.ticketm.net/dam/a/418/aa73b994-9912-4535-ba21-4865ae93a418_41291_CUSTOM.jpg",
+                    "width": 305,
+                    "height": 225,
+                    "fallback": false
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/a/418/aa73b994-9912-4535-ba21-4865ae93a418_41291_RETINA_PORTRAIT_16_9.jpg",
+                    "width": 640,
+                    "height": 360,
+                    "fallback": false
+                  }
+                ],
+                "classifications": [
+                  {
+                    "primary": true,
+                    "segment": {
+                      "id": "KZFzniwnSyZfZ7v7nJ",
+                      "name": "Music"
+                    },
+                    "genre": {
+                      "id": "KnvZfZ7vAeA",
+                      "name": "Rock"
+                    },
+                    "subGenre": {
+                      "id": "KZazBEonSMnZfZ7v6F1",
+                      "name": "Pop"
+                    }
+                  }
+                ],
+                "_links": {
+                  "self": {
+                    "href": "/discovery/v2/attractions/K8vZ9175BhV?locale=en-us"
+                  }
+                }
+              },
+              {
+                "name": "!Hero",
+                "type": "attraction",
+                "id": "K8vZ9175jtV",
+                "test": false,
+                "url": "http://ticketmaster.com/artist/883184",
+                "locale": "en-us",
+                "images": [
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_TABLET_LANDSCAPE_LARGE_16_9.jpg",
+                    "width": 2048,
+                    "height": 1152,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_TABLET_LANDSCAPE_16_9.jpg",
+                    "width": 1024,
+                    "height": 576,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_RETINA_PORTRAIT_16_9.jpg",
+                    "width": 640,
+                    "height": 360,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_RECOMENDATION_16_9.jpg",
+                    "width": 100,
+                    "height": 56,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "3_2",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_ARTIST_PAGE_3_2.jpg",
+                    "width": 305,
+                    "height": 203,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "3_2",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_TABLET_LANDSCAPE_3_2.jpg",
+                    "width": 1024,
+                    "height": 683,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "3_2",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_RETINA_PORTRAIT_3_2.jpg",
+                    "width": 640,
+                    "height": 427,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "4_3",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_CUSTOM.jpg",
+                    "width": 305,
+                    "height": 225,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_RETINA_LANDSCAPE_16_9.jpg",
+                    "width": 1136,
+                    "height": 639,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_EVENT_DETAIL_PAGE_16_9.jpg",
+                    "width": 205,
+                    "height": 115,
+                    "fallback": true
+                  }
+                ],
+                "classifications": [
+                  {
+                    "primary": true,
+                    "segment": {
+                      "id": "KZFzniwnSyZfZ7v7nJ",
+                      "name": "Music"
+                    },
+                    "genre": {
+                      "id": "KnvZfZ7vAe7",
+                      "name": "Religious"
+                    },
+                    "subGenre": {
+                      "id": "KZazBEonSMnZfZ7v6ea",
+                      "name": "Gospel"
+                    }
+                  }
+                ],
+                "_links": {
+                  "self": {
+                    "href": "/discovery/v2/attractions/K8vZ9175jtV?locale=en-us"
+                  }
+                }
+              },
+              {
+                "name": "!Tang",
+                "type": "attraction",
+                "id": "K8vZ9172oD0",
+                "test": false,
+                "url": "http://ticketmaster.com/artist/1673094",
+                "locale": "en-us",
+                "images": [
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_TABLET_LANDSCAPE_LARGE_16_9.jpg",
+                    "width": 2048,
+                    "height": 1152,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_TABLET_LANDSCAPE_16_9.jpg",
+                    "width": 1024,
+                    "height": 576,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_RETINA_PORTRAIT_16_9.jpg",
+                    "width": 640,
+                    "height": 360,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_RECOMENDATION_16_9.jpg",
+                    "width": 100,
+                    "height": 56,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "3_2",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_ARTIST_PAGE_3_2.jpg",
+                    "width": 305,
+                    "height": 203,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "3_2",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_TABLET_LANDSCAPE_3_2.jpg",
+                    "width": 1024,
+                    "height": 683,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "3_2",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_RETINA_PORTRAIT_3_2.jpg",
+                    "width": 640,
+                    "height": 427,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "4_3",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_CUSTOM.jpg",
+                    "width": 305,
+                    "height": 225,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_RETINA_LANDSCAPE_16_9.jpg",
+                    "width": 1136,
+                    "height": 639,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_EVENT_DETAIL_PAGE_16_9.jpg",
+                    "width": 205,
+                    "height": 115,
+                    "fallback": true
+                  }
+                ],
+                "classifications": [
+                  {
+                    "primary": true,
+                    "segment": {
+                      "id": "KZFzniwnSyZfZ7v7nJ",
+                      "name": "Music"
+                    },
+                    "genre": {
+                      "id": "KnvZfZ7vAee",
+                      "name": "R&B"
+                    },
+                    "subGenre": {
+                      "id": "KZazBEonSMnZfZ7vknE",
+                      "name": "Soul"
+                    }
+                  }
+                ],
+                "_links": {
+                  "self": {
+                    "href": "/discovery/v2/attractions/K8vZ9172oD0?locale=en-us"
+                  }
+                }
+              },
+              {
+                "name": "!Women Art Revolution",
+                "type": "attraction",
+                "id": "K8vZ917CXDf",
+                "test": false,
+                "url": "http://ticketmaster.com/artist/1643423",
+                "locale": "en-us",
+                "images": [
+                  {
+                    "ratio": "3_2",
+                    "url": "http://s1.ticketm.net/dam/c/MISC_TABLET_LANDSCAPE_3_2.jpg",
+                    "width": 1024,
+                    "height": 683,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/MISC_TABLET_LANDSCAPE_16_9.jpg",
+                    "width": 1024,
+                    "height": 576,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/MISC_TABLET_LANDSCAPE_LARGE_16_9.jpg",
+                    "width": 2048,
+                    "height": 1152,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/MISC_RETINA_PORTRAIT_16_9.jpg",
+                    "width": 640,
+                    "height": 360,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "3_2",
+                    "url": "http://s1.ticketm.net/dam/c/MISC_ARTIST_PAGE_3_2.jpg",
+                    "width": 305,
+                    "height": 203,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "3_2",
+                    "url": "http://s1.ticketm.net/dam/c/MISC_RETINA_PORTRAIT_3_2.jpg",
+                    "width": 640,
+                    "height": 427,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "4_3",
+                    "url": "http://s1.ticketm.net/dam/c/MISC_CUSTOM.jpg",
+                    "width": 305,
+                    "height": 225,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/MISC_EVENT_DETAIL_PAGE_16_9.jpg",
+                    "width": 205,
+                    "height": 115,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/MISC_RECOMENDATION_16_9.jpg",
+                    "width": 100,
+                    "height": 56,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/MISC_RETINA_LANDSCAPE_16_9.jpg",
+                    "width": 1136,
+                    "height": 639,
+                    "fallback": true
+                  }
+                ],
+                "classifications": [
+                  {
+                    "primary": true,
+                    "segment": {
+                      "id": "KZFzniwnSyZfZ7v7nn",
+                      "name": "Film"
+                    },
+                    "genre": {
+                      "id": "KnvZfZ7vAka",
+                      "name": "Miscellaneous"
+                    },
+                    "subGenre": {
+                      "id": "KZazBEonSMnZfZ7vFln",
+                      "name": "Miscellaneous"
+                    }
+                  }
+                ],
+                "_links": {
+                  "self": {
+                    "href": "/discovery/v2/attractions/K8vZ917CXDf?locale=en-us"
+                  }
+                }
+              },
+              {
+                "name": "\"Maljanne, Herra Kreivi\"",
+                "type": "attraction",
+                "id": "K8vZ917ffVV",
+                "test": false,
+                "url": "http://ticketmaster.com/artist/2210914",
+                "locale": "en-us",
+                "images": [
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_TABLET_LANDSCAPE_LARGE_16_9.jpg",
+                    "width": 2048,
+                    "height": 1152,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_TABLET_LANDSCAPE_16_9.jpg",
+                    "width": 1024,
+                    "height": 576,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_RETINA_PORTRAIT_16_9.jpg",
+                    "width": 640,
+                    "height": 360,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_RECOMENDATION_16_9.jpg",
+                    "width": 100,
+                    "height": 56,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "3_2",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_ARTIST_PAGE_3_2.jpg",
+                    "width": 305,
+                    "height": 203,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "3_2",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_TABLET_LANDSCAPE_3_2.jpg",
+                    "width": 1024,
+                    "height": 683,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "3_2",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_RETINA_PORTRAIT_3_2.jpg",
+                    "width": 640,
+                    "height": 427,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "4_3",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_CUSTOM.jpg",
+                    "width": 305,
+                    "height": 225,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_RETINA_LANDSCAPE_16_9.jpg",
+                    "width": 1136,
+                    "height": 639,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_EVENT_DETAIL_PAGE_16_9.jpg",
+                    "width": 205,
+                    "height": 115,
+                    "fallback": true
+                  }
+                ],
+                "classifications": [
+                  {
+                    "primary": true,
+                    "segment": {
+                      "id": "KZFzniwnSyZfZ7v7nJ",
+                      "name": "Music"
+                    },
+                    "genre": {
+                      "id": "KnvZfZ7vAev",
+                      "name": "Pop"
+                    },
+                    "subGenre": {
+                      "id": "KZazBEonSMnZfZ7vk1l",
+                      "name": "Adult Contemporary"
+                    }
+                  }
+                ],
+                "_links": {
+                  "self": {
+                    "href": "/discovery/v2/attractions/K8vZ917ffVV?locale=en-us"
+                  }
+                }
+              },
+              {
+                "name": "\"The Coach\" Tom Whiteley",
+                "type": "attraction",
+                "id": "K8vZ917GDc0",
+                "test": false,
+                "url": "http://ticketmaster.com/artist/1486679",
+                "locale": "en-us",
+                "images": [
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/ARTS_TABLET_LANDSCAPE_LARGE_16_9.jpg",
+                    "width": 2048,
+                    "height": 1152,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "3_2",
+                    "url": "http://s1.ticketm.net/dam/c/ARTS_ARTIST_PAGE_3_2.jpg",
+                    "width": 305,
+                    "height": 203,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/ARTS_RECOMENDATION_16_9.jpg",
+                    "width": 100,
+                    "height": 56,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "3_2",
+                    "url": "http://s1.ticketm.net/dam/c/ARTS_RETINA_PORTRAIT_3_2.jpg",
+                    "width": 640,
+                    "height": 427,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/ARTS_TABLET_LANDSCAPE_16_9.jpg",
+                    "width": 1024,
+                    "height": 576,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "3_2",
+                    "url": "http://s1.ticketm.net/dam/c/ARTS_TABLET_LANDSCAPE_3_2.jpg",
+                    "width": 1024,
+                    "height": 683,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/ARTS_RETINA_PORTRAIT_16_9.jpg",
+                    "width": 640,
+                    "height": 360,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/ARTS_EVENT_DETAIL_PAGE_16_9.jpg",
+                    "width": 205,
+                    "height": 115,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "4_3",
+                    "url": "http://s1.ticketm.net/dam/c/ARTS_CUSTOM.jpg",
+                    "width": 305,
+                    "height": 225,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/ARTS_RETINA_LANDSCAPE_16_9.jpg",
+                    "width": 1136,
+                    "height": 639,
+                    "fallback": true
+                  }
+                ],
+                "classifications": [
+                  {
+                    "primary": true,
+                    "segment": {
+                      "id": "KZFzniwnSyZfZ7v7na",
+                      "name": "Arts & Theatre"
+                    },
+                    "genre": {
+                      "id": "KnvZfZ7vAe1",
+                      "name": "Comedy"
+                    },
+                    "subGenre": {
+                      "id": "KZazBEonSMnZfZ7vF17",
+                      "name": "Comedy"
+                    }
+                  }
+                ],
+                "_links": {
+                  "self": {
+                    "href": "/discovery/v2/attractions/K8vZ917GDc0?locale=en-us"
+                  }
+                }
+              },
+              {
+                "name": "#1 Hits of the 60's",
+                "type": "attraction",
+                "id": "K8vZ917GFT7",
+                "test": false,
+                "url": "http://ticketmaster.com/artist/1206286",
+                "locale": "en-us",
+                "images": [
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_TABLET_LANDSCAPE_LARGE_16_9.jpg",
+                    "width": 2048,
+                    "height": 1152,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_TABLET_LANDSCAPE_16_9.jpg",
+                    "width": 1024,
+                    "height": 576,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_RETINA_PORTRAIT_16_9.jpg",
+                    "width": 640,
+                    "height": 360,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_RECOMENDATION_16_9.jpg",
+                    "width": 100,
+                    "height": 56,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "3_2",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_ARTIST_PAGE_3_2.jpg",
+                    "width": 305,
+                    "height": 203,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "3_2",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_TABLET_LANDSCAPE_3_2.jpg",
+                    "width": 1024,
+                    "height": 683,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "3_2",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_RETINA_PORTRAIT_3_2.jpg",
+                    "width": 640,
+                    "height": 427,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "4_3",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_CUSTOM.jpg",
+                    "width": 305,
+                    "height": 225,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_RETINA_LANDSCAPE_16_9.jpg",
+                    "width": 1136,
+                    "height": 639,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "https://s1.ticketm.net/dbimages/20416a.gif",
+                    "width": 205,
+                    "height": 115,
+                    "fallback": false
+                  }
+                ],
+                "classifications": [
+                  {
+                    "primary": true,
+                    "segment": {
+                      "id": "KZFzniwnSyZfZ7v7nJ",
+                      "name": "Music"
+                    },
+                    "genre": {
+                      "id": "KnvZfZ7vAeA",
+                      "name": "Rock"
+                    },
+                    "subGenre": {
+                      "id": "KZazBEonSMnZfZ7v6F1",
+                      "name": "Pop"
+                    }
+                  }
+                ],
+                "_links": {
+                  "self": {
+                    "href": "/discovery/v2/attractions/K8vZ917GFT7?locale=en-us"
+                  }
+                }
+              },
+              {
+                "name": "#140conf",
+                "type": "attraction",
+                "id": "K8vZ917C6V0",
+                "test": false,
+                "url": "http://ticketmaster.com/artist/1564289",
+                "locale": "en-us",
+                "images": [
+                  {
+                    "ratio": "3_2",
+                    "url": "http://s1.ticketm.net/dam/c/MISC_TABLET_LANDSCAPE_3_2.jpg",
+                    "width": 1024,
+                    "height": 683,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/MISC_TABLET_LANDSCAPE_16_9.jpg",
+                    "width": 1024,
+                    "height": 576,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/MISC_TABLET_LANDSCAPE_LARGE_16_9.jpg",
+                    "width": 2048,
+                    "height": 1152,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/MISC_RETINA_PORTRAIT_16_9.jpg",
+                    "width": 640,
+                    "height": 360,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "3_2",
+                    "url": "http://s1.ticketm.net/dam/c/MISC_ARTIST_PAGE_3_2.jpg",
+                    "width": 305,
+                    "height": 203,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/MISC_EVENT_DETAIL_PAGE_16_9.jpg",
+                    "width": 205,
+                    "height": 115,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "3_2",
+                    "url": "http://s1.ticketm.net/dam/c/MISC_RETINA_PORTRAIT_3_2.jpg",
+                    "width": 640,
+                    "height": 427,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "4_3",
+                    "url": "http://s1.ticketm.net/dam/c/MISC_CUSTOM.jpg",
+                    "width": 305,
+                    "height": 225,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/MISC_RECOMENDATION_16_9.jpg",
+                    "width": 100,
+                    "height": 56,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/MISC_RETINA_LANDSCAPE_16_9.jpg",
+                    "width": 1136,
+                    "height": 639,
+                    "fallback": true
+                  }
+                ],
+                "classifications": [
+                  {
+                    "primary": true,
+                    "segment": {
+                      "id": "KZFzniwnSyZfZ7v7n1",
+                      "name": "Miscellaneous"
+                    },
+                    "genre": {
+                      "id": "KnvZfZ7v7ll",
+                      "name": "Undefined"
+                    },
+                    "subGenre": {
+                      "id": "KZazBEonSMnZfZ7vAv1",
+                      "name": "Undefined"
+                    }
+                  }
+                ],
+                "_links": {
+                  "self": {
+                    "href": "/discovery/v2/attractions/K8vZ917C6V0?locale=en-us"
+                  }
+                }
+              },
+              {
+                "name": "#Amg",
+                "type": "attraction",
+                "id": "K8vZ9178ry0",
+                "test": false,
+                "url": "http://ticketmaster.com/artist/742549",
+                "locale": "en-us",
+                "images": [
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_TABLET_LANDSCAPE_LARGE_16_9.jpg",
+                    "width": 2048,
+                    "height": 1152,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_TABLET_LANDSCAPE_16_9.jpg",
+                    "width": 1024,
+                    "height": 576,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_RETINA_PORTRAIT_16_9.jpg",
+                    "width": 640,
+                    "height": 360,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_RECOMENDATION_16_9.jpg",
+                    "width": 100,
+                    "height": 56,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "3_2",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_ARTIST_PAGE_3_2.jpg",
+                    "width": 305,
+                    "height": 203,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "3_2",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_TABLET_LANDSCAPE_3_2.jpg",
+                    "width": 1024,
+                    "height": 683,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "3_2",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_RETINA_PORTRAIT_3_2.jpg",
+                    "width": 640,
+                    "height": 427,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "4_3",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_CUSTOM.jpg",
+                    "width": 305,
+                    "height": 225,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_RETINA_LANDSCAPE_16_9.jpg",
+                    "width": 1136,
+                    "height": 639,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_EVENT_DETAIL_PAGE_16_9.jpg",
+                    "width": 205,
+                    "height": 115,
+                    "fallback": true
+                  }
+                ],
+                "classifications": [
+                  {
+                    "primary": true,
+                    "segment": {
+                      "id": "KZFzniwnSyZfZ7v7nJ",
+                      "name": "Music"
+                    },
+                    "genre": {
+                      "id": "KnvZfZ7vAv1",
+                      "name": "Hip-Hop/Rap"
+                    },
+                    "subGenre": {
+                      "id": "KZazBEonSMnZfZ7vkdA",
+                      "name": "Urban"
+                    }
+                  }
+                ],
+                "_links": {
+                  "self": {
+                    "href": "/discovery/v2/attractions/K8vZ9178ry0?locale=en-us"
+                  }
+                }
+              },
+              {
+                "name": "#Been#Trill",
+                "type": "attraction",
+                "id": "K8vZ9172cbf",
+                "test": false,
+                "url": "http://ticketmaster.com/artist/1722703",
+                "locale": "en-us",
+                "images": [
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_TABLET_LANDSCAPE_LARGE_16_9.jpg",
+                    "width": 2048,
+                    "height": 1152,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_TABLET_LANDSCAPE_16_9.jpg",
+                    "width": 1024,
+                    "height": 576,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_RETINA_PORTRAIT_16_9.jpg",
+                    "width": 640,
+                    "height": 360,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_RECOMENDATION_16_9.jpg",
+                    "width": 100,
+                    "height": 56,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "3_2",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_ARTIST_PAGE_3_2.jpg",
+                    "width": 305,
+                    "height": 203,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "3_2",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_TABLET_LANDSCAPE_3_2.jpg",
+                    "width": 1024,
+                    "height": 683,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "3_2",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_RETINA_PORTRAIT_3_2.jpg",
+                    "width": 640,
+                    "height": 427,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "4_3",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_CUSTOM.jpg",
+                    "width": 305,
+                    "height": 225,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_RETINA_LANDSCAPE_16_9.jpg",
+                    "width": 1136,
+                    "height": 639,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_EVENT_DETAIL_PAGE_16_9.jpg",
+                    "width": 205,
+                    "height": 115,
+                    "fallback": true
+                  }
+                ],
+                "classifications": [
+                  {
+                    "primary": true,
+                    "segment": {
+                      "id": "KZFzniwnSyZfZ7v7nJ",
+                      "name": "Music"
+                    },
+                    "genre": {
+                      "id": "KnvZfZ7vAv1",
+                      "name": "Hip-Hop/Rap"
+                    },
+                    "subGenre": {
+                      "id": "KZazBEonSMnZfZ7vkdA",
+                      "name": "Urban"
+                    }
+                  }
+                ],
+                "_links": {
+                  "self": {
+                    "href": "/discovery/v2/attractions/K8vZ9172cbf?locale=en-us"
+                  }
+                }
+              },
+              {
+                "name": "#Hobrox",
+                "type": "attraction",
+                "id": "K8vZ917u2EV",
+                "test": false,
+                "url": "http://ticketmaster.com/artist/1501778",
+                "locale": "en-us",
+                "images": [
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_TABLET_LANDSCAPE_LARGE_16_9.jpg",
+                    "width": 2048,
+                    "height": 1152,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_TABLET_LANDSCAPE_16_9.jpg",
+                    "width": 1024,
+                    "height": 576,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_RETINA_PORTRAIT_16_9.jpg",
+                    "width": 640,
+                    "height": 360,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_RECOMENDATION_16_9.jpg",
+                    "width": 100,
+                    "height": 56,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "3_2",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_ARTIST_PAGE_3_2.jpg",
+                    "width": 305,
+                    "height": 203,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "3_2",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_TABLET_LANDSCAPE_3_2.jpg",
+                    "width": 1024,
+                    "height": 683,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "3_2",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_RETINA_PORTRAIT_3_2.jpg",
+                    "width": 640,
+                    "height": 427,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_RETINA_LANDSCAPE_16_9.jpg",
+                    "width": 1136,
+                    "height": 639,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "https://s1.ticketm.net/dbimages/65571a.jpg",
+                    "width": 205,
+                    "height": 115,
+                    "fallback": false
+                  },
+                  {
+                    "ratio": "4_3",
+                    "url": "https://s1.ticketm.net/dbimages/65572a.jpg",
+                    "width": 305,
+                    "height": 225,
+                    "fallback": false
+                  }
+                ],
+                "classifications": [
+                  {
+                    "primary": true,
+                    "segment": {
+                      "id": "KZFzniwnSyZfZ7v7nJ",
+                      "name": "Music"
+                    },
+                    "genre": {
+                      "id": "KnvZfZ7vAeA",
+                      "name": "Rock"
+                    },
+                    "subGenre": {
+                      "id": "KZazBEonSMnZfZ7v6F1",
+                      "name": "Pop"
+                    }
+                  }
+                ],
+                "_links": {
+                  "self": {
+                    "href": "/discovery/v2/attractions/K8vZ917u2EV?locale=en-us"
+                  }
+                }
+              },
+              {
+                "name": "#SummersEND Music Festival",
+                "type": "attraction",
+                "id": "K8vZ9171ya0",
+                "test": false,
+                "url": "http://ticketmaster.com/artist/899742",
+                "locale": "en-us",
+                "images": [
+                  {
+                    "ratio": "16_9",
+                    "url": "https://s1.ticketm.net/dbimages/147984a.jpg",
+                    "width": 205,
+                    "height": 115,
+                    "fallback": false
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_TABLET_LANDSCAPE_LARGE_16_9.jpg",
+                    "width": 2048,
+                    "height": 1152,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_TABLET_LANDSCAPE_16_9.jpg",
+                    "width": 1024,
+                    "height": 576,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "4_3",
+                    "url": "https://s1.ticketm.net/dbimages/147983a.jpg",
+                    "width": 305,
+                    "height": 225,
+                    "fallback": false
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_RETINA_PORTRAIT_16_9.jpg",
+                    "width": 640,
+                    "height": 360,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_RECOMENDATION_16_9.jpg",
+                    "width": 100,
+                    "height": 56,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "3_2",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_ARTIST_PAGE_3_2.jpg",
+                    "width": 305,
+                    "height": 203,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "3_2",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_TABLET_LANDSCAPE_3_2.jpg",
+                    "width": 1024,
+                    "height": 683,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "3_2",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_RETINA_PORTRAIT_3_2.jpg",
+                    "width": 640,
+                    "height": 427,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_RETINA_LANDSCAPE_16_9.jpg",
+                    "width": 1136,
+                    "height": 639,
+                    "fallback": true
+                  }
+                ],
+                "classifications": [
+                  {
+                    "primary": true,
+                    "segment": {
+                      "id": "KZFzniwnSyZfZ7v7nJ",
+                      "name": "Music"
+                    },
+                    "genre": {
+                      "id": "KnvZfZ7vAvF",
+                      "name": "Dance/Electronic"
+                    },
+                    "subGenre": {
+                      "id": "KZazBEonSMnZfZ7vAJ1",
+                      "name": "Club Dance"
+                    }
+                  }
+                ],
+                "_links": {
+                  "self": {
+                    "href": "/discovery/v2/attractions/K8vZ9171ya0?locale=en-us"
+                  }
+                }
+              },
+              {
+                "name": "#Trashtag",
+                "type": "attraction",
+                "id": "K8vZ917oyh0",
+                "test": false,
+                "url": "http://ticketmaster.com/artist/1932567",
+                "locale": "en-us",
+                "images": [
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/ARTS_TABLET_LANDSCAPE_LARGE_16_9.jpg",
+                    "width": 2048,
+                    "height": 1152,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "3_2",
+                    "url": "http://s1.ticketm.net/dam/c/ARTS_ARTIST_PAGE_3_2.jpg",
+                    "width": 305,
+                    "height": 203,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/ARTS_RECOMENDATION_16_9.jpg",
+                    "width": 100,
+                    "height": 56,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "3_2",
+                    "url": "http://s1.ticketm.net/dam/c/ARTS_RETINA_PORTRAIT_3_2.jpg",
+                    "width": 640,
+                    "height": 427,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/ARTS_TABLET_LANDSCAPE_16_9.jpg",
+                    "width": 1024,
+                    "height": 576,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "3_2",
+                    "url": "http://s1.ticketm.net/dam/c/ARTS_TABLET_LANDSCAPE_3_2.jpg",
+                    "width": 1024,
+                    "height": 683,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/ARTS_RETINA_PORTRAIT_16_9.jpg",
+                    "width": 640,
+                    "height": 360,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/ARTS_EVENT_DETAIL_PAGE_16_9.jpg",
+                    "width": 205,
+                    "height": 115,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "4_3",
+                    "url": "http://s1.ticketm.net/dam/c/ARTS_CUSTOM.jpg",
+                    "width": 305,
+                    "height": 225,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/ARTS_RETINA_LANDSCAPE_16_9.jpg",
+                    "width": 1136,
+                    "height": 639,
+                    "fallback": true
+                  }
+                ],
+                "classifications": [
+                  {
+                    "primary": true,
+                    "segment": {
+                      "id": "KZFzniwnSyZfZ7v7na",
+                      "name": "Arts & Theatre"
+                    },
+                    "genre": {
+                      "id": "KnvZfZ7v7l6",
+                      "name": "Performance Art"
+                    },
+                    "subGenre": {
+                      "id": "KZazBEonSMnZfZ7v7l1",
+                      "name": "Performance Art"
+                    }
+                  }
+                ],
+                "_links": {
+                  "self": {
+                    "href": "/discovery/v2/attractions/K8vZ917oyh0?locale=en-us"
+                  }
+                }
+              },
+              {
+                "name": "#Ukggold",
+                "type": "attraction",
+                "id": "K8vZ917K7dV",
+                "test": false,
+                "url": "http://ticketmaster.com/artist/2070732",
+                "locale": "en-us",
+                "images": [
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_TABLET_LANDSCAPE_LARGE_16_9.jpg",
+                    "width": 2048,
+                    "height": 1152,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_TABLET_LANDSCAPE_16_9.jpg",
+                    "width": 1024,
+                    "height": 576,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_RETINA_PORTRAIT_16_9.jpg",
+                    "width": 640,
+                    "height": 360,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_RECOMENDATION_16_9.jpg",
+                    "width": 100,
+                    "height": 56,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "3_2",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_ARTIST_PAGE_3_2.jpg",
+                    "width": 305,
+                    "height": 203,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "3_2",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_TABLET_LANDSCAPE_3_2.jpg",
+                    "width": 1024,
+                    "height": 683,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "3_2",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_RETINA_PORTRAIT_3_2.jpg",
+                    "width": 640,
+                    "height": 427,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "4_3",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_CUSTOM.jpg",
+                    "width": 305,
+                    "height": 225,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_RETINA_LANDSCAPE_16_9.jpg",
+                    "width": 1136,
+                    "height": 639,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_EVENT_DETAIL_PAGE_16_9.jpg",
+                    "width": 205,
+                    "height": 115,
+                    "fallback": true
+                  }
+                ],
+                "classifications": [
+                  {
+                    "primary": true,
+                    "segment": {
+                      "id": "KZFzniwnSyZfZ7v7nJ",
+                      "name": "Music"
+                    },
+                    "genre": {
+                      "id": "KnvZfZ7vAv1",
+                      "name": "Hip-Hop/Rap"
+                    },
+                    "subGenre": {
+                      "id": "KZazBEonSMnZfZ7vkdA",
+                      "name": "Urban"
+                    }
+                  }
+                ],
+                "_links": {
+                  "self": {
+                    "href": "/discovery/v2/attractions/K8vZ917K7dV?locale=en-us"
+                  }
+                }
+              },
+              {
+                "name": "#Yolo",
+                "type": "attraction",
+                "id": "K8vZ9178ytV",
+                "test": false,
+                "url": "http://ticketmaster.com/artist/1837389",
+                "locale": "en-us",
+                "images": [
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_TABLET_LANDSCAPE_LARGE_16_9.jpg",
+                    "width": 2048,
+                    "height": 1152,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_TABLET_LANDSCAPE_16_9.jpg",
+                    "width": 1024,
+                    "height": 576,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "4_3",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_CUSTOM.jpg",
+                    "width": 305,
+                    "height": 225,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_RETINA_PORTRAIT_16_9.jpg",
+                    "width": 640,
+                    "height": 360,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_RECOMENDATION_16_9.jpg",
+                    "width": 100,
+                    "height": 56,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_EVENT_DETAIL_PAGE_16_9.jpg",
+                    "width": 205,
+                    "height": 115,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "3_2",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_ARTIST_PAGE_3_2.jpg",
+                    "width": 305,
+                    "height": 203,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "3_2",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_TABLET_LANDSCAPE_3_2.jpg",
+                    "width": 1024,
+                    "height": 683,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "3_2",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_RETINA_PORTRAIT_3_2.jpg",
+                    "width": 640,
+                    "height": 427,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_RETINA_LANDSCAPE_16_9.jpg",
+                    "width": 1136,
+                    "height": 639,
+                    "fallback": true
+                  }
+                ],
+                "classifications": [
+                  {
+                    "primary": true,
+                    "segment": {
+                      "id": "KZFzniwnSyZfZ7v7nJ",
+                      "name": "Music"
+                    },
+                    "genre": {
+                      "id": "KnvZfZ7vAeA",
+                      "name": "Rock"
+                    },
+                    "subGenre": {
+                      "id": "KZazBEonSMnZfZ7v6F1",
+                      "name": "Pop"
+                    }
+                  }
+                ],
+                "_links": {
+                  "self": {
+                    "href": "/discovery/v2/attractions/K8vZ9178ytV?locale=en-us"
+                  }
+                }
+              },
+              {
+                "name": "$#*! My Mayor Says",
+                "type": "attraction",
+                "id": "K8vZ917uUgV",
+                "test": false,
+                "url": "http://ticketmaster.com/artist/1542031",
+                "locale": "en-us",
+                "images": [
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/ARTS_TABLET_LANDSCAPE_LARGE_16_9.jpg",
+                    "width": 2048,
+                    "height": 1152,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "3_2",
+                    "url": "http://s1.ticketm.net/dam/c/ARTS_ARTIST_PAGE_3_2.jpg",
+                    "width": 305,
+                    "height": 203,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/ARTS_RECOMENDATION_16_9.jpg",
+                    "width": 100,
+                    "height": 56,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "3_2",
+                    "url": "http://s1.ticketm.net/dam/c/ARTS_RETINA_PORTRAIT_3_2.jpg",
+                    "width": 640,
+                    "height": 427,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/ARTS_TABLET_LANDSCAPE_16_9.jpg",
+                    "width": 1024,
+                    "height": 576,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "3_2",
+                    "url": "http://s1.ticketm.net/dam/c/ARTS_TABLET_LANDSCAPE_3_2.jpg",
+                    "width": 1024,
+                    "height": 683,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/ARTS_RETINA_PORTRAIT_16_9.jpg",
+                    "width": 640,
+                    "height": 360,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/ARTS_EVENT_DETAIL_PAGE_16_9.jpg",
+                    "width": 205,
+                    "height": 115,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "4_3",
+                    "url": "http://s1.ticketm.net/dam/c/ARTS_CUSTOM.jpg",
+                    "width": 305,
+                    "height": 225,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/ARTS_RETINA_LANDSCAPE_16_9.jpg",
+                    "width": 1136,
+                    "height": 639,
+                    "fallback": true
+                  }
+                ],
+                "classifications": [
+                  {
+                    "primary": true,
+                    "segment": {
+                      "id": "KZFzniwnSyZfZ7v7na",
+                      "name": "Arts & Theatre"
+                    },
+                    "genre": {
+                      "id": "KnvZfZ7vAe1",
+                      "name": "Comedy"
+                    },
+                    "subGenre": {
+                      "id": "KZazBEonSMnZfZ7vF17",
+                      "name": "Comedy"
+                    }
+                  }
+                ],
+                "_links": {
+                  "self": {
+                    "href": "/discovery/v2/attractions/K8vZ917uUgV?locale=en-us"
+                  }
+                }
+              },
+              {
+                "name": "$3 Throwdown",
+                "type": "attraction",
+                "id": "K8vZ917GIgV",
+                "test": false,
+                "url": "http://ticketmaster.com/artist/1283833",
+                "locale": "en-us",
+                "images": [
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_TABLET_LANDSCAPE_LARGE_16_9.jpg",
+                    "width": 2048,
+                    "height": 1152,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_TABLET_LANDSCAPE_16_9.jpg",
+                    "width": 1024,
+                    "height": 576,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_RETINA_PORTRAIT_16_9.jpg",
+                    "width": 640,
+                    "height": 360,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_RECOMENDATION_16_9.jpg",
+                    "width": 100,
+                    "height": 56,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "3_2",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_ARTIST_PAGE_3_2.jpg",
+                    "width": 305,
+                    "height": 203,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "3_2",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_TABLET_LANDSCAPE_3_2.jpg",
+                    "width": 1024,
+                    "height": 683,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "3_2",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_RETINA_PORTRAIT_3_2.jpg",
+                    "width": 640,
+                    "height": 427,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "4_3",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_CUSTOM.jpg",
+                    "width": 305,
+                    "height": 225,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_RETINA_LANDSCAPE_16_9.jpg",
+                    "width": 1136,
+                    "height": 639,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_EVENT_DETAIL_PAGE_16_9.jpg",
+                    "width": 205,
+                    "height": 115,
+                    "fallback": true
+                  }
+                ],
+                "classifications": [
+                  {
+                    "primary": true,
+                    "segment": {
+                      "id": "KZFzniwnSyZfZ7v7nJ",
+                      "name": "Music"
+                    },
+                    "genre": {
+                      "id": "KnvZfZ7vAeA",
+                      "name": "Rock"
+                    },
+                    "subGenre": {
+                      "id": "KZazBEonSMnZfZ7v6F1",
+                      "name": "Pop"
+                    }
+                  }
+                ],
+                "_links": {
+                  "self": {
+                    "href": "/discovery/v2/attractions/K8vZ917GIgV?locale=en-us"
+                  }
+                }
+              },
+              {
+                "name": "$4 Wednesdays At 4th and B",
+                "type": "attraction",
+                "id": "K8vZ9178h5f",
+                "test": false,
+                "url": "http://ticketmaster.com/artist/1791413",
+                "locale": "en-us",
+                "images": [
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_TABLET_LANDSCAPE_LARGE_16_9.jpg",
+                    "width": 2048,
+                    "height": 1152,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_TABLET_LANDSCAPE_16_9.jpg",
+                    "width": 1024,
+                    "height": 576,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_RETINA_PORTRAIT_16_9.jpg",
+                    "width": 640,
+                    "height": 360,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_RECOMENDATION_16_9.jpg",
+                    "width": 100,
+                    "height": 56,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "3_2",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_ARTIST_PAGE_3_2.jpg",
+                    "width": 305,
+                    "height": 203,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "3_2",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_TABLET_LANDSCAPE_3_2.jpg",
+                    "width": 1024,
+                    "height": 683,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "3_2",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_RETINA_PORTRAIT_3_2.jpg",
+                    "width": 640,
+                    "height": 427,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "4_3",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_CUSTOM.jpg",
+                    "width": 305,
+                    "height": 225,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_RETINA_LANDSCAPE_16_9.jpg",
+                    "width": 1136,
+                    "height": 639,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_EVENT_DETAIL_PAGE_16_9.jpg",
+                    "width": 205,
+                    "height": 115,
+                    "fallback": true
+                  }
+                ],
+                "classifications": [
+                  {
+                    "primary": true,
+                    "segment": {
+                      "id": "KZFzniwnSyZfZ7v7nJ",
+                      "name": "Music"
+                    },
+                    "genre": {
+                      "id": "KnvZfZ7vAe6",
+                      "name": "Undefined"
+                    },
+                    "subGenre": {
+                      "id": "KZazBEonSMnZfZ7v6JI",
+                      "name": "Undefined"
+                    }
+                  }
+                ],
+                "_links": {
+                  "self": {
+                    "href": "/discovery/v2/attractions/K8vZ9178h5f?locale=en-us"
+                  }
+                }
+              },
+              {
+                "name": "$5 Fine",
+                "type": "attraction",
+                "id": "K8vZ917C32f",
+                "test": false,
+                "url": "http://ticketmaster.com/artist/1579021",
+                "locale": "en-us",
+                "images": [
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_TABLET_LANDSCAPE_LARGE_16_9.jpg",
+                    "width": 2048,
+                    "height": 1152,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "4_3",
+                    "url": "https://s1.ticketm.net/dbimages/79078a.jpg",
+                    "width": 305,
+                    "height": 225,
+                    "fallback": false
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "https://s1.ticketm.net/dbimages/79079a.jpg",
+                    "width": 205,
+                    "height": 115,
+                    "fallback": false
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_TABLET_LANDSCAPE_16_9.jpg",
+                    "width": 1024,
+                    "height": 576,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_RETINA_PORTRAIT_16_9.jpg",
+                    "width": 640,
+                    "height": 360,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_RECOMENDATION_16_9.jpg",
+                    "width": 100,
+                    "height": 56,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "3_2",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_ARTIST_PAGE_3_2.jpg",
+                    "width": 305,
+                    "height": 203,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "3_2",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_TABLET_LANDSCAPE_3_2.jpg",
+                    "width": 1024,
+                    "height": 683,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "3_2",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_RETINA_PORTRAIT_3_2.jpg",
+                    "width": 640,
+                    "height": 427,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_RETINA_LANDSCAPE_16_9.jpg",
+                    "width": 1136,
+                    "height": 639,
+                    "fallback": true
+                  }
+                ],
+                "classifications": [
+                  {
+                    "primary": true,
+                    "segment": {
+                      "id": "KZFzniwnSyZfZ7v7nJ",
+                      "name": "Music"
+                    },
+                    "genre": {
+                      "id": "KnvZfZ7vAv6",
+                      "name": "Country"
+                    },
+                    "subGenre": {
+                      "id": "KZazBEonSMnZfZ7vAFa",
+                      "name": "Country"
+                    }
+                  }
+                ],
+                "_links": {
+                  "self": {
+                    "href": "/discovery/v2/attractions/K8vZ917C32f?locale=en-us"
+                  }
+                }
+              },
+              {
+                "name": "$kinny",
+                "type": "attraction",
+                "id": "K8vZ917fFB7",
+                "test": false,
+                "url": "http://ticketmaster.com/artist/2185781",
+                "locale": "en-us",
+                "images": [
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_TABLET_LANDSCAPE_LARGE_16_9.jpg",
+                    "width": 2048,
+                    "height": 1152,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_TABLET_LANDSCAPE_16_9.jpg",
+                    "width": 1024,
+                    "height": 576,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_RETINA_PORTRAIT_16_9.jpg",
+                    "width": 640,
+                    "height": 360,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_RECOMENDATION_16_9.jpg",
+                    "width": 100,
+                    "height": 56,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "3_2",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_ARTIST_PAGE_3_2.jpg",
+                    "width": 305,
+                    "height": 203,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "3_2",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_TABLET_LANDSCAPE_3_2.jpg",
+                    "width": 1024,
+                    "height": 683,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "3_2",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_RETINA_PORTRAIT_3_2.jpg",
+                    "width": 640,
+                    "height": 427,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "4_3",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_CUSTOM.jpg",
+                    "width": 305,
+                    "height": 225,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_RETINA_LANDSCAPE_16_9.jpg",
+                    "width": 1136,
+                    "height": 639,
+                    "fallback": true
+                  },
+                  {
+                    "ratio": "16_9",
+                    "url": "http://s1.ticketm.net/dam/c/MUSIC_EVENT_DETAIL_PAGE_16_9.jpg",
+                    "width": 205,
+                    "height": 115,
+                    "fallback": true
+                  }
+                ],
+                "classifications": [
+                  {
+                    "primary": true,
+                    "segment": {
+                      "id": "KZFzniwnSyZfZ7v7nJ",
+                      "name": "Music"
+                    },
+                    "genre": {
+                      "id": "KnvZfZ7vAv1",
+                      "name": "Hip-Hop/Rap"
+                    },
+                    "subGenre": {
+                      "id": "KZazBEonSMnZfZ7vkvl",
+                      "name": "Hip-Hop/Rap"
+                    }
+                  }
+                ],
+                "_links": {
+                  "self": {
+                    "href": "/discovery/v2/attractions/K8vZ917fFB7?locale=en-us"
+                  }
+                }
+              }
+            ]
+          },
+          "page": {
+            "size": 20,
+            "totalElements": 170867,
+            "totalPages": 8544,
+            "number": 0
+          }
+        }
+    }
+]
