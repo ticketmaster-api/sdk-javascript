@@ -1,0 +1,570 @@
+[
+    {
+        "scope": "https://app.ticketmaster.com",
+        "method": "GET",
+        "path": "/discovery/v2/classifications/KZFzniwnSyZfZ7v7na?apikey=mock-api-key",
+        "status": 200,
+        "headers": {
+            "Access-Control-Allow-Headers": "origin, x-requested-with, accept",
+            "Access-Control-Allow-Origin": "*",
+            "Date": "Sat, 16 Jan 2016 18:41:27 GMT",
+            "Content-Length": "3488",
+            "Access-Control-Max-Age": "3628800",
+            "Access-Control-Allow-Methods": "GET, PUT, POST, DELETE",
+            "X-Application-Context": "application:default,jetson4",
+            "Connection": "keep-alive",
+            "Content-Type": "application/json;charset=utf-8",
+            "Server": "Apache-Coyote/1.1"
+        },
+        "response": {
+          "_links": {
+            "self": {
+              "href": "/discovery/v2/classifications/KZFzniwnSyZfZ7v7na?locale=en-us"
+            }
+          },
+          "segment": {
+            "id": "KZFzniwnSyZfZ7v7na",
+            "name": "Arts & Theatre",
+            "_links": {
+              "self": {
+                "href": "/discovery/v2/classifications/segments/KZFzniwnSyZfZ7v7na?locale=en-us"
+              }
+            },
+            "_embedded": {
+              "genres": [
+                {
+                  "id": "KnvZfZ7v7lv",
+                  "name": "Magic & Illusion",
+                  "_links": {
+                    "self": {
+                      "href": "/discovery/v2/classifications/genres/KnvZfZ7v7lv?locale=en-us"
+                    }
+                  },
+                  "_embedded": {
+                    "subgenres": [
+                      {
+                        "id": "KZazBEonSMnZfZ7v7l7",
+                        "name": "Magic",
+                        "_links": {
+                          "self": {
+                            "href": "/discovery/v2/classifications/subgenres/KZazBEonSMnZfZ7v7l7?locale=en-us"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "KnvZfZ7vAe1",
+                  "name": "Comedy",
+                  "_links": {
+                    "self": {
+                      "href": "/discovery/v2/classifications/genres/KnvZfZ7vAe1?locale=en-us"
+                    }
+                  },
+                  "_embedded": {
+                    "subgenres": [
+                      {
+                        "id": "KZazBEonSMnZfZ7vF17",
+                        "name": "Comedy",
+                        "_links": {
+                          "self": {
+                            "href": "/discovery/v2/classifications/subgenres/KZazBEonSMnZfZ7vF17?locale=en-us"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "KnvZfZ7v7nJ",
+                  "name": "Classical",
+                  "_links": {
+                    "self": {
+                      "href": "/discovery/v2/classifications/genres/KnvZfZ7v7nJ?locale=en-us"
+                    }
+                  },
+                  "_embedded": {
+                    "subgenres": [
+                      {
+                        "id": "KZazBEonSMnZfZ7v7nI",
+                        "name": "Symphonic",
+                        "_links": {
+                          "self": {
+                            "href": "/discovery/v2/classifications/subgenres/KZazBEonSMnZfZ7v7nI?locale=en-us"
+                          }
+                        }
+                      },
+                      {
+                        "id": "KZazBEonSMnZfZ7v7nE",
+                        "name": "Classical/Vocal",
+                        "_links": {
+                          "self": {
+                            "href": "/discovery/v2/classifications/subgenres/KZazBEonSMnZfZ7v7nE?locale=en-us"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "KnvZfZ7v7lJ",
+                  "name": "Variety",
+                  "_links": {
+                    "self": {
+                      "href": "/discovery/v2/classifications/genres/KnvZfZ7v7lJ?locale=en-us"
+                    }
+                  },
+                  "_embedded": {
+                    "subgenres": [
+                      {
+                        "id": "KZazBEonSMnZfZ7vAvA",
+                        "name": "Variety",
+                        "_links": {
+                          "self": {
+                            "href": "/discovery/v2/classifications/subgenres/KZazBEonSMnZfZ7vAvA?locale=en-us"
+                          }
+                        }
+                      },
+                      {
+                        "id": "KZazBEonSMnZfZ7vAv7",
+                        "name": "Cabaret",
+                        "_links": {
+                          "self": {
+                            "href": "/discovery/v2/classifications/subgenres/KZazBEonSMnZfZ7vAv7?locale=en-us"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "KnvZfZ7v7nI",
+                  "name": "Dance",
+                  "_links": {
+                    "self": {
+                      "href": "/discovery/v2/classifications/genres/KnvZfZ7v7nI?locale=en-us"
+                    }
+                  },
+                  "_embedded": {
+                    "subgenres": [
+                      {
+                        "id": "KZazBEonSMnZfZ7v7nn",
+                        "name": "Ballet",
+                        "_links": {
+                          "self": {
+                            "href": "/discovery/v2/classifications/subgenres/KZazBEonSMnZfZ7v7nn?locale=en-us"
+                          }
+                        }
+                      },
+                      {
+                        "id": "KZazBEonSMnZfZ7v7nl",
+                        "name": "Dance",
+                        "_links": {
+                          "self": {
+                            "href": "/discovery/v2/classifications/subgenres/KZazBEonSMnZfZ7v7nl?locale=en-us"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "KnvZfZ7v7nE",
+                  "name": "Cultural",
+                  "_links": {
+                    "self": {
+                      "href": "/discovery/v2/classifications/genres/KnvZfZ7v7nE?locale=en-us"
+                    }
+                  },
+                  "_embedded": {
+                    "subgenres": [
+                      {
+                        "id": "KZazBEonSMnZfZ7v7nt",
+                        "name": "Cultural",
+                        "_links": {
+                          "self": {
+                            "href": "/discovery/v2/classifications/subgenres/KZazBEonSMnZfZ7v7nt?locale=en-us"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "KnvZfZ7v7nn",
+                  "name": "Fashion",
+                  "_links": {
+                    "self": {
+                      "href": "/discovery/v2/classifications/genres/KnvZfZ7v7nn?locale=en-us"
+                    }
+                  },
+                  "_embedded": {
+                    "subgenres": [
+                      {
+                        "id": "KZazBEonSMnZfZ7v7le",
+                        "name": "Fashion",
+                        "_links": {
+                          "self": {
+                            "href": "/discovery/v2/classifications/subgenres/KZazBEonSMnZfZ7v7le?locale=en-us"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "KnvZfZ7v7nt",
+                  "name": "Espectaculo",
+                  "_links": {
+                    "self": {
+                      "href": "/discovery/v2/classifications/genres/KnvZfZ7v7nt?locale=en-us"
+                    }
+                  },
+                  "_embedded": {
+                    "subgenres": [
+                      {
+                        "id": "KZazBEonSMnZfZ7v7lv",
+                        "name": "Espectaculo",
+                        "_links": {
+                          "self": {
+                            "href": "/discovery/v2/classifications/subgenres/KZazBEonSMnZfZ7v7lv?locale=en-us"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "KnvZfZ7v7nl",
+                  "name": "Fine Art",
+                  "_links": {
+                    "self": {
+                      "href": "/discovery/v2/classifications/genres/KnvZfZ7v7nl?locale=en-us"
+                    }
+                  },
+                  "_embedded": {
+                    "subgenres": [
+                      {
+                        "id": "KZazBEonSMnZfZ7v7ld",
+                        "name": "Fine Art",
+                        "_links": {
+                          "self": {
+                            "href": "/discovery/v2/classifications/subgenres/KZazBEonSMnZfZ7v7ld?locale=en-us"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "KnvZfZ7v7n1",
+                  "name": "Circus & Specialty Acts",
+                  "_links": {
+                    "self": {
+                      "href": "/discovery/v2/classifications/genres/KnvZfZ7v7n1?locale=en-us"
+                    }
+                  },
+                  "_embedded": {
+                    "subgenres": [
+                      {
+                        "id": "KZazBEonSMnZfZ7v7nJ",
+                        "name": "Pantomime",
+                        "_links": {
+                          "self": {
+                            "href": "/discovery/v2/classifications/subgenres/KZazBEonSMnZfZ7v7nJ?locale=en-us"
+                          }
+                        }
+                      },
+                      {
+                        "id": "KZazBEonSMnZfZ7v7n1",
+                        "name": "Circus",
+                        "_links": {
+                          "self": {
+                            "href": "/discovery/v2/classifications/subgenres/KZazBEonSMnZfZ7v7n1?locale=en-us"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "KnvZfZ7v7na",
+                  "name": "Children's Theatre",
+                  "_links": {
+                    "self": {
+                      "href": "/discovery/v2/classifications/genres/KnvZfZ7v7na?locale=en-us"
+                    }
+                  },
+                  "_embedded": {
+                    "subgenres": [
+                      {
+                        "id": "KZazBEonSMnZfZ7v7na",
+                        "name": "Children's Theatre",
+                        "_links": {
+                          "self": {
+                            "href": "/discovery/v2/classifications/subgenres/KZazBEonSMnZfZ7v7na?locale=en-us"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "KnvZfZ7v7l1",
+                  "name": "Theatre",
+                  "_links": {
+                    "self": {
+                      "href": "/discovery/v2/classifications/genres/KnvZfZ7v7l1?locale=en-us"
+                    }
+                  },
+                  "_embedded": {
+                    "subgenres": [
+                      {
+                        "id": "KZazBEonSMnZfZ7v7lI",
+                        "name": "Comedy",
+                        "_links": {
+                          "self": {
+                            "href": "/discovery/v2/classifications/subgenres/KZazBEonSMnZfZ7v7lI?locale=en-us"
+                          }
+                        }
+                      },
+                      {
+                        "id": "KZazBEonSMnZfZ7vAvd",
+                        "name": "Mystery",
+                        "_links": {
+                          "self": {
+                            "href": "/discovery/v2/classifications/subgenres/KZazBEonSMnZfZ7vAvd?locale=en-us"
+                          }
+                        }
+                      },
+                      {
+                        "id": "KZazBEonSMnZfZ7v7ll",
+                        "name": "Miscellaneous",
+                        "_links": {
+                          "self": {
+                            "href": "/discovery/v2/classifications/subgenres/KZazBEonSMnZfZ7v7ll?locale=en-us"
+                          }
+                        }
+                      },
+                      {
+                        "id": "KZazBEonSMnZfZ7vAve",
+                        "name": "Musical",
+                        "_links": {
+                          "self": {
+                            "href": "/discovery/v2/classifications/subgenres/KZazBEonSMnZfZ7vAve?locale=en-us"
+                          }
+                        }
+                      },
+                      {
+                        "id": "KZazBEonSMnZfZ7v7ln",
+                        "name": "Horror",
+                        "_links": {
+                          "self": {
+                            "href": "/discovery/v2/classifications/subgenres/KZazBEonSMnZfZ7v7ln?locale=en-us"
+                          }
+                        }
+                      },
+                      {
+                        "id": "KZazBEonSMnZfZ7v7lt",
+                        "name": "Drama",
+                        "_links": {
+                          "self": {
+                            "href": "/discovery/v2/classifications/subgenres/KZazBEonSMnZfZ7v7lt?locale=en-us"
+                          }
+                        }
+                      },
+                      {
+                        "id": "KZazBEonSMnZfZ7vAvv",
+                        "name": "Monologue",
+                        "_links": {
+                          "self": {
+                            "href": "/discovery/v2/classifications/subgenres/KZazBEonSMnZfZ7vAvv?locale=en-us"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "KnvZfZ7v7ld",
+                  "name": "Miscellaneous Theatre",
+                  "_links": {
+                    "self": {
+                      "href": "/discovery/v2/classifications/genres/KnvZfZ7v7ld?locale=en-us"
+                    }
+                  },
+                  "_embedded": {
+                    "subgenres": [
+                      {
+                        "id": "KZazBEonSMnZfZ7v7lk",
+                        "name": "Miscellaneous Theatre",
+                        "_links": {
+                          "self": {
+                            "href": "/discovery/v2/classifications/subgenres/KZazBEonSMnZfZ7v7lk?locale=en-us"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "KnvZfZ7v7le",
+                  "name": "Miscellaneous",
+                  "_links": {
+                    "self": {
+                      "href": "/discovery/v2/classifications/genres/KnvZfZ7v7le?locale=en-us"
+                    }
+                  },
+                  "_embedded": {
+                    "subgenres": [
+                      {
+                        "id": "KZazBEonSMnZfZ7vF1k",
+                        "name": "Miscellaneous",
+                        "_links": {
+                          "self": {
+                            "href": "/discovery/v2/classifications/subgenres/KZazBEonSMnZfZ7vF1k?locale=en-us"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "KnvZfZ7v7lA",
+                  "name": "Music",
+                  "_links": {
+                    "self": {
+                      "href": "/discovery/v2/classifications/genres/KnvZfZ7v7lA?locale=en-us"
+                    }
+                  },
+                  "_embedded": {
+                    "subgenres": [
+                      {
+                        "id": "KZazBEonSMnZfZ7v7lF",
+                        "name": "Chamber Music",
+                        "_links": {
+                          "self": {
+                            "href": "/discovery/v2/classifications/subgenres/KZazBEonSMnZfZ7v7lF?locale=en-us"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "KnvZfZ7v7l7",
+                  "name": "Multimedia",
+                  "_links": {
+                    "self": {
+                      "href": "/discovery/v2/classifications/genres/KnvZfZ7v7l7?locale=en-us"
+                    }
+                  },
+                  "_embedded": {
+                    "subgenres": [
+                      {
+                        "id": "KZazBEonSMnZfZ7v7l6",
+                        "name": "Multimedia",
+                        "_links": {
+                          "self": {
+                            "href": "/discovery/v2/classifications/subgenres/KZazBEonSMnZfZ7v7l6?locale=en-us"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "KnvZfZ7v7l6",
+                  "name": "Performance Art",
+                  "_links": {
+                    "self": {
+                      "href": "/discovery/v2/classifications/genres/KnvZfZ7v7l6?locale=en-us"
+                    }
+                  },
+                  "_embedded": {
+                    "subgenres": [
+                      {
+                        "id": "KZazBEonSMnZfZ7v7l1",
+                        "name": "Performance Art",
+                        "_links": {
+                          "self": {
+                            "href": "/discovery/v2/classifications/subgenres/KZazBEonSMnZfZ7v7l1?locale=en-us"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "KnvZfZ7v7lk",
+                  "name": "Opera",
+                  "_links": {
+                    "self": {
+                      "href": "/discovery/v2/classifications/genres/KnvZfZ7v7lk?locale=en-us"
+                    }
+                  },
+                  "_embedded": {
+                    "subgenres": [
+                      {
+                        "id": "KZazBEonSMnZfZ7v7la",
+                        "name": "Opera",
+                        "_links": {
+                          "self": {
+                            "href": "/discovery/v2/classifications/subgenres/KZazBEonSMnZfZ7v7la?locale=en-us"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "KnvZfZ7v7la",
+                  "name": "Spectacular",
+                  "_links": {
+                    "self": {
+                      "href": "/discovery/v2/classifications/genres/KnvZfZ7v7la?locale=en-us"
+                    }
+                  },
+                  "_embedded": {
+                    "subgenres": [
+                      {
+                        "id": "KZazBEonSMnZfZ7v7lE",
+                        "name": "Spectacular",
+                        "_links": {
+                          "self": {
+                            "href": "/discovery/v2/classifications/subgenres/KZazBEonSMnZfZ7v7lE?locale=en-us"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "KnvZfZ7v7lF",
+                  "name": "Puppetry",
+                  "_links": {
+                    "self": {
+                      "href": "/discovery/v2/classifications/genres/KnvZfZ7v7lF?locale=en-us"
+                    }
+                  },
+                  "_embedded": {
+                    "subgenres": [
+                      {
+                        "id": "KZazBEonSMnZfZ7v7lJ",
+                        "name": "Puppet Show",
+                        "_links": {
+                          "self": {
+                            "href": "/discovery/v2/classifications/subgenres/KZazBEonSMnZfZ7v7lJ?locale=en-us"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        }
+    }
+]
