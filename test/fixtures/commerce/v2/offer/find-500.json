@@ -1,0 +1,26 @@
+[
+
+    {
+        "scope": "https://app.ticketmaster.com",
+        "method": "GET",
+        "path": "/commerce/v2/events/unknown-id/offers?apikey=mock-api-key",
+        "status": 500,
+        "headers": {
+          "Date": "Sat, 25 Jun 2016 20:55:35 GMT",
+          "Content-Length": "88",
+          "X-Application-Context": "application:default,jetson4",
+          "Connection": "keep-alive",
+          "Content-Type": "application/json;charset=utf-8",
+          "Server": "Apache-Coyote/1.1"
+        },
+        "response": {
+          "errors": [
+          {
+            "status": "500",
+            "detail": "Invalid Event - event not found.",
+            "code": "40001"
+          }
+        ]
+      }
+    }
+]
