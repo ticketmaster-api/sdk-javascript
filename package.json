@@ -1,14 +1,30 @@
 {
   "name": "ticketmaster",
   "version": "0.5.0",
-  "description": "Node SDK for the Ticketmaster Open Platform",
+  "description": "SDK for the Ticketmaster Open Platform",
   "main": "index.js",
   "scripts": {
+    "dev": "webpack",
+    "prod": "NODE_ENV=prod webpack",
+    "win-prod": "set NODE_ENV=prod && webpack",
     "test": "./node_modules/mocha/bin/mocha test --recursive"
+  },
+  "keywords": [
+    "ticketmaster",
+    "ticketmaster-api",
+    "ticketmaster-sdk",
+    "ticketmaster-node",
+    "ticketmaster-client"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ticketmaster-api/sdk-javascript.git"
   },
   "author": "Adam Meghji",
   "license": "MIT",
   "devDependencies": {
+    "webpack": "^1.13.1",
+    "json-loader": "^0.5.4",
     "chai": "3.0.0",
     "inherits": "^2.0.1",
     "mocha": "2.2.5",
@@ -17,5 +33,6 @@
   "dependencies": {
     "bluebird": "2.9.30",
     "request": "2.58.0"
-  }
+  },
+  "homepage": "https://github.com/ticketmaster-api/sdk-javascript"
 }
