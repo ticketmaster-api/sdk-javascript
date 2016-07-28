@@ -2,7 +2,7 @@
 
 VERSION=$(cat package.json | grep '"version":' | grep -o '\d\+\.\d\+\.\d\+')
 GIT_BRANCH=$(git symbolic-ref HEAD | sed -e 's|^refs/heads/||')
-GIT_TAG="v${VERSION}"
+GIT_TAG="${VERSION}"
 RELEASE_BRANCH="release-$VERSION"
 
 trap '{ echo -e "\nError: $BASH_COMMAND" >&2; cleanup; exit 1; }' ERR
