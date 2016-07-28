@@ -1,7 +1,7 @@
-# ticketmaster [![Build Status](https://travis-ci.org/ticketmaster-api/sdk-javascript.svg?branch=master)](https://travis-ci.org/ticketmaster-api/sdk-javascript)
+# **[Ticketmaster](https://www.npmjs.com/package/ticketmaster)** [![Build Status](https://travis-ci.org/ticketmaster-api/sdk-javascript.svg?branch=master)](https://travis-ci.org/ticketmaster-api/sdk-javascript)
 
 
-Node SDK for the Ticketmaster Open Platform (http://developer.ticketmaster.com/).
+Javascript SDK for the **[Ticketmaster Open Platform](http://developer.ticketmaster.com/)**.
 
 Aims to wrap the Ticketmaster API with coverage for all Open Platform endpoints, featuring:
  - API key authentication support
@@ -10,35 +10,114 @@ Aims to wrap the Ticketmaster API with coverage for all Open Platform endpoints,
 
 ## System Requirements
 
- - NodeJS (v0.10 or greater)
+ - [NodeJS](https://nodejs.org) (v0.10 or greater)
 
-## Usage
+## Installation:
 
+```bash
+npm install --save ticketmaster
+```
 
-1. Include the ticketmaster npm package:
+## Client:
 
- - `npm install --save ticketmaster`
+For browser usage there are two files in **dist/** folder
+```bash
+./dist/ticketmaster-client-[version].js (raw with source-maps)  
+./dist/ticketmaster-client-[version].min.js (minified)
+```
 
-2. Require the package and make an API call:
+Include one of them in to your project:
+```html
+...
+<script src="ticketmaster-client-[version].js"></script>
+<script src="ticketmaster-client-[version].min.js"></script>
+...
+```
+
+Use global variable **TMAPI** to make an API call (name can be changed in webpack settings during rebuild):
+
+```javascript
+TMAPI('your-api-key').discovery.v2.event.all()
+.then(function(result) {
+  // "result" is an object of Ticketmaster events information
+});
+```
+
+## Server:
+
+Require the package and make an API call:
 
 ```javascript
 var TM = require('ticketmaster');
 TM('your-api-key').discovery.v2.event.all()
-.then(function(events) {
-  // "events" is an array of Ticketmaster event information
-  console.log(events);
+.then(function(result) {
+  // "result" is an object of Ticketmaster events information
 });
 ```
 
 Alternative syntax if you are only interested in a subset of the API:
+
 ```javascript
 var EventAPI = require('ticketmaster').discovery.v2.event;
 EventAPI('your-api-key').all()
 ```
 
+## Rebuild source:
+
+In case you want to build your own bundle for client   
+
+`1`. Clone this repository  
+
+```bash
+git clone git@github.com:ticketmaster-api/sdk-javascript.git
+```
+`2`. install dependencies  
+
+```bash
+npm install
+```
+`3`. Run npm script: 
+
+- for raw (with source-maps) version of client lib use:
+```bash
+npm run-script dev
+```
+- for minified version of client lib use:
+```bash
+npm run-script prod
+```
+- or (for Windows users):
+```bash
+npm run-script win-prod
+```
+
+
+## Error handling:
+
+**Be aware:** no **.catch()** method provided! You should write it by your own.
+
+
+## Result object API:
+
+(provided only for sets which are result of **.all()** type methods)
+
+properties:  
+-`result.items` - Array of Ticketmaster event information.  
+-`result.page` - Additional general information object.  
+
+methods:  
+-`result.getPage(index)` - Promise which returns a new Result object.  
+-`result.nextPage()` - Promise which returns a new Result object. Can take additional param - step (1 by default).  
+-`result.previousPage()` - Promise which returns a new Result object. Can take additional param - step (1 by default).  
+-`result.records()` - returns an Array of this page's records  
+-`result.count()` - returns the total count of items   
+-`result.isLastPage()` - returns a Boolean if current Result is the last page  
+
 ## Running Tests
 
- - `make test`
+ ```bash
+ npm test
+ ```
 
 ## Status
 
@@ -70,4 +149,3 @@ Pull Requests gladly accepted!
 ## Contact Us
 
 [internal only] Find us in #open-platform on Ticketmaster Slack!
-

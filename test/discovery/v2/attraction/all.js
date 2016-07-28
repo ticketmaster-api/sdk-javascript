@@ -15,7 +15,7 @@ describe('discovery.v2.attraction.all', function() {
         var all = All('mock-api-key');
         all()
         .then(function(attractions) {
-          attractions[0].name.should.equal("!!!");
+          attractions.items[0].name.should.equal("!!!");
           nockDone();
           done();
         })

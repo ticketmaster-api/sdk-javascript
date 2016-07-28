@@ -15,7 +15,7 @@ describe('discovery.v2.classification.all', function() {
         var all = All('mock-api-key');
         all()
         .then(function(classifications) {
-          classifications[0].should.not.be.an('undefined');
+          classifications.items[0].should.not.be.an('undefined');
           nockDone();
           done();
         })
