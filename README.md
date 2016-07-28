@@ -103,12 +103,12 @@ npm run-script win-prod
 
 properties:  
 -`result.items` - Array of Ticketmaster event information.  
--`result.page` - Aditional general information object.  
+-`result.page` - Additional general information object.  
 
 methods:  
 -`result.getPage(index)` - Promise which returns a new Result object.  
--`result.nextPage()` - Promise which returns a new Result object. Can take aditional param - step (1 by default).  
--`result.previousPage()` - Promise which returns a new Result object. Can take aditional param - step (1 by default).  
+-`result.nextPage()` - Promise which returns a new Result object. Can take additional param - step (1 by default).  
+-`result.previousPage()` - Promise which returns a new Result object. Can take additional param - step (1 by default).  
 -`result.records()` - returns an Array of this page's records  
 -`result.count()` - returns the total count of items   
 -`result.isLastPage()` - returns a Boolean if current Result is the last page  
