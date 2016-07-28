@@ -7,7 +7,7 @@
     "dev": "webpack",
     "prod": "NODE_ENV=prod webpack",
     "win-prod": "set NODE_ENV=prod && webpack",
-    "test": "./node_modules/mocha/bin/mocha test --recursive"
+    "test": "mocha  --recursive"
   },
   "keywords": [
     "ticketmaster",
