@@ -20,9 +20,15 @@ npm install --save ticketmaster
 
 ## Client:
 
+For use in the browser-based client-side JS applications, a **dist/** folder exists for each release.  Releases can be found @ [https://github.com/ticketmaster-api/sdk-javascript/releases](https://github.com/ticketmaster-api/sdk-javascript/releases).
+
+```bash
+git clone --branch <version> git@github.com:ticketmaster-api/sdk-javascript.git
+```
+
 For browser usage there are two files in **dist/** folder
 ```bash
-./dist/ticketmaster-client-[version].js (raw with source-maps)  
+./dist/ticketmaster-client-[version].js (raw with source-maps)
 ./dist/ticketmaster-client-[version].min.js (minified)
 ```
 
@@ -64,19 +70,19 @@ EventAPI('your-api-key').all()
 
 ## Rebuild source:
 
-In case you want to build your own bundle for client   
+In case you want to build your own bundle for client
 
-`1`. Clone this repository  
+`1`. Clone this repository
 
 ```bash
 git clone git@github.com:ticketmaster-api/sdk-javascript.git
 ```
-`2`. install dependencies  
+`2`. install dependencies
 
 ```bash
 npm install
 ```
-`3`. Run npm script: 
+`3`. Run npm script:
 
 - for raw (with source-maps) version of client lib use:
 ```bash
@@ -101,17 +107,17 @@ npm run-script win-prod
 
 (provided only for sets which are result of **.all()** type methods)
 
-properties:  
--`result.items` - Array of Ticketmaster event information.  
--`result.page` - Additional general information object.  
+properties:
+-`result.items` - Array of Ticketmaster event information.
+-`result.page` - Additional general information object.
 
-methods:  
--`result.getPage(index)` - Promise which returns a new Result object.  
--`result.nextPage()` - Promise which returns a new Result object. Can take additional param - step (1 by default).  
--`result.previousPage()` - Promise which returns a new Result object. Can take additional param - step (1 by default).  
--`result.records()` - returns an Array of this page's records  
--`result.count()` - returns the total count of items   
--`result.isLastPage()` - returns a Boolean if current Result is the last page  
+methods:
+-`result.getPage(index)` - Promise which returns a new Result object.
+-`result.nextPage()` - Promise which returns a new Result object. Can take additional param - step (1 by default).
+-`result.previousPage()` - Promise which returns a new Result object. Can take additional param - step (1 by default).
+-`result.records()` - returns an Array of this page's records
+-`result.count()` - returns the total count of items
+-`result.isLastPage()` - returns a Boolean if current Result is the last page
 
 ## Running Tests
 
