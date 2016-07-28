@@ -4,6 +4,7 @@
   "description": "SDK for the Ticketmaster Open Platform",
   "main": "index.js",
   "scripts": {
+    "build": "webpack && NODE_ENV=prod webpack",
     "dev": "webpack",
     "prod": "NODE_ENV=prod webpack",
     "win-prod": "set NODE_ENV=prod && webpack",
