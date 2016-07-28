@@ -7,7 +7,8 @@
     "dev": "webpack",
     "prod": "NODE_ENV=prod webpack",
     "win-prod": "set NODE_ENV=prod && webpack",
-    "test": "mocha  --recursive"
+    "test": "mocha  --recursive",
+    "postversion": "./scripts/post-release.sh"
   },
   "keywords": [
     "ticketmaster",

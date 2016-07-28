@@ -1,7 +1,7 @@
 install: node_modules/
 
 clean:
-	@rm -rf node_modules/
+	@rm -rf node_modules/ dist/
 
 node_modules/:
 	@npm install
