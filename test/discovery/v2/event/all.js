@@ -15,7 +15,7 @@ describe('discovery.v2.event.all', function() {
         var all = All('mock-api-key');
         all()
         .then(function(events) {
-          events[0].name.should.equal("OSEA Membership Registration");
+          events.items[0].name.should.equal("OSEA Membership Registration");
           nockDone();
           done();
         })
