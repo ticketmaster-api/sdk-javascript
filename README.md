@@ -12,7 +12,7 @@ Aims to wrap the Ticketmaster API with coverage for all Open Platform endpoints,
 
  - [NodeJS](https://nodejs.org) (v0.10 or greater)
 
-## Instalation:
+## Installation:
 
 ```bash
 npm install --save ticketmaster
@@ -94,7 +94,7 @@ npm run-script win-prod
 
 ## Error handling:
 
-**Be aware:** no **.cath()** method provided! You should write it by your own.
+**Be aware:** no **.catch()** method provided! You should write it by your own.
 
 
 ## Result object API:
@@ -149,4 +149,3 @@ Pull Requests gladly accepted!
 ## Contact Us
 
 [internal only] Find us in #open-platform on Ticketmaster Slack!
-
