@@ -9,16 +9,17 @@ describe('commerce.v2.offer.find', function() {
     nockBack.fixtures = './test/fixtures/commerce/v2'
   });
 
-  describe('success', function() {
-    it('should find offers', function(done) {
-      nockBack('offer/find-200.json', {}, function(nockDone) {
+  describe('success', function () {
+    it('should find offers', function (done) {
+      nockBack('offer/find-200.json', {}, function (nockDone) {
         var find = Find('mock-api-key');
+
         find('vvG1iZKU5jIxKX')
-        .then(function(result) {
-          result.limits.max.should.equal(14);
-          nockDone();
-          done();
-        });
+          .then(function (result) {
+            result.limits.max.should.equal(14);
+            nockDone();
+            done();
+          });
       });
     });
   });
