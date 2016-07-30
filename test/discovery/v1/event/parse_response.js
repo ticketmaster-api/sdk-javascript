@@ -1,5 +1,5 @@
-var chai      = require("chai");
-var should    = chai.should();
+var chai = require('chai');
+var should = chai.should();
 var getEventJson = require('../../../fixtures/discovery/v1/event/find-200')[0].response;
 var ParseResponse = require('../../../../lib/discovery/v1/event/parse_response');
 

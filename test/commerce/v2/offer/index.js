@@ -1,9 +1,7 @@
-var chai   = require("chai");
-var should = chai.should();
-var event = require('../../../../lib/commerce/v2/offer');
+import event from '../../../../lib/commerce/v2/offer';
 
-describe('commerce.v2.offer', function() {
-  it('should provide find', function(done) {
+describe('commerce.v2.offer', () => {
+  it('should provide find', (done) => {
     event().should.have.property('find');
     done();
   });

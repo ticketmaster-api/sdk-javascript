@@ -1,4 +1,4 @@
-var chai   = require("chai");
+var chai = require('chai');
 var should = chai.should();
 var venue = require('../../../../lib/discovery/v1/venue');
 

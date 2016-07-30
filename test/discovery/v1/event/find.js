@@ -1,12 +1,12 @@
-var chai      = require("chai");
-var should    = chai.should();
-var nock      = require('nock');
-var nockBack  = nock.back;
-var Find      = require('../../../../lib/discovery/v1/event/find');
+var chai = require('chai');
+var should = chai.should();
+var nock = require('nock');
+var nockBack = nock.back;
+var Find = require('../../../../lib/discovery/v1/event/find');
 
 describe('discovery.v1.event.find', function() {
   before(function() {
-    nockBack.fixtures = './test/fixtures/discovery/v1'
+    nockBack.fixtures = './test/fixtures/discovery/v1';
   });
 
   describe('success', function() {
@@ -16,11 +16,11 @@ describe('discovery.v1.event.find', function() {
         find('3A004F38C8275108')
         .then((function(_this) {
           return function(result) {
-            result.name.should.equal("Monster Jam");
+            result.name.should.equal('Monster Jam');
             nockDone();
             done();
           };
-        })(this))
+        })(this));
       });
     });
   });
@@ -36,7 +36,7 @@ describe('discovery.v1.event.find', function() {
             nockDone();
             done();
           };
-        })(this))
+        })(this));
       });
     });
   });

@@ -1,5 +1,5 @@
-var chai      = require("chai");
-var should    = chai.should();
+var chai = require('chai');
+var should = chai.should();
 var getCategoryJson = require('../../../fixtures/discovery/v1/category/find-200')[0].response;
 var ParseResponse = require('../../../../lib/discovery/v1/category/parse_response');
 

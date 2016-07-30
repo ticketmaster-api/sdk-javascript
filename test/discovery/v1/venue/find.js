@@ -1,12 +1,12 @@
-var chai      = require("chai");
-var should    = chai.should();
-var nock      = require('nock');
-var nockBack  = nock.back;
-var Find       = require('../../../../lib/discovery/v1/venue/find');
+var chai = require('chai');
+var should = chai.should();
+var nock = require('nock');
+var nockBack = nock.back;
+var Find = require('../../../../lib/discovery/v1/venue/find');
 
 describe('discovery.v1.venue.find', function() {
   before(function() {
-    nockBack.fixtures = './test/fixtures/discovery/v1'
+    nockBack.fixtures = './test/fixtures/discovery/v1';
   });
 
   describe('success', function() {
@@ -16,11 +16,11 @@ describe('discovery.v1.venue.find', function() {
         find('475247')
         .then((function(_this) {
           return function(result) {
-            result.name.should.equal("Alamodome");
+            result.name.should.equal('Alamodome');
             nockDone();
             done();
           };
-        })(this))
+        })(this));
       });
     });
   });

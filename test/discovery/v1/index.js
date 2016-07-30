@@ -1,6 +1,6 @@
-var chai   = require("chai");
+var chai = require('chai');
 var should = chai.should();
-var v1     = require('../../../lib/discovery/v1');
+var v1 = require('../../../lib/discovery/v1');
 
 describe('discovery.v1', function() {
   it('should provide attraction', function(done) {

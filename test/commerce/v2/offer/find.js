@@ -1,21 +1,19 @@
-var chai      = require("chai");
-var should    = chai.should();
-var nock      = require('nock');
-var nockBack  = nock.back;
-var Find      = require('../../../../lib/commerce/v2/offer/find');
+import {back as nockBack} from 'nock';
 
-describe('commerce.v2.offer.find', function() {
-  before(function() {
-    nockBack.fixtures = './test/fixtures/commerce/v2'
+import Find from '../../../../lib/commerce/v2/offer/find';
+
+describe('commerce.v2.offer.find', () => {
+  before(() => {
+    nockBack.fixtures = './test/fixtures/commerce/v2';
   });
 
-  describe('success', function () {
-    it('should find offers', function (done) {
-      nockBack('offer/find-200.json', {}, function (nockDone) {
-        var find = Find('mock-api-key');
+  describe('success', () => {
+    it('should find offers', done => {
+      nockBack('offer/find-200.json', {}, nockDone => {
+        const find = Find('mock-api-key');
 
         find('vvG1iZKU5jIxKX')
-          .then(function (result) {
+          .then(result => {
             result.limits.max.should.equal(14);
             nockDone();
             done();
@@ -24,12 +22,12 @@ describe('commerce.v2.offer.find', function() {
     });
   });
 
-  describe('not found', function() {
-    it('should handle 500', function(done) {
-      nockBack('offer/find-500.json', {}, function(nockDone) {
-        var find = Find('mock-api-key');
+  describe('not found', () => {
+    it('should handle 500', done => {
+      nockBack('offer/find-500.json', {}, nockDone => {
+        const find = Find('mock-api-key');
         find('unknown-id')
-        .catch(function(response) {
+        .catch(response => {
           response.errors[0].code.should.equal('40001');
           nockDone();
           done();

@@ -9,7 +9,7 @@
     "prod": "cross-env NODE_ENV=prod webpack",
     "test": "mocha --compilers js:babel-core/register --recursive",
     "postversion": "./scripts/post-release.sh",
-    "lint": "eslint ./lib"
+    "lint": "eslint ./lib ./test"
   },
   "keywords": [
     "ticketmaster",

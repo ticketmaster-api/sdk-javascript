@@ -1,6 +1,3 @@
-import chai from "chai";
-const should = chai.should();
-
 import Attraction from '../../../../lib/discovery/v2/attraction';
 
 describe('discovery.v2.attraction', () => {

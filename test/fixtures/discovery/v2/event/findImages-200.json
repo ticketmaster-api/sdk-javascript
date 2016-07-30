@@ -1,0 +1,113 @@
+[
+  {
+    "scope": "https://app.ticketmaster.com",
+    "method": "GET",
+    "path": "/discovery/v2/events/vv17FZfdGkSrrMju/images?apikey=mock-api-key",
+    "status": 200,
+    "headers": {
+      "Access-Control-Allow-Headers": "origin, x-requested-with, accept",
+      "Access-Control-Allow-Methods": "GET, PUT, POST, DELETE",
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Max-Age": 3628800,
+      "Content-Type": "application/hal+json;charset=utf-8",
+      "Date": "Sat, 30 Jul 2016 17:11:07 GMT",
+      "Rate-Limit": 5000,
+      "Rate-Limit-Available": 4990,
+      "Rate-Limit-Over": 0,
+      "Rate-Limit-Reset": 1469920563443,
+      "Server": "Apache-Coyote/1.1",
+      "X-Application-Context": "application:local,default,jphx1:8080",
+      "X-TM-GTM-Origin": "uapi-us-phx2",
+      "Content-Length": 1932,
+      "Connection": "Close"
+    },
+    "response": {
+      "type": "event",
+      "id": "Z1lMVSyiJynZ177dJa",
+      "images": [
+        {
+          "ratio": "3_2",
+          "url": "http://s1.ticketm.net/dam/c/8cf/a6653880-7899-4f67-8067-1f95f4d158cf_124761_ARTIST_PAGE_3_2.jpg",
+          "width": 305,
+          "height": 203,
+          "fallback": true
+        },
+        {
+          "ratio": "4_3",
+          "url": "http://s1.ticketm.net/dam/c/8cf/a6653880-7899-4f67-8067-1f95f4d158cf_124761_CUSTOM.jpg",
+          "width": 305,
+          "height": 225,
+          "fallback": true
+        },
+        {
+          "ratio": "16_9",
+          "url": "http://s1.ticketm.net/dam/c/8cf/a6653880-7899-4f67-8067-1f95f4d158cf_124761_RETINA_PORTRAIT_16_9.jpg",
+          "width": 640,
+          "height": 360,
+          "fallback": true
+        },
+        {
+          "ratio": "3_2",
+          "url": "http://s1.ticketm.net/dam/c/8cf/a6653880-7899-4f67-8067-1f95f4d158cf_124761_RETINA_PORTRAIT_3_2.jpg",
+          "width": 640,
+          "height": 427,
+          "fallback": true
+        },
+        {
+          "ratio": "16_9",
+          "url": "http://s1.ticketm.net/dam/c/8cf/a6653880-7899-4f67-8067-1f95f4d158cf_124761_RECOMENDATION_16_9.jpg",
+          "width": 100,
+          "height": 56,
+          "fallback": true
+        },
+        {
+          "ratio": "3_2",
+          "url": "http://s1.ticketm.net/dam/c/8cf/a6653880-7899-4f67-8067-1f95f4d158cf_124761_TABLET_LANDSCAPE_3_2.jpg",
+          "width": 1024,
+          "height": 683,
+          "fallback": true
+        },
+        {
+          "ratio": "16_9",
+          "url": "http://s1.ticketm.net/dam/c/8cf/a6653880-7899-4f67-8067-1f95f4d158cf_124761_RETINA_LANDSCAPE_16_9.jpg",
+          "width": 1136,
+          "height": 639,
+          "fallback": true
+        },
+        {
+          "ratio": "16_9",
+          "url": "http://s1.ticketm.net/dam/c/8cf/a6653880-7899-4f67-8067-1f95f4d158cf_124761_TABLET_LANDSCAPE_16_9.jpg",
+          "width": 1024,
+          "height": 576,
+          "fallback": true
+        },
+        {
+          "ratio": "16_9",
+          "url": "http://s1.ticketm.net/dam/c/8cf/a6653880-7899-4f67-8067-1f95f4d158cf_124761_TABLET_LANDSCAPE_LARGE_16_9.jpg",
+          "width": 2048,
+          "height": 1152,
+          "fallback": true
+        },
+        {
+          "ratio": "16_9",
+          "url": "http://s1.ticketm.net/dam/c/8cf/a6653880-7899-4f67-8067-1f95f4d158cf_124761_EVENT_DETAIL_PAGE_16_9.jpg",
+          "width": 205,
+          "height": 115,
+          "fallback": true
+        },
+        {
+          "ratio": "3_2",
+          "url": "https://static-label.frontgatetickets.com/common/events/92970.jpg",
+          "width": 120,
+          "height": 80,
+          "fallback": false
+        }
+      ],
+      "_links": {
+        "self": {
+          "href": "/discovery/v2/events/Z1lMVSyiJynZ177dJa/images?locale=en-us"
+        }
+      }
+    }
+  }
+]

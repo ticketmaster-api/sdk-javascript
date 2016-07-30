@@ -1,23 +1,21 @@
-var chai = require("chai");
-var should = chai.should();
-var nock = require('nock');
-var nockBack = nock.back;
-var Classification = require('../../../../lib/discovery/v2/classification');
+import {back as nockBack} from 'nock';
 
-describe('discovery.v2.classification.find', function() {
-  before(function() {
-    nockBack.fixtures = './test/fixtures/discovery/v2'
+import Classification from '../../../../lib/discovery/v2/classification';
+
+describe('discovery.v2.classification.find', () => {
+  before(() => {
+    nockBack.fixtures = './test/fixtures/discovery/v2';
   });
 
-  describe('success', function() {
-    it('should find a classification', function(done) {
-      nockBack('classification/find-200.json', {}, function(nockDone) {
+  describe('success', () => {
+    it('should find a classification', done => {
+      nockBack('classification/find-200.json', {}, nockDone => {
         Classification('mock-api-key').find('KZFzniwnSyZfZ7v7na')
-          .then(function(result) {
-            result.segment.name.should.equal("Arts & Theatre");
+          .then(result => {
+            result.segment.name.should.equal('Arts & Theatre');
             nockDone();
             done();
-          })
+          });
       });
     });
   });
