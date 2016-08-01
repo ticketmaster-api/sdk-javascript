@@ -2,7 +2,8 @@
   "name": "ticketmaster",
   "version": "1.0.0",
   "description": "SDK for the Ticketmaster Open Platform",
-  "main": "index.js",
+  "main": "dist/server/index.js",
+  "jsnext:main": "lib/index.js",
   "scripts": {
     "build": "webpack && npm run prod",
     "dev": "webpack",

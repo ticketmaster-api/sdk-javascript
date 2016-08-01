@@ -1,24 +1,21 @@
-var chai = require('chai');
-var should = chai.should();
-var nock = require('nock');
-var nockBack = nock.back;
-var All = require('../../../../lib/discovery/v1/event/all');
+import {back as nockBack} from 'nock';
 
-describe('discovery.v1.event.all', function() {
-  before(function() {
+import Event from '../../../../lib/discovery/v1/event';
+
+describe('discovery.v1.event.all', () => {
+  before(() => {
     nockBack.fixtures = './test/fixtures/discovery/v1';
   });
 
-  describe('success', function() {
-    it('should find an event', function(done) {
-      nockBack('event/all-200.json', {}, function(nockDone) {
-        var all = All('mock-api-key');
-        all()
-        .then(function(events) {
-          events[0].name.should.equal('OSEA Membership Registration');
-          nockDone();
-          done();
-        });
+  describe('success', () => {
+    it('should find an event', done => {
+      nockBack('event/all-200.json', {}, nockDone => {
+        Event('mock-api-key').all()
+          .then((result) => {
+            result.items[0].name.should.equal('OSEA Membership Registration');
+            nockDone();
+            done();
+          });
       });
     });
   });

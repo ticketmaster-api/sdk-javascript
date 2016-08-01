@@ -1,42 +1,34 @@
-var chai = require('chai');
-var should = chai.should();
-var nock = require('nock');
-var nockBack = nock.back;
-var Find = require('../../../../lib/discovery/v1/event/find');
+import {back as nockBack} from 'nock';
 
-describe('discovery.v1.event.find', function() {
-  before(function() {
+import Event from '../../../../lib/discovery/v1/event';
+
+describe('discovery.v1.event.find', () => {
+  before(() => {
     nockBack.fixtures = './test/fixtures/discovery/v1';
   });
 
-  describe('success', function() {
-    it('should find an event', function(done) {
+  describe('success', () => {
+    it('should find an event', done => {
       nockBack('event/find-200.json', {}, function(nockDone) {
-        var find = Find('mock-api-key');
-        find('3A004F38C8275108')
-        .then((function(_this) {
-          return function(result) {
+        Event('mock-api-key').find('3A004F38C8275108')
+          .then((result) => {
             result.name.should.equal('Monster Jam');
             nockDone();
             done();
-          };
-        })(this));
+          });
       });
     });
   });
 
-  describe('not found', function() {
-    it('should handle 404', function(done) {
+  describe('not found', () => {
+    it('should handle 404', done => {
       nockBack('event/find-404.json', {}, function(nockDone) {
-        var find = Find('mock-api-key');
-        find('unknown-id')
-        .catch((function(_this) {
-          return function(response) {
+        Event('mock-api-key').find('unknown-id')
+          .catch((response) => {
             response.errors[0].code.should.equal('DIS1004');
             nockDone();
             done();
-          };
-        })(this));
+          });
       });
     });
   });

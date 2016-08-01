@@ -1,6 +1,6 @@
 import {back as nockBack} from 'nock';
 
-import Find from '../../../../lib/commerce/v2/offer/find';
+import Offer from '../../../../lib/commerce/v2/offer';
 
 describe('commerce.v2.offer.find', () => {
   before(() => {
@@ -8,12 +8,10 @@ describe('commerce.v2.offer.find', () => {
   });
 
   describe('success', () => {
-    it('should find offers', done => {
-      nockBack('offer/find-200.json', {}, nockDone => {
-        const find = Find('mock-api-key');
-
-        find('vvG1iZKU5jIxKX')
-          .then(result => {
+    it('should find offers', (done) => {
+      nockBack('offer/find-200.json', {}, (nockDone) => {
+        Offer('mock-api-key').find('vvG1iZKU5jIxKX', 'offers')
+          .then((result) => {
             result.limits.max.should.equal(14);
             nockDone();
             done();
@@ -23,15 +21,14 @@ describe('commerce.v2.offer.find', () => {
   });
 
   describe('not found', () => {
-    it('should handle 500', done => {
-      nockBack('offer/find-500.json', {}, nockDone => {
-        const find = Find('mock-api-key');
-        find('unknown-id')
-        .catch(response => {
-          response.errors[0].code.should.equal('40001');
-          nockDone();
-          done();
-        });
+    it('should handle 500', (done) => {
+      nockBack('offer/find-500.json', {}, (nockDone) => {
+        Offer('mock-api-key').find('unknown-id', 'offers')
+          .catch((response) => {
+            response.errors[0].code.should.equal('40001');
+            nockDone();
+            done();
+          });
       });
     });
   });

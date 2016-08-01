@@ -2,7 +2,7 @@
     {
         "scope": "https://app.ticketmaster.com",
         "method": "GET",
-        "path": "/discovery/v1/events/?apikey=mock-api-key",
+        "path": "/discovery/v1/events?apikey=mock-api-key",
         "status": 200,
         "headers": {
           "Access-Control-Allow-Headers": "origin, x-requested-with, accept",
