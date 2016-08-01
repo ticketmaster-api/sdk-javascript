@@ -2,12 +2,13 @@
   "name": "ticketmaster",
   "version": "1.0.0",
   "description": "SDK for the Ticketmaster Open Platform",
-  "main": "dist/server/index.js",
+  "main": "dist/index.js",
   "jsnext:main": "lib/index.js",
   "scripts": {
-    "build": "webpack && npm run prod",
+    "build": "npm run prod",
     "dev": "webpack",
     "prod": "cross-env NODE_ENV=prod webpack",
+    "prod:assess": "cross-env NODE_ENV=prod webpack --display-modules --sort-modules-by size",
     "test": "mocha --compilers js:babel-core/register --recursive",
     "postversion": "./scripts/post-release.sh",
     "lint": "eslint ./lib ./test"
@@ -27,6 +28,7 @@
   "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.11.4",
+    "babel-loader": "^6.2.4",
     "babel-preset-es2015": "^6.9.0",
     "chai": "3.5.0",
     "cross-env": "^2.0.0",
@@ -38,10 +40,10 @@
     "json-loader": "^0.5.4",
     "mocha": "2.5.3",
     "nock": "8.0.0",
-    "webpack": "^1.13.1"
+    "webpack": "^2.1.0-beta.20"
   },
   "dependencies": {
-    "bluebird": "3.4.1",
+    "bluebird": "^3.4.1",
     "request": "2.74.0"
   },
   "homepage": "https://github.com/ticketmaster-api/sdk-javascript"

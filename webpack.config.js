@@ -1,23 +1,29 @@
-var path = require('path'),
-  webpack = require('webpack'),
-  PROD = process.env.NODE_ENV && process.env.NODE_ENV.trim() === 'prod',
-  filename = 'ticketmaster-client-' + require('./package.json').version;
+var path = require('path');
+var webpack = require('webpack');
+var env = process.env.NODE_ENV || 'development';
+var PROD = env === 'prod';
+var filename = 'ticketmaster-client-' + require('./package.json').version;
 
 module.exports = {
-  entry: './index.js',
+  entry: './lib/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: PROD ? [filename, '.min.js'].join('') : [filename, '.js'].join(''),
-    library: "TMAPI" // global
+    library: 'TMAPI' // global
   },
-  devtool: PROD ? '' : '#cheap-module-inline-source-map',
+  devtool: PROD ? false : 'cheap-module-inline-source-map',
   node: {
-    fs: "empty",
-    net: "empty",
-    tls: "empty"
+    fs: 'empty',
+    net: 'empty',
+    tls: 'empty'
   },
   module: {
     loaders: [
+      {
+        test: /\.js$/,
+        loader: 'babel',
+        include: path.join(process.cwd(), 'lib')
+      },
       {
         test: /\.json$/,
         loader: 'json'
@@ -26,13 +32,10 @@ module.exports = {
   },
   plugins: [
     new webpack.NoErrorsPlugin(),
-    PROD ? new webpack.optimize.UglifyJsPlugin({
-      compress: {
-        warnings: false
-      },
+    new webpack.DefinePlugin({NODE_ENV: env}),
+    new webpack.optimize.UglifyJsPlugin({
+      compress: {warnings: false},
       comments: false
-    }) : new webpack.DefinePlugin({
-      NODE_ENV: 'development'
     })
   ]
 };
