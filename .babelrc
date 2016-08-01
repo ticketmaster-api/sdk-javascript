@@ -1,4 +1,10 @@
 {
   "compact": "true",
-  "presets": ["es2015"]
+  "plugins": ["lodash"],
+  "presets": ["es2015-webpack"],
+  "env": {
+    "test": {
+      "presets": ["es2015"]
+    }
+  }
 }

@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <title>TMAPI</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <script src="../dist/ticketmaster-client-1.0.0.min.js"></script>
+  <script>
+    (function (TMAPI){
+      TMAPI.default('pTAf3X1DA6XCHjaQaw0WmlgcA0j1r32C').discovery.v2.event.all().then(function (data) {
+        console.log(data)
+      })
+    })(TMAPI)
+  </script>
+</body>
+</html>
