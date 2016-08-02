@@ -11,17 +11,24 @@
   <script>
     (function(TMAPI) {
       function logPage(page) {
-        console.log(page.page.number, page.items.map((item) => item.name))
+        console.log(page.page.number, page.items.map(function(item) {
+          return item.name
+        }))
 
         return page.getNext()
       }
 
-      const sdk = TMAPI.default('pTAf3X1DA6XCHjaQaw0WmlgcA0j1r32C')
+      const sdk = TMAPI.default('YOUR_KEY_HERE')
 
-      sdk.discovery.v2.event.all({page: 4, size: 5, city: 'London'})
-        .then(logPage)
-        .then(logPage)
-        .then(logPage)
+      if (sdk) {
+        sdk.discovery.v2.event.all({page: 4, size: 5, city: 'London'})
+          .then(logPage)
+          .then(logPage)
+          .then(logPage)
+          .catch(function(e) {
+            console.log(e)
+          })
+      }
 
     })(TMAPI)
   </script>
