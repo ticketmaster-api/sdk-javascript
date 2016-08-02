@@ -11,11 +11,12 @@ describe('discovery.v2.attraction.all', () => {
     it('should find an attraction', (done) => {
       nockBack('attraction/all-200.json', {}, nockDone => {
         Attraction('mock-api-key').all()
-          .then((attractions) => {
-            attractions.items[0].name.should.equal('!!!');
+          .then((result) => {
+            result.items[0].name.should.equal('!!!');
             nockDone();
             done();
-          });
+          })
+          .catch(() => done());
       });
     });
   });

@@ -15,7 +15,8 @@ describe('discovery.v1.attraction.find', () => {
             result.name.should.equal('Monster Jam');
             nockDone();
             done();
-          });
+          })
+          .catch(() => done());
       });
     });
   });

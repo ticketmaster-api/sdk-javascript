@@ -9,13 +9,14 @@ describe('discovery.v2.venue.find', () => {
 
   describe('success', () => {
     it('should find a venue', done => {
-      nockBack('venue/find-200.json', {}, nockDone => {
+      nockBack('venue/find-200.json', {}, (nockDone) => {
         Venue('mock-api-key').find('KovZpZAEA76A')
-          .then(result => {
+          .then((result) => {
             result.name.should.equal('The Pavilion at Montage Mountain');
             nockDone();
             done();
-          });
+          })
+          .catch(() => done());
       });
     });
   });

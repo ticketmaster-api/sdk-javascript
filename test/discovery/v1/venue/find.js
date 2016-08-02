@@ -15,7 +15,8 @@ describe('discovery.v1.venue.find', () => {
             result.name.should.equal('Alamodome');
             nockDone();
             done();
-          });
+          })
+          .catch(() => done());
       });
     });
   });

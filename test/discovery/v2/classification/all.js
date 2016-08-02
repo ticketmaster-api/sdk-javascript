@@ -8,14 +8,15 @@ describe('discovery.v2.classification.all', () => {
   });
 
   describe('success', () => {
-    it('should find an classification', done => {
-      nockBack('classification/all-200.json', {}, nockDone => {
+    it('should find an classification', (done) => {
+      nockBack('classification/all-200.json', {}, (nockDone) => {
         Classification('mock-api-key').all()
-          .then(classifications => {
-            classifications.items[0].should.not.be.an('undefined');
+          .then((result) => {
+            result.items[0].should.not.be.an('undefined');
             nockDone();
             done();
-          });
+          })
+          .catch(() => done());
       });
     });
   });

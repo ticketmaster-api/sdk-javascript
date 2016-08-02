@@ -15,7 +15,8 @@ describe('discovery.v1.event.find', () => {
             result.name.should.equal('Monster Jam');
             nockDone();
             done();
-          });
+          })
+          .catch(() => done());
       });
     });
   });
@@ -24,11 +25,12 @@ describe('discovery.v1.event.find', () => {
     it('should handle 404', done => {
       nockBack('event/find-404.json', {}, function(nockDone) {
         Event('mock-api-key').find('unknown-id')
-          .catch((response) => {
-            response.errors[0].code.should.equal('DIS1004');
+          .then((result) => {
+            result.errors[0].code.should.equal('DIS1004');
             nockDone();
             done();
-          });
+          })
+          .catch(() => done());
       });
     });
   });

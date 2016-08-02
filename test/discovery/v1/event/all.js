@@ -15,7 +15,8 @@ describe('discovery.v1.event.all', () => {
             result.items[0].name.should.equal('OSEA Membership Registration');
             nockDone();
             done();
-          });
+          })
+          .catch(() => done());
       });
     });
   });

@@ -8,19 +8,20 @@ describe('discovery.v2.event.find', () => {
   });
 
   describe('success', () => {
-    it('should find an event', done => {
-      nockBack('event/find-200.json', {}, nockDone => {
+    it('should find an event', (done) => {
+      nockBack('event/find-200.json', {}, (nockDone) => {
         Event('mock-api-key').find('vv17FZfdGkSrrMju')
-          .then(result => {
+          .then((result) => {
             result.name.should.equal('Susquehanna Breakdown RV Pass');
             nockDone();
             done();
-          });
+          })
+          .catch(() => done());
       });
     });
 
-    it('should find images for an event', done => {
-      nockBack('event/findImages-200.json', {}, nockDone => {
+    it('should find images for an event', (done) => {
+      nockBack('event/findImages-200.json', {}, (nockDone) => {
         Event('mock-api-key').find('vv17FZfdGkSrrMju', 'images')
           .then((result) => {
             result.images[0].should.deep.equal({
@@ -32,20 +33,22 @@ describe('discovery.v2.event.find', () => {
             });
             nockDone();
             done();
-          });
+          })
+          .catch(() => done());
       });
     });
   });
 
   describe('not found', () => {
-    it('should handle 404', done => {
-      nockBack('event/find-404.json', {}, nockDone => {
+    it('should handle 404', (done) => {
+      nockBack('event/find-404.json', {}, (nockDone) => {
         Event('mock-api-key').find('unknown-id')
-          .catch(response => {
+          .catch((response) => {
             response.errors[0].code.should.equal('DIS1004');
             nockDone();
             done();
-          });
+          })
+          .catch(() => done());
       });
     });
   });

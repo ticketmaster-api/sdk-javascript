@@ -15,7 +15,8 @@ describe('discovery.v1.category.find', () => {
             result.name.should.equal('Sports');
             nockDone();
             done();
-          });
+          })
+          .catch(() => done());
       });
     });
   });
