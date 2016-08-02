@@ -15,7 +15,8 @@ describe('discovery.v2.classification.find', () => {
             result.segment.name.should.equal('Arts & Theatre');
             nockDone();
             done();
-          });
+          })
+          .catch((err) => done(err));
       });
     });
   });

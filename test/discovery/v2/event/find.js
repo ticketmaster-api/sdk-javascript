@@ -16,7 +16,7 @@ describe('discovery.v2.event.find', () => {
             nockDone();
             done();
           })
-          .catch(() => done());
+          .catch((err) => done(err));
       });
     });
 
@@ -34,7 +34,7 @@ describe('discovery.v2.event.find', () => {
             nockDone();
             done();
           })
-          .catch(() => done());
+          .catch((err) => done(err));
       });
     });
   });
@@ -48,7 +48,7 @@ describe('discovery.v2.event.find', () => {
             nockDone();
             done();
           })
-          .catch(() => done());
+          .catch((err) => done(err));
       });
     });
   });

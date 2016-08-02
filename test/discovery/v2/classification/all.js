@@ -16,7 +16,7 @@ describe('discovery.v2.classification.all', () => {
             nockDone();
             done();
           })
-          .catch(() => done());
+          .catch((err) => done(err));
       });
     });
   });
