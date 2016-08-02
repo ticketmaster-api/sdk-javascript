@@ -10,22 +10,18 @@
   <script src="../dist/ticketmaster-client-1.0.0.min.js"></script>
   <script>
     (function(TMAPI) {
-      function logPage(page, triggerNext = true) {
+      function logPage(page) {
         console.log(page.page.number, page.items.map((item) => item.name))
 
-        if (triggerNext) {
-          return page.getNext()
-        }
+        return page.getNext()
       }
 
       const sdk = TMAPI.default('pTAf3X1DA6XCHjaQaw0WmlgcA0j1r32C')
 
-      sdk.discovery.v2.event.all({page: 4, size: 5, city: 'Los Angeles'})
+      sdk.discovery.v2.event.all({page: 4, size: 5, city: 'London'})
         .then(logPage)
         .then(logPage)
-        .then(function(page) {
-          logPage(page)
-        })
+        .then(logPage)
 
     })(TMAPI)
   </script>
