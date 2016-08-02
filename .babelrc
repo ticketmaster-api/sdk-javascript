@@ -1,6 +1,6 @@
 {
   "compact": "true",
-  "plugins": ["lodash"],
+  "plugins": ["lodash", "transform-object-assign"],
   "presets": ["es2015-webpack"],
   "env": {
     "test": {
