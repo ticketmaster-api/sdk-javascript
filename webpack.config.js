@@ -1,3 +1,4 @@
+// TODO: split dev and production configs
 var path = require('path');
 var webpack = require('webpack');
 var LodashModuleReplacementPlugin = require('lodash-webpack-plugin');
