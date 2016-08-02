@@ -1,7 +1,6 @@
 // TODO: split dev and production configs
 var path = require('path');
 var webpack = require('webpack');
-var LodashModuleReplacementPlugin = require('lodash-webpack-plugin');
 
 var env = process.env.NODE_ENV || 'development';
 var PROD = env === 'production';
@@ -35,7 +34,6 @@ module.exports = {
     ]
   },
   plugins: [
-    new LodashModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin(),
     new webpack.optimize.OccurrenceOrderPlugin,
     new webpack.DefinePlugin({NODE_ENV: env}),
