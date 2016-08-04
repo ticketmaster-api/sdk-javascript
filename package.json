@@ -8,10 +8,11 @@
     "build": "npm run prod",
     "dev": "webpack",
     "prod": "cross-env NODE_ENV=production webpack",
-    "prod:assess": "cross-env NODE_ENV=production webpack --display-modules --sort-modules-by size",
-    "test": "cross-env NODE_ENV=test mocha --compilers js:babel-register --recursive",
+    "prod:assess": "npm run prod -- --display-modules --sort-modules-by size",
+    "test": "cross-env NODE_ENV=test mocha --require ./test/globals --compilers js:babel-register --recursive",
     "postversion": "./scripts/post-release.sh",
-    "lint": "eslint ./lib ./test"
+    "lint": "eslint ./lib ./test",
+    "precommit": "npm run lint && npm test"
   },
   "keywords": [
     "ticketmaster",
@@ -39,6 +40,7 @@
     "eslint-config-standard": "5.3.5",
     "eslint-plugin-promise": "2.0.0",
     "eslint-plugin-standard": "2.0.0",
+    "husky": "0.11.6",
     "inherits": "2.0.1",
     "json-loader": "0.5.4",
     "mocha": "3.0.1",

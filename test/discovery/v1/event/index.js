@@ -1,5 +1,3 @@
-import chai from 'chai';
-const should = chai.should();
 import event from '../../../../lib/discovery/v1/event';
 
 describe('discovery.v1.event', () => {
