@@ -7,9 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-  <script src="../dist/ticketmaster-client-1.0.0.min.js"></script>
+  <script src="../dist/web/tmapi-1.0.0.min.js"></script>
   <script>
-    (function(TMAPI) {
+    (function(tmapi) {
+      var sdk = tmapi('YOUR_KEY_HERE')
+
       function logNextPage(page) {
         console.log(page.page.number, page.items.map(function(item) {
           return item.name
@@ -17,8 +19,6 @@
 
         return page.getNext()
       }
-
-      const sdk = TMAPI.default('YOUR_KEY_HERE')
 
       if (sdk) {
         sdk.discovery.v2.event.all({page: 4, size: 5, city: 'London'})
@@ -29,8 +29,7 @@
             console.log(e)
           })
       }
-
-    })(TMAPI)
+    })(window.tmapi)
   </script>
 </body>
 </html>
