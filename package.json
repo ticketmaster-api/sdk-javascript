@@ -2,7 +2,7 @@
   "name": "tmapi",
   "version": "1.0.0",
   "description": "SDK for the Ticketmaster Open Platform",
-  "main": "dist/node/tmapi.js",
+  "main": "dist/node/index.js",
   "module": "lib/index.js",
   "scripts": {
     "clean": "rimraf ./dist",
