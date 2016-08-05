@@ -1,1 +1,1 @@
-global.should = require('chai').should();
+global.should = require('chai').should()
