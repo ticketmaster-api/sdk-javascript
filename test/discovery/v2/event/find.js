@@ -22,7 +22,7 @@ describe('discovery.v2.event.find', () => {
 
     it('should find images for an event', (done) => {
       nockBack('event/findImages-200.json', {}, (nockDone) => {
-        Event('mock-api-key').find('vv17FZfdGkSrrMju', 'images')
+        Event('mock-api-key').findImages('vv17FZfdGkSrrMju')
           .then((result) => {
             result.images[0].should.deep.equal({
               'ratio': '3_2',
