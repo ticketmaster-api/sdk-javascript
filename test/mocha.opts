@@ -1,0 +1,4 @@
+--require ./test/globals
+--compilers js:babel-register
+--recursive
+--check-leaks

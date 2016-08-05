@@ -1,9 +1,7 @@
-var chai      = require("chai");
-var should    = chai.should();
-var commerce  = require('../../lib/commerce');
+import commerce from '../../lib/commerce';
 
-describe('commerce', function() {
-  it('should provide v2', function(done) {
+describe('commerce', () => {
+  it('should provide v2', done => {
     commerce().should.have.property('v2');
     done();
   });

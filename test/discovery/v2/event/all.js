@@ -1,24 +1,36 @@
-var chai      = require("chai");
-var should    = chai.should();
-var nock      = require('nock');
-var nockBack  = nock.back;
-var All       = require('../../../../lib/discovery/v2/event/all');
+import {back as nockBack} from 'nock';
 
-describe('discovery.v2.event.all', function() {
-  before(function() {
-    nockBack.fixtures = './test/fixtures/discovery/v2'
-  });
+import sdk from '../../../../lib';
+import Event from '../../../../lib/discovery/v2/event';
 
-  describe('success', function() {
-    it('should find an event', function(done) {
-      nockBack('event/all-200.json', {}, function(nockDone) {
-        var all = All('mock-api-key');
-        all()
-        .then(function(events) {
-          events.items[0].name.should.equal("OSEA Membership Registration");
-          nockDone();
-          done();
-        })
+const api = sdk('mock-api-key');
+
+const onResult = (done) => (page) => {
+  page.items[0].name.should.equal('OSEA Membership Registration');
+  done();
+};
+
+nockBack.fixtures = './test/fixtures/discovery/v2';
+
+describe('discovery.v2.event.all', () => {
+  describe('success', () => {
+    it('should find an event using the fluent API', (done) => {
+      nockBack('event/all-200.json', {}, (nockDone) => {
+        nockDone();
+
+        api.discovery.v2.event.all()
+          .then(onResult(done))
+          .catch((err) => done(err));
+      });
+    });
+
+    it('should find an event', (done) => {
+      nockBack('event/all-200.json', {}, (nockDone) => {
+        nockDone();
+
+        Event('mock-api-key').all()
+          .then(onResult(done))
+          .catch((err) => done(err));
       });
     });
   });

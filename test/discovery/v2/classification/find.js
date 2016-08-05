@@ -1,26 +1,22 @@
-var chai      = require("chai");
-var should    = chai.should();
-var nock      = require('nock');
-var nockBack  = nock.back;
-var Find      = require('../../../../lib/discovery/v2/classification/find');
+import {back as nockBack} from 'nock';
 
-describe('discovery.v2.classification.find', function() {
-  before(function() {
-    nockBack.fixtures = './test/fixtures/discovery/v2'
+import Classification from '../../../../lib/discovery/v2/classification';
+
+describe('discovery.v2.classification.find', () => {
+  before(() => {
+    nockBack.fixtures = './test/fixtures/discovery/v2';
   });
 
-  describe('success', function() {
-    it('should find a classification', function(done) {
-      nockBack('classification/find-200.json', {}, function(nockDone) {
-        var find = Find('mock-api-key');
-        find('KZFzniwnSyZfZ7v7na')
-        .then((function(_this) {
-          return function(result) {
-            result.segment.name.should.equal("Arts & Theatre");
+  describe('success', () => {
+    it('should find a classification', done => {
+      nockBack('classification/find-200.json', {}, nockDone => {
+        Classification('mock-api-key').find('KZFzniwnSyZfZ7v7na')
+          .then(result => {
+            result.segment.name.should.equal('Arts & Theatre');
             nockDone();
             done();
-          };
-        })(this))
+          })
+          .catch((err) => done(err));
       });
     });
   });

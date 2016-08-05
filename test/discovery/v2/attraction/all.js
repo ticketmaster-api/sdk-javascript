@@ -1,24 +1,22 @@
-var chai      = require("chai");
-var should    = chai.should();
-var nock      = require('nock');
-var nockBack  = nock.back;
-var All       = require('../../../../lib/discovery/v2/attraction/all');
+import {back as nockBack} from 'nock';
 
-describe('discovery.v2.attraction.all', function() {
-  before(function() {
-    nockBack.fixtures = './test/fixtures/discovery/v2'
+import Attraction from '../../../../lib/discovery/v2/attraction';
+
+describe('discovery.v2.attraction.all', () => {
+  before(() => {
+    nockBack.fixtures = './test/fixtures/discovery/v2';
   });
 
-  describe('success', function() {
-    it('should find an attraction', function(done) {
-      nockBack('attraction/all-200.json', {}, function(nockDone) {
-        var all = All('mock-api-key');
-        all()
-        .then(function(attractions) {
-          attractions.items[0].name.should.equal("!!!");
-          nockDone();
-          done();
-        })
+  describe('success', () => {
+    it('should find an attraction', (done) => {
+      nockBack('attraction/all-200.json', {}, nockDone => {
+        Attraction('mock-api-key').all()
+          .then((result) => {
+            result.items[0].name.should.equal('!!!');
+            nockDone();
+            done();
+          })
+          .catch(() => done());
       });
     });
   });

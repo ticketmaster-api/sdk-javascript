@@ -1,9 +1,7 @@
-var chai   = require("chai");
-var should = chai.should();
-var venue = require('../../../../lib/discovery/v2/venue');
+import venue from '../../../../lib/discovery/v2/venue';
 
-describe('discovery.v2.venue', function() {
-  it('should provide find', function(done) {
+describe('discovery.v2.venue', () => {
+  it('should provide find', (done) => {
     venue().should.have.property('find');
     done();
   });

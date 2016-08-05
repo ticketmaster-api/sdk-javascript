@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <title>TMAPI</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <script src="../dist/web/tmapi-1.0.0.min.js"></script>
+  <script>
+    (function(tmapi) {
+      var sdk = tmapi('YOUR_KEY_HERE')
+
+      function logNextPage(page) {
+        console.group('page: ' + page.page.number)
+        page.items.map(console.log)
+        console.groupEnd();
+
+        return page.getNext()
+      }
+
+      if (sdk) {
+        sdk.discovery.v1.attraction.all({page: 4, size: 5, city: 'London'})
+          .then(logNextPage)
+          .then(logNextPage)
+          .then(logNextPage)
+          .catch(function(e) {
+            console.log(e)
+          })
+      }
+    })(window.tmapi)
+  </script>
+</body>
+</html>

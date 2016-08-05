@@ -1,26 +1,22 @@
-var chai      = require("chai");
-var should    = chai.should();
-var nock      = require('nock');
-var nockBack  = nock.back;
-var Find       = require('../../../../lib/discovery/v1/venue/find');
+import {back as nockBack} from 'nock';
 
-describe('discovery.v1.venue.find', function() {
-  before(function() {
-    nockBack.fixtures = './test/fixtures/discovery/v1'
+import Venue from '../../../../lib/discovery/v1/venue';
+
+describe('discovery.v1.venue.find', () => {
+  before(() => {
+    nockBack.fixtures = './test/fixtures/discovery/v1';
   });
 
-  describe('success', function() {
-    it('should find a venue', function(done) {
+  describe('success', () => {
+    it('should find a venue', done => {
       nockBack('venue/find-200.json', {}, function(nockDone) {
-        var find = Find('mock-api-key');
-        find('475247')
-        .then((function(_this) {
-          return function(result) {
-            result.name.should.equal("Alamodome");
+        Venue('mock-api-key').find('475247')
+          .then((result) => {
+            result.name.should.equal('Alamodome');
             nockDone();
             done();
-          };
-        })(this))
+          })
+          .catch(() => done());
       });
     });
   });
