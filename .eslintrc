@@ -9,5 +9,8 @@
     "should": true,
     "describe": true,
     "before": true,
+    "after": true,
+    "__Rewire__": true,
+    "__ResetDependency__": true
   }
 }

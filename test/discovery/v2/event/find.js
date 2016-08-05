@@ -1,6 +1,6 @@
 import {back as nockBack} from 'nock';
 
-import Event from '../../../../lib/discovery/v2/event';
+import {Event} from '../../../../lib/discovery/v2';
 
 describe('discovery.v2.event.find', () => {
   before(() => {

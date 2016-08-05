@@ -1,6 +1,6 @@
 import {back as nockBack} from 'nock';
 
-import Venue from '../../../../lib/discovery/v2/venue';
+import {Venue} from '../../../../lib/discovery/v2';
 
 describe('discovery.v2.venue.find', () => {
   before(() => {
