@@ -1,8 +1,8 @@
-import category from '../../../../lib/discovery/v1/category';
+import {Category} from '../../../../lib/discovery/v1';
 
 describe('discovery.v1.category', () => {
   it('should provide find', done => {
-    category().should.have.property('find');
+    Category().should.have.property('find');
     done();
   });
 });

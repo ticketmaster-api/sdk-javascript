@@ -1,8 +1,8 @@
-import attraction from '../../../../lib/discovery/v1/attraction';
+import {Attraction} from '../../../../lib/discovery/v1';
 
 describe('discovery.v1.attraction', () => {
   it('should provide find', done => {
-    attraction().should.have.property('find');
+    Attraction().should.have.property('find');
     done();
   });
 });

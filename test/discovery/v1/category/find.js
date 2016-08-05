@@ -1,6 +1,6 @@
 import {back as nockBack} from 'nock';
 
-import Category from '../../../../lib/discovery/v1/category';
+import {Category} from '../../../../lib/discovery/v1';
 
 describe('discovery.v1.category.find', () => {
   before(() => {

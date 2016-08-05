@@ -1,8 +1,8 @@
-import venue from '../../../../lib/discovery/v1/venue';
+import {Venue} from '../../../../lib/discovery/v1';
 
 describe('discovery.v1.venue', () => {
   it('should provide find', (done) => {
-    venue().should.have.property('find');
+    Venue().should.have.property('find');
     done();
   });
 });

@@ -1,13 +1,13 @@
-import event from '../../../../lib/discovery/v1/event';
+import {Event} from '../../../../lib/discovery/v1';
 
 describe('discovery.v1.event', () => {
   it('should provide find', done => {
-    event().should.have.property('find');
+    Event().should.have.property('find');
     done();
   });
 
   it('should provide all', done => {
-    event().should.have.property('all');
+    Event().should.have.property('all');
     done();
   });
 });
