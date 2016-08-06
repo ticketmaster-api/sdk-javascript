@@ -7,6 +7,7 @@ describe('utils.find', () => {
 
   it('should parse params for a resource', (done) => {
     const query = find('discovery/v2', 'a3b2c1d4e5f6', 'events')
+
     query(1).should.deep.equal({
       path: ['discovery/v2', 'events', 1],
       qs:   {apikey: 'a3b2c1d4e5f6'}
@@ -17,6 +18,7 @@ describe('utils.find', () => {
 
   it('should parse params for a sub-resource', (done) => {
     const query = find('discovery/v2', 'a3b2c1d4e5f6', 'events', 'images')
+
     query(1).should.deep.equal({
       path: ['discovery/v2', 'events', 1, 'images'],
       qs:   {apikey: 'a3b2c1d4e5f6'}

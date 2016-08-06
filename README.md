@@ -6,11 +6,10 @@ Javascript SDK for the **[Ticketmaster Open Platform](http://developer.ticketmas
 Aims to wrap the Ticketmaster API with coverage for all Open Platform endpoints, featuring:
  - API key authentication support
  - Ticketmaster OAuth2 access key support
- - Promises on all requests via Bluebird
 
 ## System Requirements
 
- - [NodeJS](https://nodejs.org) (v0.10 or greater)
+ - [NodeJS](https://nodejs.org) (v0.12 or greater)
 
 ## Installation:
 
@@ -28,74 +27,81 @@ git clone --branch <version> git@github.com:ticketmaster-api/sdk-javascript.git
 
 For browser usage there are two files in **dist/** folder
 ```bash
-./dist/ticketmaster-client-[version].js (raw with source-maps)
-./dist/ticketmaster-client-[version].min.js (minified)
+./dist/tmapi-[version].js     (raw with source-maps)
+./dist/tmapi-[version].min.js (minified)
 ```
 
 Include one of them in to your project:
 ```html
 ...
-<script src="ticketmaster-client-[version].js"></script>
-<script src="ticketmaster-client-[version].min.js"></script>
+<script src="dist/tmapi-[version].js"></script>
+<script src="dist/tmapi-[version].min.js"></script>
 ...
 ```
 
-Use global variable **TMAPI** to make an API call (name can be changed in webpack settings during rebuild):
+Use global variable **tmapi** to make an API call:
 
 ```javascript
-TMAPI('your-api-key').discovery.v2.event.all()
-.then(function(result) {
-  // "result" is an object of Ticketmaster events information
-});
+tmapi('YOUR_API_KEY').discovery.v2.event.all()
+  .then(function(page) {
+    // "page" is an object of Ticketmaster events information
+  });
 ```
+
+**Note** If you need to support browsers lacking native support for Promises you should supply a polyfill
 
 ## Server:
 
 Require the package and make an API call:
 
+ES5
 ```javascript
-var TM = require('ticketmaster');
-TM('your-api-key').discovery.v2.event.all()
-.then(function(result) {
-  // "result" is an object of Ticketmaster events information
-});
+var tmapi = require('tmapi');
+
+tmapi('YOUR_API_KEY').discovery.v2.event.all()
+  .then(function(result) {
+    // see notes on the Result object below
+  });
 ```
 
-Alternative syntax if you are only interested in a subset of the API:
+ES6
+```javascript
+import tmapi from 'tmapi';
+
+tmapi('YOUR_API_KEY').discovery.v2.event.all()
+  .then((result) => {}) // see notes on the Result object below
+```
+
+Modules are also available individually:
 
 ```javascript
-var EventAPI = require('ticketmaster').discovery.v2.event;
-EventAPI('your-api-key').all()
+import {Event} from 'tmapi/discovery/v2'
+
+Event('YOUR_API_KEY').all()
+  .then((result) => console.log(result.items))
 ```
 
 ## Rebuild source:
 
 In case you want to build your own bundle for client
 
-`1`. Clone this repository
+1. Clone this repository
 
-```bash
-git clone git@github.com:ticketmaster-api/sdk-javascript.git
-```
-`2`. install dependencies
+    ```bash
+    git clone git@github.com:ticketmaster-api/sdk-javascript.git
+    ```
 
-```bash
-npm install
-```
-`3`. Run npm script:
+1. install dependencies
 
-- for raw (with source-maps) version of client lib use:
-```bash
-npm run-script dev
-```
-- for minified version of client lib use:
-```bash
-npm run-script prod
-```
-- or (for Windows users):
-```bash
-npm run-script win-prod
-```
+    ```bash
+    npm install
+    ```
+
+1. Run npm script:
+
+    ```bash
+    npm run build
+    ```
 
 
 ## Error handling:
@@ -108,16 +114,34 @@ npm run-script win-prod
 (provided only for sets which are result of **.all()** type methods)
 
 properties:
--`result.items` - Array of Ticketmaster event information.
--`result.page` - Additional general information object.
+
+- `result.items` - Array of Ticketmaster event information.
+- `result.page` - Additional general information object.
 
 methods:
--`result.getPage(index)` - Promise which returns a new Result object.
--`result.nextPage()` - Promise which returns a new Result object. Can take additional param - step (1 by default).
--`result.previousPage()` - Promise which returns a new Result object. Can take additional param - step (1 by default).
--`result.records()` - returns an Array of this page's records
--`result.count()` - returns the total count of items
--`result.isLastPage()` - returns a Boolean if current Result is the last page
+
+- `result.getAt(index): Promise`
+  - Returns a Promise yielding a new Result object.
+
+- `result.getNext([step]): Promise`
+  - Returns a Promise yielding a new Result object.
+  - Can take additional `step` param (1 by default).
+
+- `result.getPrev([step]): Promise`
+  - Returns a Promise yielding a new Result object.
+  - Can take additional `step` param (1 by default).
+
+- `result.count(): Integer`
+  - Returns the total count of items matching your criteria
+
+- `result.pages(): Integer`
+  - Returns the total count of pages matching your criteria
+
+- `result.isFirst(): Boolean`
+  - Whether the current Result is the first page
+
+- `result.isLast(): Boolean`
+  - Whether the current Result is the last page
 
 ## Running Tests
 
@@ -129,28 +153,38 @@ methods:
 
 Currently supports the following endpoints:
 
- - Discovery API
-   - v1
-     - Attraction
-       - Find
-     - Category
-       - Find
-     - Event
-       - All
-       - Find
-     - Venue
-       - Find
-   - v2
-     - Attraction
-       - Find
-     - Event
-       - All
-       - Find
-     - Venue
-       - Find
+### Discovery API
+- v1
+  - Attraction
+    - all
+    - find
+  - Category
+    - all
+    - find
+  - Event
+    - all
+    - find
+    - findImages
+  - Venue
+    - all
+    - find
+- v2
+  - Attraction
+    - all
+    - find
+  - Classification
+    - all
+    - find
+  - Event
+    - all
+    - find
+    - findImages
+  - Venue
+    - all {page, size, sort}
+    - find
 
-The goal is to implement all endpoints available @ http://developer.ticketmaster.com/.
-Pull Requests gladly accepted!
+Our goal is to implement [all available endpoints](http://developer.ticketmaster.com/).
+Pull Requests are gladly accepted!
 
 ## Contact Us
 

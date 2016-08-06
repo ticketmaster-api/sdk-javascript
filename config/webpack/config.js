@@ -1,31 +1,31 @@
-import path from 'path';
+import path from 'path'
 
-import pkg from './../../package.json';
+import pkg from './../../package.json'
 
 function getFilename(suffix) {
-  return pkg.name + '-' + pkg.version + suffix;
+  return pkg.name + '-' + pkg.version + suffix
 }
 
 const settings = (options) => ({
-  entry: './lib/index.js',
+  entry:  './lib/index.js',
   output: Object.assign({}, {
-    filename: `node/${pkg.name}.js`,
-    library: pkg.name,
+    filename:      `node/${pkg.name}.js`,
+    library:       pkg.name,
     libraryTarget: 'umd',
-    path: path.resolve(process.cwd(), 'dist')
+    path:          path.resolve(process.cwd(), 'dist')
   }, options.output),
   devtool: options.devtool,
-  module: {
+  module:  {
     loaders: [
       {
-        test: /\.js$/,
-        loader: 'babel',
+        test:    /\.js$/,
+        loader:  'babel',
         include: path.join(process.cwd(), 'lib')
       }
     ]
   },
   resolve: options.resolve,
   plugins: options.plugins
-});
+})
 
-export {settings, getFilename};
+export {settings, getFilename}
