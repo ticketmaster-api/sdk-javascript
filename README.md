@@ -30,12 +30,18 @@ Currently supports the following endpoints:
   - Events
   - Venues
 
+#### In Development
+- Commerce API
+- Partner API
+- Top Picks API
+- Deals API
+- OAuth API
+- Season Ticketing API
+- [International Discovery API (TIAP)](http://docs.ticketmasterdiscoveryapi.apiary.io/#)
+
 Our goal is to implement [all available endpoints](http://developer.ticketmaster.com/).
+
 Pull Requests are gladly accepted!
-
-## System Requirements
-
- - [NodeJS](https://nodejs.org) (v0.12 or greater)
 
 ## Installation:
 
@@ -43,43 +49,43 @@ Pull Requests are gladly accepted!
 npm install --save ticketmaster
 ```
 
+### System Requirements
+
+- [NodeJS](https://nodejs.org) (v0.12 or greater)
+
+
 # Usage
 
 ## Client:
 
-For use in client-side JS applications, a **dist/** folder exists for each release.  Releases can be found @ [https://github.com/ticketmaster-api/sdk-javascript/releases](https://github.com/ticketmaster-api/sdk-javascript/releases).
+For client-side JS applications, a **dist/** folder exists for
+[each release](https://github.com/ticketmaster-api/sdk-javascript/releases)
+comprising
 
 ```bash
-git clone --branch <version> git@github.com:ticketmaster-api/sdk-javascript.git
-```
-
-For browser usage there are two files in **dist/** folder
-```bash
-./dist/tmapi-[version].js     # raw with source-maps
+./dist/tmapi-[version].js     # uncompressed with source-maps
 ./dist/tmapi-[version].min.js # minified
 ```
 
-Include one of them in to your project:
+Use the global variable **tmapi** to make an API call:
+
 ```html
 ...
-<script src="dist/tmapi-[version].js"></script>
 <script src="dist/tmapi-[version].min.js"></script>
-...
+<script>
+  (function(tmapi){
+    tmapi('YOUR_API_KEY').discovery.v2.event.all()
+      .then(function(result) {
+        console.log(result.items) // See notes on the Result object below
+      })
+      .catch(function(err) {
+        console.log(err)          // NOTE: you must provide your own error handler
+      })
+  })(window.tmapi)
+</script>
 ```
 
-Use global variable **tmapi** to make an API call:
-
-```javascript
-tmapi('YOUR_API_KEY').discovery.v2.event.all()
-  .then(function(result) {
-    console.log(result.items) // See notes on the Result object below
-  })
-  .catch(function(err) {
-    console.log(err)          // NOTE: you must provide your own error handler
-  })
-```
-
-**Note** If you need to support browsers lacking native support for Promises you should supply a polyfill
+**Note** If you need to support browsers lacking native support for Promises you will need to supply a polyfill library
 
 ## Server:
 
