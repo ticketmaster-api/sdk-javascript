@@ -7,6 +7,32 @@ Aims to wrap the Ticketmaster API with coverage for all Open Platform endpoints,
  - API key authentication support
  - Ticketmaster OAuth2 access key support
 
+Currently supports the following endpoints:
+
+#### Discovery API
+- v2
+  - [Attractions](http://developer.ticketmaster.com/products-and-docs/apis/discovery/v2/#search-attractions-v2)
+    - [`all`](http://developer.ticketmaster.com/products-and-docs/apis/discovery/v2/#query-parameters-3)
+    - `find`
+  - [Classifications](http://developer.ticketmaster.com/products-and-docs/apis/discovery/v2/#search-classifications-v2)
+    - [`all`](http://developer.ticketmaster.com/products-and-docs/apis/discovery/v2/#query-parameters-5)
+    - `find`
+  - [Events](http://developer.ticketmaster.com/products-and-docs/apis/discovery/v2/#srch-events-v2)
+    - [`all`](http://developer.ticketmaster.com/products-and-docs/apis/discovery/v2/#query-parameters)
+    - `find`
+    - `findImages`
+  - [Venues](http://developer.ticketmaster.com/products-and-docs/apis/discovery/v2/#search-venues-v2)
+    - [`all`](http://developer.ticketmaster.com/products-and-docs/apis/discovery/v2/#query-parameters-7)
+    - `find`
+- v1 (deprecated, same methods as above)
+  - Attractions
+  - Categories (renamed to Classifications in v2)
+  - Events
+  - Venues
+
+Our goal is to implement [all available endpoints](http://developer.ticketmaster.com/).
+Pull Requests are gladly accepted!
+
 ## System Requirements
 
  - [NodeJS](https://nodejs.org) (v0.12 or greater)
@@ -16,6 +42,8 @@ Aims to wrap the Ticketmaster API with coverage for all Open Platform endpoints,
 ```bash
 npm install --save ticketmaster
 ```
+
+# Usage
 
 ## Client:
 
@@ -105,33 +133,6 @@ Event('YOUR_API_KEY').all()
   .catch((err) => console.log(err))            // NOTE: you must provide your own error handler
 ```
 
-## Rebuild source:
-
-In case you want to build your own bundle for client
-
-1. Clone this repository
-
-    ```bash
-    git clone git@github.com:ticketmaster-api/sdk-javascript.git
-    ```
-
-1. install dependencies
-
-    ```bash
-    npm install
-    ```
-
-1. Run npm script:
-
-    ```bash
-    npm run build
-    ```
-
-
-## Error handling:
-
-**Be aware:** no **.catch()** method provided! You should write it by your own.
-
 
 ## Result object API:
 
@@ -167,48 +168,40 @@ methods:
 - `result.isLast(): Boolean`
   - Whether the current Result is the last page
 
+
+## Error handling:
+
+**NOTE:** no `.catch()` method is provided! You **must** supply your own.
+
+# Contributing
+
+## Rebuild source:
+
+In case you want to build your own bundle for client
+
+1. Clone this repository
+
+    ```bash
+    git clone git@github.com:ticketmaster-api/sdk-javascript.git
+    ```
+
+1. install dependencies
+
+    ```bash
+    npm install
+    ```
+
+1. Run npm script:
+
+    ```bash
+    npm run build
+    ```
+
 ## Running Tests
 
  ```bash
  npm test
  ```
-
-## Status
-
-Currently supports the following endpoints:
-
-### Discovery API
-- v1
-  - Attraction
-    - all
-    - find
-  - Category
-    - all
-    - find
-  - Event
-    - all
-    - find
-    - findImages
-  - Venue
-    - all
-    - find
-- v2
-  - [Attractions](http://developer.ticketmaster.com/products-and-docs/apis/discovery/v2/#search-attractions-v2)
-    - [all](http://developer.ticketmaster.com/products-and-docs/apis/discovery/v2/#query-parameters-3)
-    - find
-  - [Classifications](http://developer.ticketmaster.com/products-and-docs/apis/discovery/v2/#search-classifications-v2)
-    - [all](http://developer.ticketmaster.com/products-and-docs/apis/discovery/v2/#query-parameters-5)
-    - find
-  - [Events](http://developer.ticketmaster.com/products-and-docs/apis/discovery/v2/#srch-events-v2)
-    - [all](http://developer.ticketmaster.com/products-and-docs/apis/discovery/v2/#query-parameters)
-    - find
-    - findImages
-  - [Venues](http://developer.ticketmaster.com/products-and-docs/apis/discovery/v2/#search-venues-v2)
-    - [all](http://developer.ticketmaster.com/products-and-docs/apis/discovery/v2/#query-parameters-7)
-    - find
-
-Our goal is to implement [all available endpoints](http://developer.ticketmaster.com/).
-Pull Requests are gladly accepted!
 
 ## Contact Us
 
