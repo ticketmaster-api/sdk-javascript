@@ -5,7 +5,7 @@ Javascript SDK for the **[Ticketmaster Open Platform](http://developer.ticketmas
 
 Aims to wrap the Ticketmaster API with coverage for all Open Platform endpoints, featuring:
  - API key authentication support
- - Ticketmaster OAuth2 access key support
+ - Ticketmaster OAuth2 access key support (coming soon)
 
 Currently supports the following endpoints:
 
@@ -139,6 +139,7 @@ Event('YOUR_API_KEY').all()
   .catch((err) => console.log(err))            // NOTE: you must provide your own error handler
 ```
 
+See `/docs` for examples you can run
 
 ## Result object API:
 
@@ -178,37 +179,3 @@ methods:
 ## Error handling:
 
 **NOTE:** no `.catch()` method is provided! You **must** supply your own.
-
-# Contributing
-
-## Rebuild source:
-
-In case you want to build your own bundle for client
-
-1. Clone this repository
-
-    ```bash
-    git clone git@github.com:ticketmaster-api/sdk-javascript.git
-    ```
-
-1. install dependencies
-
-    ```bash
-    npm install
-    ```
-
-1. Run npm script:
-
-    ```bash
-    npm run build
-    ```
-
-## Running Tests
-
- ```bash
- npm test
- ```
-
-## Contact Us
-
-[internal only] Find us in #open-platform on Ticketmaster Slack!
