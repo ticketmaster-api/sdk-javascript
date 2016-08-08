@@ -1,6 +1,6 @@
-import webpack from 'webpack'
+import webpack from 'webpack';
 
-import {settings, getFilename} from './config'
+import {settings, getFilename} from './config';
 
 const config = settings({
   output: {
@@ -10,6 +10,6 @@ const config = settings({
   plugins: [
     new webpack.NoErrorsPlugin()
   ]
-})
+});
 
-export default config
+export default config;
