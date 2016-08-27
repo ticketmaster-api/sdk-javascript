@@ -5,177 +5,155 @@ Javascript SDK for the **[Ticketmaster Open Platform](http://developer.ticketmas
 
 Aims to wrap the Ticketmaster API with coverage for all Open Platform endpoints, featuring:
  - API key authentication support
- - Ticketmaster OAuth2 access key support (coming soon)
+ - Ticketmaster OAuth2 access key support
+ - Promises on all requests via Bluebird
 
-Currently supports the following endpoints:
+## System Requirements
 
-#### Discovery API
-- v2
-  - [Attractions](http://developer.ticketmaster.com/products-and-docs/apis/discovery/v2/#search-attractions-v2)
-    - [`all`](http://developer.ticketmaster.com/products-and-docs/apis/discovery/v2/#query-parameters-3)
-    - `find`
-  - [Classifications](http://developer.ticketmaster.com/products-and-docs/apis/discovery/v2/#search-classifications-v2)
-    - [`all`](http://developer.ticketmaster.com/products-and-docs/apis/discovery/v2/#query-parameters-5)
-    - `find`
-  - [Events](http://developer.ticketmaster.com/products-and-docs/apis/discovery/v2/#srch-events-v2)
-    - [`all`](http://developer.ticketmaster.com/products-and-docs/apis/discovery/v2/#query-parameters)
-    - `find`
-    - `findImages`
-  - [Venues](http://developer.ticketmaster.com/products-and-docs/apis/discovery/v2/#search-venues-v2)
-    - [`all`](http://developer.ticketmaster.com/products-and-docs/apis/discovery/v2/#query-parameters-7)
-    - `find`
-- v1 (deprecated, same methods as above)
-  - Attractions
-  - Categories (renamed to Classifications in v2)
-  - Events
-  - Venues
-
-#### In Development
-- Commerce API
-- Partner API
-- Top Picks API
-- Deals API
-- OAuth API
-- Season Ticketing API
-- [International Discovery API (TIAP)](http://docs.ticketmasterdiscoveryapi.apiary.io/#)
-
-Our goal is to implement [all available endpoints](http://developer.ticketmaster.com/).
-
-Pull Requests are gladly accepted!
+ - [NodeJS](https://nodejs.org) (v0.10 or greater)
 
 ## Installation:
 
 ```bash
-npm install --save ticketmaster
+npm install --save ticketmaster@<version>
 ```
 
-### System Requirements
-
-- [NodeJS](https://nodejs.org) (v0.12 or greater)
-
-
-# Usage
+NOTE: We heavily use [semantic versioning](http://semver.org/), and actively introduce breaking changes across MAJOR version changes.  To avoid any breaking changes being introduced inadvertently, you should lock this package at a specific version using the npm command above, and upgrade explicitly.
 
 ## Client:
 
-For client-side JS applications, a **dist/** folder exists for
-[each release](https://github.com/ticketmaster-api/sdk-javascript/releases)
-comprising
+For use in the browser-based client-side JS applications, a **dist/** folder exists for each release.  Releases can be found @ [https://github.com/ticketmaster-api/sdk-javascript/releases](https://github.com/ticketmaster-api/sdk-javascript/releases).
 
 ```bash
-./dist/tmapi-[version].js     # uncompressed with source-maps
-./dist/tmapi-[version].min.js # minified
+git clone --branch <version> git@github.com:ticketmaster-api/sdk-javascript.git
 ```
 
-Use the global variable **tmapi** to make an API call:
+For browser usage there are two files in **dist/** folder
+```bash
+./dist/ticketmaster-client-[version].js (raw with source-maps)
+./dist/ticketmaster-client-[version].min.js (minified)
+```
 
+Include one of them in to your project:
 ```html
 ...
-<script src="dist/tmapi-[version].min.js"></script>
-<script>
-  (function(tmapi){
-    tmapi('YOUR_API_KEY').discovery.v2.event.all()
-      .then(function(result) {
-        console.log(result.items) // See notes on the Result object below
-      })
-      .catch(function(err) {
-        console.log(err)          // NOTE: you must provide your own error handler
-      })
-  })(window.tmapi)
-</script>
+<script src="ticketmaster-client-[version].js"></script>
+<script src="ticketmaster-client-[version].min.js"></script>
+...
 ```
 
-**Note** If you need to support browsers lacking native support for Promises you will need to supply a polyfill library
+Use global variable **TMAPI** to make an API call (name can be changed in webpack settings during rebuild):
+
+```javascript
+TMAPI('your-api-key').discovery.v2.event.all()
+.then(function(result) {
+  // "result" is an object of Ticketmaster events information
+});
+```
 
 ## Server:
 
 Require the package and make an API call:
 
-ES5
 ```javascript
-var tmapi = require('tmapi');
-
-tmapi('YOUR_API_KEY').discovery.v2.event.all()
-  .then(function(result) {
-    console.log(result.items) // See notes on the Result object below
-  })
-  .catch(function(err) {
-    console.log(err)          // NOTE: you must provide your own error handler
-  })
+var TM = require('ticketmaster');
+TM('your-api-key').discovery.v2.event.all()
+.then(function(result) {
+  // "result" is an object of Ticketmaster events information
+});
 ```
 
-ES6
-```javascript
-import tmapi from 'tmapi';
+Alternative syntax if you are only interested in a subset of the API:
 
-tmapi('YOUR_API_KEY').discovery.v2.event.all()
-  .then((result) => {
-    console.log(result.items)        // See notes on the Result object below
-  })
-  .catch((err) => console.log(err))  // NOTE: you must provide your own error handler
+```javascript
+var EventAPI = require('ticketmaster').discovery.v2.event;
+EventAPI('your-api-key').all()
 ```
 
-Modules are also available individually:
+## Rebuild source:
 
-ES5
-```javascript
-var Event = require('tmapi/discovery/v2').Event
+In case you want to build your own bundle for client
 
-Event('YOUR_API_KEY').all()
-  .then(function(result) {
-    console.log(result.items) // See notes on the Result object below
-  })
-  .catch(function(err) {
-    console.log(err)          // NOTE: you must provide your own error handler
-  })
+`1`. Clone this repository
+
+```bash
+git clone git@github.com:ticketmaster-api/sdk-javascript.git
+```
+`2`. install dependencies
+
+```bash
+npm install
+```
+`3`. Run npm script:
+
+- for raw (with source-maps) version of client lib use:
+```bash
+npm run-script dev
+```
+- for minified version of client lib use:
+```bash
+npm run-script prod
+```
+- or (for Windows users):
+```bash
+npm run-script win-prod
 ```
 
-ES6
-```javascript
-import {Event} from 'tmapi/discovery/v2'
 
-Event('YOUR_API_KEY').all()
-  .then((result) => console.log(result.items)) // See notes on the Result object below
-  .catch((err) => console.log(err))            // NOTE: you must provide your own error handler
-```
+## Error handling:
 
-See `/docs` for examples you can run
+**Be aware:** no **.catch()** method provided! You should write it by your own.
+
 
 ## Result object API:
 
 (provided only for sets which are result of **.all()** type methods)
 
 properties:
-
-- `result.items` - Array of Ticketmaster event information.
-- `result.page` - Additional general information object.
+-`result.items` - Array of Ticketmaster event information.
+-`result.page` - Additional general information object.
 
 methods:
+-`result.getPage(index)` - Promise which returns a new Result object.
+-`result.nextPage()` - Promise which returns a new Result object. Can take additional param - step (1 by default).
+-`result.previousPage()` - Promise which returns a new Result object. Can take additional param - step (1 by default).
+-`result.records()` - returns an Array of this page's records
+-`result.count()` - returns the total count of items
+-`result.isLastPage()` - returns a Boolean if current Result is the last page
 
-- `result.getAt(index): Promise`
-  - Returns a Promise yielding a new Result object.
+## Running Tests
 
-- `result.getNext([step]): Promise`
-  - Returns a Promise yielding a new Result object.
-  - Can take additional `step` param (1 by default).
+ ```bash
+ npm test
+ ```
 
-- `result.getPrev([step]): Promise`
-  - Returns a Promise yielding a new Result object.
-  - Can take additional `step` param (1 by default).
+## Status
 
-- `result.count(): Integer`
-  - Returns the total count of items matching your criteria
+Currently supports the following endpoints:
 
-- `result.pages(): Integer`
-  - Returns the total count of pages matching your criteria
+ - Discovery API
+   - v1
+     - Attraction
+       - Find
+     - Category
+       - Find
+     - Event
+       - All
+       - Find
+     - Venue
+       - Find
+   - v2
+     - Attraction
+       - Find
+     - Event
+       - All
+       - Find
+     - Venue
+       - Find
 
-- `result.isFirst(): Boolean`
-  - Whether the current Result is the first page
+The goal is to implement all endpoints available @ http://developer.ticketmaster.com/.
+Pull Requests gladly accepted!
 
-- `result.isLast(): Boolean`
-  - Whether the current Result is the last page
+## Contact Us
 
-
-## Error handling:
-
-**NOTE:** no `.catch()` method is provided! You **must** supply your own.
+[internal only] Find us in #open-platform on Ticketmaster Slack!
