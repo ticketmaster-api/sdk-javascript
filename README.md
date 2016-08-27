@@ -42,10 +42,10 @@ Include one of them in to your project:
 ...
 ```
 
-Use global variable **TMAPI** to make an API call (name can be changed in webpack settings during rebuild):
+Use global variable **ticketmaster** to make an API call (name can be changed in webpack settings during rebuild):
 
 ```javascript
-TMAPI('your-api-key').discovery.v2.event.all()
+ticketmaster('your-api-key').discovery.v2.event.all()
 .then(function(result) {
   // "result" is an object of Ticketmaster events information
 });
@@ -56,8 +56,8 @@ TMAPI('your-api-key').discovery.v2.event.all()
 Require the package and make an API call:
 
 ```javascript
-var TM = require('ticketmaster');
-TM('your-api-key').discovery.v2.event.all()
+var ticketmaster = require('ticketmaster');
+ticketmaster('your-api-key').discovery.v2.event.all()
 .then(function(result) {
   // "result" is an object of Ticketmaster events information
 });
