@@ -1,6 +1,6 @@
 {
   "name": "ticketmaster",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "SDK for the Ticketmaster Open Platform",
   "main": "dist/node/index.js",
   "module": "lib/index.js",
