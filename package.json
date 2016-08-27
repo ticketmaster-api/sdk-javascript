@@ -14,7 +14,7 @@
     "lint": "eslint ./lib ./test",
     "precommit": "npm run lint && npm test",
     "postcommit": "npm run build",
-    "preversion": "npm run clean && npm run build",
+    "preversion": "npm run clean",
     "postversion": "./scripts/post-release.sh"
   },
   "keywords": [
