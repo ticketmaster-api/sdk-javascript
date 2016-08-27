@@ -1,6 +1,6 @@
-var tmapi = require('../../../dist/node/index');
+var ticketmaster = require('../../../dist/node/index');
 
-var sdk = tmapi('YOUR_API_KEY');
+var sdk = ticketmaster('YOUR_API_KEY');
 
 function logNextPage(page) {
   console.log(page.page.number, page.items.map(function(item) {

@@ -63,25 +63,25 @@ For client-side JS applications, a **dist/** folder exists for
 comprising
 
 ```bash
-./dist/tmapi-[version].js     # uncompressed with source-maps
-./dist/tmapi-[version].min.js # minified
+./dist/ticketmaster-[version].js     # uncompressed with source-maps
+./dist/ticketmaster-[version].min.js # minified
 ```
 
-Use the global variable **tmapi** to make an API call:
+Use the global variable **ticketmaster** to make an API call:
 
 ```html
 ...
-<script src="dist/tmapi-[version].min.js"></script>
+<script src="dist/ticketmaster-[version].min.js"></script>
 <script>
-  (function(tmapi){
-    tmapi('YOUR_API_KEY').discovery.v2.event.all()
+  (function(ticketmaster){
+    ticketmaster('YOUR_API_KEY').discovery.v2.event.all()
       .then(function(result) {
         console.log(result.items) // See notes on the Result object below
       })
       .catch(function(err) {
         console.log(err)          // NOTE: you must provide your own error handler
       })
-  })(window.tmapi)
+  })(window.ticketmaster)
 </script>
 ```
 
@@ -93,9 +93,9 @@ Require the package and make an API call:
 
 ES5
 ```javascript
-var tmapi = require('tmapi');
+var ticketmaster = require('ticketmaster');
 
-tmapi('YOUR_API_KEY').discovery.v2.event.all()
+ticketmaster('YOUR_API_KEY').discovery.v2.event.all()
   .then(function(result) {
     console.log(result.items) // See notes on the Result object below
   })
@@ -106,9 +106,9 @@ tmapi('YOUR_API_KEY').discovery.v2.event.all()
 
 ES6
 ```javascript
-import tmapi from 'tmapi';
+import ticketmaster from 'ticketmaster';
 
-tmapi('YOUR_API_KEY').discovery.v2.event.all()
+ticketmaster('YOUR_API_KEY').discovery.v2.event.all()
   .then((result) => {
     console.log(result.items)        // See notes on the Result object below
   })
@@ -119,7 +119,7 @@ Modules are also available individually:
 
 ES5
 ```javascript
-var Event = require('tmapi/discovery/v2').Event
+var Event = require('ticketmaster/discovery/v2').Event
 
 Event('YOUR_API_KEY').all()
   .then(function(result) {
@@ -132,7 +132,7 @@ Event('YOUR_API_KEY').all()
 
 ES6
 ```javascript
-import {Event} from 'tmapi/discovery/v2'
+import {Event} from 'ticketmaster/discovery/v2'
 
 Event('YOUR_API_KEY').all()
   .then((result) => console.log(result.items)) // See notes on the Result object below

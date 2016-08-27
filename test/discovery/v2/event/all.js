@@ -1,9 +1,9 @@
 import {back as nockBack} from 'nock'
 
-import tmapi from '../../../../lib'
+import ticketmaster from '../../../../lib'
 import {Event} from '../../../../lib/discovery/v2'
 
-const api = tmapi('mock-api-key')
+const api = ticketmaster('mock-api-key')
 
 const onResult = (done) => (page) => {
   page.items[0].name.should.equal('OSEA Membership Registration')

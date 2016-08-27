@@ -1,6 +1,6 @@
-import tmapi from '../../../dist/node'
+import ticketmaster from '../../../dist/node'
 
-const sdk = tmapi('YOUR_API_KEY')
+const sdk = ticketmaster('YOUR_API_KEY')
 
 const logNextPage = (page) => {
   console.log(page.page.number, page.items.map(({name}) => name))
