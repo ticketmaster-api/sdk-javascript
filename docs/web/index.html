@@ -2,15 +2,15 @@
 <html lang="en-us">
 <head>
   <meta charset="utf-8">
-  <title>TMAPI</title>
+  <title>Ticketmaster API</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-  <script src="../dist/web/tmapi-1.0.0.min.js"></script>
+  <script src="../../dist/web/ticketmaster-2.0.0.min.js"></script>
   <script>
-    (function(tmapi) {
-      var sdk = tmapi('YOUR_KEY_HERE')
+    (function(ticketmaster) {
+      var sdk = ticketmaster('YOUR_API_KEY')
 
       function logNextPage(page) {
         console.group('page: ' + page.page.number)
@@ -29,7 +29,7 @@
             console.log(e)
           })
       }
-    })(window.tmapi)
+    })(window.ticketmaster)
   </script>
 </body>
 </html>

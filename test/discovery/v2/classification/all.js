@@ -1,6 +1,6 @@
 import {back as nockBack} from 'nock';
 
-import Classification from '../../../../lib/discovery/v2/classification';
+import {Classification} from '../../../../lib/discovery/v2';
 
 describe('discovery.v2.classification.all', () => {
   before(() => {

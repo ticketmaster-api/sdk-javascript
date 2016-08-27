@@ -10,11 +10,11 @@ const config = settings({
   plugins: [
     new webpack.LoaderOptionsPlugin({
       minimize: true,
-      debug: false
+      debug:    false
     }),
     new webpack.optimize.UglifyJsPlugin({
-      compress: {warnings: false},
-      comments: false,
+      compress:  {warnings: false},
+      comments:  false,
       sourceMap: false
     })
   ]

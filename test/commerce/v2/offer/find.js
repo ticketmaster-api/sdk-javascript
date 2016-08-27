@@ -1,6 +1,6 @@
 import {back as nockBack} from 'nock';
 
-import Offer from '../../../../lib/commerce/v2/offer';
+import {Offer} from '../../../../lib/commerce/v2';
 
 describe('commerce.v2.offer.find', () => {
   before(() => {
