@@ -15,8 +15,10 @@ Aims to wrap the Ticketmaster API with coverage for all Open Platform endpoints,
 ## Installation:
 
 ```bash
-npm install --save ticketmaster
+npm install --save ticketmaster@<version>
 ```
+
+NOTE: We heavily use [semantic versioning](http://semver.org/), and actively introduce breaking changes across MAJOR version changes.  To avoid any breaking changes being introduced inadvertently, you should lock this package at a specific version using the npm command above, and upgrade explicitly.
 
 ## Client:
 
