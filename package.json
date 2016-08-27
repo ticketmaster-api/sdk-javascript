@@ -1,5 +1,5 @@
 {
-  "name": "tmapi",
+  "name": "ticketmaster",
   "version": "1.0.0",
   "description": "SDK for the Ticketmaster Open Platform",
   "main": "dist/node/index.js",
