@@ -1,0 +1,1 @@
+'use strict';Object.defineProperty(exports,"__esModule",{value:true});var config={baseURL:'https://app.ticketmaster.com'};exports.default=config;module.exports=exports['default'];
