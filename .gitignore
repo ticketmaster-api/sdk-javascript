@@ -3,4 +3,5 @@ node_modules/
 npm-debug.log
 .tmp/
 dist/
+docs/web/*
 coverage/
