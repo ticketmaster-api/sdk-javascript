@@ -1,0 +1,1 @@
+'use strict';Object.defineProperty(exports,"__esModule",{value:true});var _v=require('./v2');var _v2=_interopRequireDefault(_v);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}exports.default=function(apiKey){return{v2:(0,_v2.default)(apiKey)};};module.exports=exports['default'];
