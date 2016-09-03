@@ -1,0 +1,1 @@
+'use strict';Object.defineProperty(exports,"__esModule",{value:true});exports.api=undefined;var _offer=require('./offer');var _offer2=_interopRequireDefault(_offer);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}var api=exports.api='commerce/v2';exports.default=function(apikey){return{offer:(0,_offer2.default)(apikey)};};
