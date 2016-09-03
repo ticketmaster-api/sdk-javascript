@@ -10,7 +10,7 @@ Aims to wrap the Ticketmaster API with coverage for all Open Platform endpoints,
 
 ## System Requirements
 
- - [NodeJS](https://nodejs.org) (v0.10 or greater)
+ - [NodeJS](https://nodejs.org) (v0.12 or greater)
 
 ## Installation:
 
