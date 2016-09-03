@@ -27,7 +27,7 @@ printf "\n"
 if [ $push == "y" ]
 then
   git push origin $GIT_TAG
-  npm publish $VERSION
+  npm publish
 fi
 
 cleanup
