@@ -154,6 +154,16 @@ Currently supports the following endpoints:
 The goal is to implement all endpoints available @ http://developer.ticketmaster.com/.
 Pull Requests gladly accepted!
 
+## Deployment
+
+Maintainers can cut a new release:
+
+```bash
+npm version <new_version>
+```
+
+This will build, tag, push to git, and push the build folder to npm.
+
 ## Contact Us
 
 [internal only] Find us in #open-platform on Ticketmaster Slack!
