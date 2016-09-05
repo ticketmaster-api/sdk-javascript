@@ -7,19 +7,19 @@ function getFilename(suffix) {
 }
 
 const settings = (options) => ({
-  entry: './lib/index.js',
+  entry:  './lib/index.js',
   output: Object.assign({}, {
-    filename: `node/${pkg.name}.js`,
-    library: pkg.name,
+    filename:      `node/${pkg.name}.js`,
+    library:       pkg.name,
     libraryTarget: 'umd',
-    path: path.resolve(process.cwd(), 'dist')
+    path:          path.resolve(process.cwd(), 'dist')
   }, options.output),
   devtool: options.devtool,
-  module: {
+  module:  {
     loaders: [
       {
-        test: /\.js$/,
-        loader: 'babel',
+        test:    /\.js$/,
+        loader:  'babel',
         include: path.join(process.cwd(), 'lib')
       }
     ]

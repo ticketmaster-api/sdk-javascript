@@ -1,6 +1,6 @@
 import {back as nockBack} from 'nock';
 
-import Attraction from '../../../../lib/discovery/v2/attraction';
+import {Attraction} from '../../../../lib/discovery/v2';
 
 describe('discovery.v2.attraction.all', () => {
   before(() => {
