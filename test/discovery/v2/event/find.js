@@ -1,6 +1,6 @@
 import {back as nockBack} from 'nock';
 
-import Event from '../../../../lib/discovery/v2/event';
+import {Event} from '../../../../lib/discovery/v2';
 
 describe('discovery.v2.event.find', () => {
   before(() => {
@@ -25,10 +25,10 @@ describe('discovery.v2.event.find', () => {
         Event('mock-api-key').findImages('vv17FZfdGkSrrMju')
           .then((result) => {
             result.images[0].should.deep.equal({
-              'ratio': '3_2',
-              'url': 'http://s1.ticketm.net/dam/c/8cf/a6653880-7899-4f67-8067-1f95f4d158cf_124761_ARTIST_PAGE_3_2.jpg',
-              'width': 305,
-              'height': 203,
+              'ratio':    '3_2',
+              'url':      'http://s1.ticketm.net/dam/c/8cf/a6653880-7899-4f67-8067-1f95f4d158cf_124761_ARTIST_PAGE_3_2.jpg',
+              'width':    305,
+              'height':   203,
               'fallback': true
             });
             nockDone();

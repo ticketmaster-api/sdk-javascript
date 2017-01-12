@@ -1,12 +1,12 @@
 import {back as nockBack} from 'nock';
 
-import Event from '../../../../lib/discovery/v2/event';
+import {Event} from '../../../../lib/discovery/v2';
 
 nockBack.fixtures = './test/fixtures/discovery/v2';
 
 describe('discovery.v2.event.options', () => {
   describe('options', () => {
-    it('works', (done) => {
+    it('should produce a formatted query string from params', (done) => {
       nockBack('event/all-200-options.json', (nockDone) => {
         nockDone();
 

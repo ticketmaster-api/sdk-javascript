@@ -2,12 +2,16 @@
   "extends": "standard",
   "rules": {
     "semi": [2, "always"],
-    "space-before-function-paren": [2, "never"]
+    "space-before-function-paren": [2, "never"],
+    "key-spacing": ["error", {"align": "value"}]
   },
   "globals": {
     "it": true,
     "should": true,
     "describe": true,
     "before": true,
+    "after": true,
+    "__Rewire__": true,
+    "__ResetDependency__": true
   }
 }
